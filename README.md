@@ -17,7 +17,7 @@
 - [GitHub](https://github.com/TKvl6/myhand.Bartender)
 - [Trello](https://trello.com/b/7OGe4zzt/%EC%B9%B5%ED%85%8C%EC%9D%BC)
 - [Slack](https://www.slack.com)
-- [Bixby Studio](https://bixbydevelopers.com/)
+- [캡슐 개발 전용 Studio](https://bixbydevelopers.com/)
 
 ## 회의록
 
