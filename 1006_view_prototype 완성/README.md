@@ -2,13 +2,13 @@
 
 ## 프로토 타입 구현
 
-![01_칵테일 조회 뷰](/1006_view_prototype 완성/image/01_칵테일_조회_뷰.PNG)
+![01_칵테일 조회 뷰](/1006_view_prototype_완성/image/01_칵테일_조회_뷰.PNG)
 
-![02_베이스 재료 술 조회 뷰](/1006_view_prototype 완성/image/02_베이스_재료_술_조회_뷰.PNG)
+![02_베이스 재료 술 조회 뷰](/1006_view_prototype_완성/image/02_베이스_재료_술_조회_뷰.PNG)
 
-![03_칵테일 리스트 뷰](/1006_view_prototype 완성/image/03_칵테일_리스트_뷰.PNG)
+![03_칵테일 리스트 뷰](/1006_view_prototype_완성/image/03_칵테일_리스트_뷰.PNG)
 
-![04_레시피 조회 뷰](/1006_view_prototype 완성/image/04_레시피_조회_뷰.PNG)
+![04_레시피 조회 뷰](/1006_view_prototyp_완성/image/04_레시피_조회_뷰.PNG)
 
 
 ## DB 논의
