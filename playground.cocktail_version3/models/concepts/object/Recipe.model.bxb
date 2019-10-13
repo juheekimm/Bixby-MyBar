@@ -1,0 +1,39 @@
+structure (Recipe) {
+	property (cocktail){
+    type(Cocktail)
+    min (Optional) max(One) 
+  }
+  property (cockware){
+		type(Cockware)
+		min (Required) max(Many)
+	}
+  property (method){
+		type(Method)
+		min (Required) max(Many)
+	}
+  property (capacity){
+		type(Capacity)
+		min (Required) max(One)
+	}
+	property (steps){
+		type(Steps)
+		min (Required) max (Many)
+	}
+	property (steplist){
+		type(Steplist)
+		min (Required) max (Many)
+	}
+	property (material){
+		type(Material)
+		min (Optional) max (Many)
+	}
+	property (subMaterial){
+		type(SubMaterial)
+		min (Optional) max (Many)
+	}
+	property (page){
+		type(Page)
+		min (Optional) max (One)
+	}
+
+}
