@@ -1,0 +1,13 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (findCocktail) {
+      accepted-inputs (id)
+      local-endpoint (findCocktail.js)
+    }
+    action-endpoint (findRecipe){
+      accepted-inputs (id, page)
+      local-endpoint (findRecipe.js)
+    }
+    
+  }
+}

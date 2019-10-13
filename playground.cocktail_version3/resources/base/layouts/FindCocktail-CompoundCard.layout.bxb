@@ -1,0 +1,54 @@
+layout-macro-def (FindCocktailImage-compound-card) {
+	params {
+		param (cocktail) {
+			type (Cocktail)
+			min (Required) max (One)
+		}
+	}
+	
+	content{
+		// compound-card{
+		// 	content{
+    //     title-area{
+    //       halign (Start)
+    //       slot1{
+    //         text("하하")
+    //       }
+    //     }
+    //     single-line{
+    //       text("오이오이")
+    //     }
+				image-card {
+					aspect-ratio (16:9)
+					image-url ("#{value(cocktail.image)}")
+					title-area {
+						halign (Start)
+						slot1 {
+							text {
+								value ("#{value(cocktail.id)}")
+								style (Title_L)
+							}
+						}
+						
+						slot2 {
+							single-line {
+								text {
+									value ("범주 #{value(cocktail.category)}")
+									style (Detail_M)
+								}
+							}
+						}
+						slot3{
+							single-line{
+								text{
+									value("도수 #{value(cocktail.abv)}")
+									style(Detail_M)
+								}
+							}
+						}
+					}
+			// 	}
+			// }
+		}
+	}
+}

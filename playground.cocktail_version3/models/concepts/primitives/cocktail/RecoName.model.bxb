@@ -1,0 +1,3 @@
+structure (RecoName) {
+  extends (viv.core.BaseImage)
+}
