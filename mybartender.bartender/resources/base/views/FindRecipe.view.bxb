@@ -1,0 +1,26 @@
+result-view{
+  match: Recipe (recipe) {
+    from-output: findRecipe
+  }
+
+  message{
+    template ("레시피 페이지야")
+  }
+  render{
+    layout-match (recipe) {
+        mode (Details)
+    }
+  }
+  conversation-drivers{
+    conversation-driver{
+      template ("#{value(recipe.cocktail.majorCategory)} 술 알려줘")
+      // template ("달콤한 술 알려줘")
+    }
+    conversation-driver {
+      template ("카테고리 목록")
+    }
+    // conversation-driver {
+    //   template ("비슷한 도수의 칵테일 추천")
+    // }
+  }
+}

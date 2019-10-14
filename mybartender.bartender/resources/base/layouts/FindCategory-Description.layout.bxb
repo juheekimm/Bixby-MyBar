@@ -1,0 +1,22 @@
+layout-macro-def(FindCategory-Description) {
+  params {
+    param (category) {
+      type (Category)
+      min (Required)
+      max (One)
+    }
+  }
+//이거를 앙눔리ㅏㅜㄴ이ㅏ룬아ㅣ루ㅏㅣㄴㅁ우리ㅏ
+//카테고리들을 따로 
+  content {
+    section {  // this macro returns a "section"
+      content {
+        paragraph {
+          
+          value ("# #{value(category)} 칵테일!")
+          style (Detail_M_Soft)
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+structure (CategoryList) {
+	property (cocktail){
+		type(Cocktail)
+		min (Optional) max(Many)
+	}
+	property (isAll) {
+		type(IsAll)
+    min (Optional) max (One)
+	}
+	property (page) {
+		type(Page)
+    min (Optional) max (One)
+	}
+}

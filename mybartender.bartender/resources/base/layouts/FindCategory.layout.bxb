@@ -1,0 +1,31 @@
+layout-macro-def (FindCategory) {
+	params {
+		param (categoryList) {
+			type (CategoryList)
+			min (Optional) max (One)
+		}
+	}
+	
+	content {
+		image-card {
+			aspect-ratio (16:9)
+			title-area {
+				halign (Start)
+				slot1 {
+					text {
+						value ("#{value(categoryList.cocktail.id)}")
+						style (Title_M)
+					}
+				}
+			}
+			on-click{
+        intent{
+          goal: findCocktail
+          value: $expr(categoryList.cocktail)
+        }
+      }
+			image-url ("#{value(categoryList.cocktail.image)}")
+		}
+		
+	}
+}

@@ -1,0 +1,34 @@
+layout-macro-def (FindCategory-Image) {
+	params {
+		param (categoryList) {
+			type (CategoryList)
+			min (Optional) max (One)
+		}
+	}
+	
+	content{
+		image-card {
+			aspect-ratio (16:9)
+			title-area {
+				halign (Start)
+				slot1 {
+					text {
+						value ("#{value(categoryList.cocktail.majorCategory)}")
+						style (Title_M)
+					}
+				}
+			}
+      // on-click{
+      //   intent{
+      //     goal: findCategory
+      //     value-set : Category{
+      //        Category(categoryList.cocktail.majorCategory)
+      //     }
+      //     value: $expr(categoryList.page)
+      //   }
+      // }
+			image-url ("#{value(categoryList.cocktail.image)}")
+		}
+		
+	}
+}

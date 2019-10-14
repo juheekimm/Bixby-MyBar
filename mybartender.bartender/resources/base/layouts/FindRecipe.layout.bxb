@@ -1,0 +1,108 @@
+layout {
+   match: Recipe (recipe)
+   mode (Details)
+   
+   content {
+      section {
+         
+         content{
+            image-card {
+               aspect-ratio (16:9)
+               image-url ("#{value(recipe.cocktail.image)}")
+               title-area {
+                  halign (Start)
+                  slot1 {
+                     text {
+                        value ("#{value(recipe.cocktail.name)}")
+                        style (Title_L)
+                     }
+                  }
+                  
+                  slot2 {
+                     single-line {
+                        text {
+                           value ("범주 #{value(recipe.cocktail.category)}")
+                           style (Detail_M)
+                        }
+                     }
+                  }
+                  slot3{
+                     single-line{
+                        text{
+                           value("도수 #{value(recipe.cocktail.abv)}")
+                           style(Detail_M)
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+      
+      section{
+         
+         title("재료 (200ml 기준)")
+         content {
+            paragraph {
+               style (Detail_L)
+               value("필수)\n #{value(recipe.material)}\n\n부가)\n #{value(recipe.subMaterial)}")
+            }
+         }
+      }
+      
+      section {
+         title("제조 방식")
+         content {
+            
+            thumbnail-card {
+               title-area {
+                  halign (Start)
+                  slot2 {
+                     paragraph {
+                        value ("#{value(recipe.method)}")
+                        style (Detail_L)
+                     }
+                  }
+                  slot3{
+                     single-line{
+                        text{
+                           value("* 1 온스 = 29.57ml = 소주잔 3/5 ")
+                           style(Detail_M_Soft)
+                        }
+                     }
+                  }
+               }
+               image-url ("#{value(recipe.cockware)}")
+               image-position (Start)
+            }
+         }
+      }
+      
+      
+      section {
+         title("조리 순서")
+         content{
+            for-each (recipe.steplist) {
+               as (i) {
+                  title-card {
+                     title-area {
+                        slot1 {
+                           text {
+                              style (Detail_L_Soft)
+                              value ("Step #{i + 1}") // Best Eastern Hotels and Resorts
+                           }
+                        }
+                        slot2 {
+                           paragraph {
+                              value("#{value(recipe.steplist[i])}")
+                              style (Detail_M)
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

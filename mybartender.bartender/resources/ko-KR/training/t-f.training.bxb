@@ -1,0 +1,5 @@
+train (t-f41o2jdtopylu0621edx02ovn) {
+  utterance ("[g:findCategory] (카테고리)[v:Page:카테고리] 리스트 보여줘")
+  plan (Y2Bm0CzISaxML8ovzUvRS85Pzi5JzMyJL0stKs7MzzPRc04sSU3PL6r0ySwuIaA0LTMvBaacQRGv0oDE9FQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1571005009722)
+}
