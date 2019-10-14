@@ -2,7 +2,7 @@ capsule-info {
   //캡슐 설명
   display-name (마이바)
   //개발자 이름
-  developer-name (Example, Inc.)
+  developer-name (SSAFY MH)
   //마켓플레이스에서 캡슐과 함께 아이콘이미지표시
   icon-asset (/images/myBartender_logo.png)
   //캡슐 설명하기
@@ -28,6 +28,8 @@ capsule-info {
   //디스패치 별명에 대한 추가 요구사항
   dispatch-aliases {
     alias (마이 바)
+    alias (마이빠)
+    alias (마이 빠)
   } 
   //이거 2개 정확히 뭔지 모르겠네 마켓에 보이는 배경이랑 폰트컬러인가..
   action-bg-color (#BF2519)
