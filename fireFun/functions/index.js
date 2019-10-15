@@ -104,14 +104,13 @@ app.get("/categoryList", async (request, response) => {
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/sugar.jpg?alt=media&token=ad25f845-9a91-4571-964f-8a2d1db8b028",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/unique.jpg?alt=media&token=cc565d9d-92b5-4c1b-b096-d8e49d3466eb",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/solo.jpg?alt=media&token=16c17cff-35d3-43b1-af5e-b22cdf3059ce",
-      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/noob.jpg?alt=media&token=47497911-9512-4b2a-8f24-f63a286e7aa1",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/party.jpg?alt=media&token=e10fc303-b3fc-44b2-8575-e3d571befd04",
-      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/rain.jpg?alt=media&token=6c0d36c1-7f37-4625-b55e-9617a8478b63",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/blue.jpg?alt=media&token=a907d347-5252-4b14-bf11-7aeda28c6374",
-      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/siwan.jpg?alt=media&token=4ef890ff-314c-4b60-ab33-5066301c7d54",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b"
       ];
       const ids = [
@@ -346,13 +345,192 @@ me["muddler"] = "머들러(숟가락)를 이용해 내용물을 충분히 으깨
 me["sieve"] = "뜰체를 이용해 걸러주세요";
 me["blender"] = "믹서기로 내용물을 갈아주세요";
 
-//  추가
-// app.get("/add", async (request, response) => {
-//   try {
-//     response.json({
-//       success: "ok"
-//     });
-//   } catch (error) {
-//     response.status(500).send(error);
-//   }
-// });
+ 추가
+app.get("/add", async (request, response) => {
+  try {
+    let data = {
+      name : 'Irish Coffee(아이리시 커피)',
+      category : '달콤한',
+      abv : '14',
+      imgaeName : 'irishcoffee',
+      description : '가정에서도 간단하게 만들 수 있는 커피와 위스키를 조합한 칵테일로 커피를 진하게 끓이는 것이 요령이다.',
+      isbase : false,
+      material : '아이리시 위스키, 뜨거운 커피, 커피설탕(설탕), 생크림',
+      subMaterial : '레몬, 휘핑크림',
+      iamge : '',
+      majorCategory : '달콤'
+  }
+  let setDoc = db.collection('CockTail').doc('아이리시커피').set(data);
+  
+  data = {
+      name : 'Irish Coffee(아이리시 커피)',
+      capacity : '215',
+      cockware : '',
+      method : '',
+      material : '아이리시 위스키15ml, 뜨거운 커피200ml, 커피설탕(설탕), 생크림',
+      subMaterial : '레몬, 휘핑크림',
+      steps : '잔에 뜨거운 커피를 준비합니다.(잔 둘레에 레몬즙을 묻혀주면 풍미가 더 좋습니다.)_아이리시 위스키를 첨가합니다._기호에 맞게 설탕을 넣고 휘핑크림을 올려줍니다.'
+  }
+  setDoc = db.collection('Recipe').doc('아이리시커피').set(data);
+  
+  
+  data = {
+      name : 'Alexander(알렉산더)',
+      category : '달콤한',
+      abv : '21',
+      imgaeName : 'alexander',
+      description : '은은하게 퍼지는 달콤함이 느껴지는 칵테일로 애프터 디너에 적합하다. 영국 에드워드 7세의 왕비인 알렌산드라에서 유래되었다.',
+      isbase : false,
+      material : '브랜디, 크림 드 카카오, 생크림',
+      subMaterial : '얼음',
+      iamge : '',
+      majorCategory : '달콤'
+  }
+  setDoc = db.collection('CockTail').doc('알렉산더').set(data);
+  
+  data = {
+      name : 'Alexander(알렉산더)',
+      capacity : '75',
+      cockware : bar["shaker"],
+      method : me["shaker"],
+      material : '브랜디 25ml, 크림 드 카카오 25ml, 생크림 25ml',
+      subMaterial : '얼음',
+      steps : '잔에 얼음을 채웁니다._쉐이커에 브랜디, 카카오 크림, 생크림을 넣고 흔들어 줍니다._잔의 얼음을 비우고 쉐이커의 내용물을 따라냅니다.'
+  }
+  setDoc = db.collection('Recipe').doc('알렉산더').set(data);
+  
+  
+  data = {
+      name : 'Stringer(스팅거)',
+      category : '달콤한',
+      abv : '35',
+      imgaeName : 'stringer',
+      description : '크림 드 민트화이트를 사용한 칵테일로서는 세계에서 가장 많이 마시고 있는 칵테일로 브랜디의 달콤함과 민트의 자극을 느낄 수 있다.',
+      isbase : false,
+      material : '브랜디, 크림 드 민트화이트',
+      subMaterial : '얼음',
+      iamge : '',
+      majorCategory : '달콤'
+  }
+  setDoc = db.collection('CockTail').doc('스팅거').set(data);
+  
+  data = {
+      name : 'Stringer(스팅거)',
+      capacity : '75',
+      cockware : bar["shaker"],
+      method : me["shaker"],
+      material : '브랜디 50ml, 크림 드 민트화이트 25ml',
+      subMaterial : '얼음',
+      steps : '잔에 얼음을 채웁니다._쉐이커에 브랜디와 크림 드 민트화이트를 넣고 흔들어 줍니다._잔의 얼음을 비우고 쉐이커의 내용물을 따라냅니다.'
+  }
+  setDoc = db.collection('Recipe').doc('스팅거').set(data);
+  
+  
+  data = {
+      name : 'B&B(비앤비)',
+      category : '달콤한, 센',
+      abv : '40',
+      imgaeName : 'bnb',
+      description : '브랜드의 B와 베네딕티누의 B를 따서 B&B라는 이름이 붙은 칵테일',
+      isbase : false,
+      material : '브랜디, 베네딕티누',
+      subMaterial : '얼음',
+      iamge : '',
+      majorCategory : '달콤'
+  }
+  setDoc = db.collection('CockTail').doc('비앤비').set(data);
+  
+  data = {
+      name : 'B&B(비앤비)',
+      capacity : '80',
+      cockware : '',
+      method : '',
+      material : '브랜디 40ml, 베네딕티누 40ml',
+      subMaterial : '얼음',
+      steps : '잔에 베네딕티누를 채웁니다._섞이지 않도록 주의하면서 브랜디를 위에 겹쳐 따릅니다.'
+  }
+  setDoc = db.collection('Recipe').doc('비앤비').set(data);
+  
+  data = {
+      name : 'Egg Nog(에그 노그)',
+      category : '달콤한, 크리스마스',
+      abv : '14',
+      imgaeName : 'eggnog',
+      description : '계란이 들어간 특색있는 칵테일로 일반적으로 브랜디에 럼을 첨가하여 만든다. 미국 남부가 발상지로 크리스마스에 즐겨 마신다고 한다. 계란과 우유가 들어갔기 때문에 추운 겨울날 마시면 기운이 날 것 같은 술이다.',
+      isbase : false,
+      material : '브랜디, 럼, 계란, 설탕, 우유',
+      subMaterial : '얼음',
+      iamge : '',
+      majorCategory : '달콤'
+  }
+  setDoc = db.collection('CockTail').doc('에그노그').set(data);
+  
+  data = {
+      name : 'Egg Nog(에그 노그)',
+      capacity : '80',
+      cockware : bar["shaker"],
+      method : me["shaker"],
+      material : '브랜디 30ml, 럼 15ml, 계란 1개, 설탕 1티스푼, 우유 적당량',
+      subMaterial : '얼음',
+      steps : '브랜디, 럼, 계란, 설탕을 쉐이커에 넣고 흔들어 줍니다._얼음을 채운 잔에 쉐이커의 내용물을 따라줍니다._우유를 취향 껏 채운 후 가볍게 저어줍니다.'
+  }
+  setDoc = db.collection('Recipe').doc('에그노그').set(data);
+  
+  
+  data = {
+      name : '소니니',
+      category : '쉽게 만들 수 있는',
+      abv : '11',
+      imageName : 'sonini',
+      description : '소주와 버니니를 1:2 또는 1:3 비율로 섞어 만든 칵테일',
+      isbase : false,
+      material : '소주, 버니니',
+      subMaterial : '',
+      image : '',
+      majorCategory : '초간단'
+  }
+  setDoc = db.collection('CockTail').doc('소니니').set(data);
+  
+  data = {
+      name : '소니니',
+      capacity : '90',
+      cockware : '',
+      method : '',
+      material : '소주 30ml, 버니니 60ml',
+      subMaterial : '',
+      steps : '잔에 소주와 버니니를 1:2 또는 1:3 비율로 섞어줍니다.'
+  }
+  setDoc = db.collection('Recipe').doc('소니니').set(data);
+  
+  
+  data = {
+      name : '소토닉',
+      category : '쉽게 만들 수 있는, 청량한',
+      abv : '9',
+      imageName : 'sotonic',
+      description : '소주와 토닉워터를 섞고 레몬을 첨가한 혼합주로 소주의 특유의 알코올 냄새가 나지 않아 목넘김에 부담이 없다.',
+      isbase : false,
+      material : '소주, 토닉워터, 레몬',
+      subMaterial : '얼음',
+      image : '',
+      majorCategory : '초간단'
+  }
+  setDoc = db.collection('CockTail').doc('소토닉').set(data);
+  
+  data = {
+      name : '소토닉',
+      capacity : '1060',
+      cockware : '',
+      method : '',
+      material : '소주 1병, 토닉워터 2병, 레몬 반개(슬라이스)',
+      subMaterial : '얼음',
+      steps : '큰 병에 소주와 토닉워터를 모두 섞어줍니다._슬라이스한 레몬을 첨가합니다._잔에 적당량 따른 후 얼음을 띄워줍니다.(레몬으로 장식해 주면 더 좋습니다.)'
+  }
+  setDoc = db.collection('Recipe').doc('소토닉').set(data);
+    response.json({
+      success: "ok"
+    });
+  } catch (error) {
+    response.status(500).send(error);
+  }
+});
