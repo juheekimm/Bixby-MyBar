@@ -104,7 +104,7 @@ app.get("/category/:id", async (request, response) => {
     const b = [];
     
     userQuerySnapshot.forEach(doc => {
-      if (doc.data().isbase == "false") {
+      if (doc.data().isbase == false) {
         if (doc.data().category.includes(id)) {
           a.push(doc.id);
           b.push(doc.data());
@@ -119,6 +119,26 @@ app.get("/category/:id", async (request, response) => {
     }
     response.json(users);
   } catch (error) {
+    response.status(500).send(error);
+  }
+});
+app.get("/categoryList",async(request,response) =>{
+  try{
+  const userQuerySnapshot = await db.collection("CockTail").get();
+  const total = [];
+  const dalcom = [];
+  const sheubseul =[];
+  const red = [];
+  userQuerySnapshot.forEach(doc => { 
+
+  });
+  total.push({
+    category : 상큼한,
+    data : 
+  });
+  
+  response.json(total);
+  }catch(error){
     response.status(500).send(error);
   }
 });
