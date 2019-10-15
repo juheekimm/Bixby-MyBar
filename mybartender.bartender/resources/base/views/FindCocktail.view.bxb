@@ -23,7 +23,7 @@ result-view {
 				}
 			}
 		}
-		else if(size(cocktail) == 1) {
+		else-if(size(cocktail) == 1) {
 			layout-match (cocktail) {
 				mode (Details)
 			}
