@@ -98,9 +98,24 @@ app.get("/categoryList", async (request, response) => {
   try {
     if (cateList.length == 0) {
       const userQuerySnapshot = await db.collection("CockTail").get();
-      const category = [];
-      const x = [['집에서도 쉽게! 초간단 칵테일'], ['술자리 인싸되는 폭탄주 모음'], ['달콤하게 취하고 싶은 날'],['우와 이거 좀 신기한데?'] ,['유독 혼술이 당기는 날'], ['입문자 추천 칵테일'], ['파티에서 마시기 좋은'], ['무알콜 칵테일 모음'], ['외로운 날을 달달하게 만들어주는'],['비오는 날 마시기 좋은'],['취하고 싶은 날'],['입안가득 청량해지는 칵테일'],['모두가 사랑하는 칵테일']];
-      const y = [];
+      
+      const category= [['집에서도 쉽게! 초간단 칵테일'], ['술자리 인싸되는 폭탄주 모음'], ['달콤하게 취하고 싶은 날'],['우와 이거 좀 신기한데?'] ,['유독 혼술이 당기는 날'], ['입문자 추천 칵테일'], ['파티에서 마시기 좋은'], ['무알콜 칵테일 모음'], ['외로운 날을 달달하게 만들어주는'],['비오는 날 마시기 좋은'],['취하고 싶은 날'],['입안가득 청량해지는 칵테일'],['모두가 사랑하는 칵테일']];
+      const x = [[],[],[],[],[],[],[],[],[],[],[],[],[]];
+      const y = [
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b"
+];
       const ids = [
         '초간단',
         '폭탄주',
