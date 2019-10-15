@@ -1,0 +1,61 @@
+structure (Cocktail) {
+	//id
+	property (id){
+		type(Id)
+		min (Required) max(One)
+	}
+	//data
+	property (name) {
+		type (Name)
+		min (Required) max (One)
+	}
+	property (category) {
+		type (Category)
+		min (Optional) max (Many)
+	}
+	property(abv){
+		type(ABV)
+		min (Required) max (One)
+	}
+	property (description) {
+		type (Description)
+		min (Required) max (One)
+	}
+	property (isbase){
+		type(Isbase)
+		min (Required) max (One)
+	}
+	property(imageName){
+		type(ImageName)
+		min (Required) max (Many)
+	}
+	property (material){
+		type(Material)
+		min (Optional) max (Many)
+	}
+	property (subMaterial){
+		type(SubMaterial)
+		min (Optional) max (Many)
+	}
+	property (recoName){
+		type(RecoName)
+		min (Optional) max (Many)
+	}	
+	property (type){
+		type(Type)
+		min (Optional) max (Many)
+	}
+	property (recoNamelist){
+		type(RecoNamelist)
+		min (Optional) max (Many)
+	}
+	//img
+	property (image) {
+		type (Image)
+		min (Required) max (Many)
+	}
+	property (majorCategory) {
+		type (MajorCategory)
+		min (Required) max (One)
+	}
+}

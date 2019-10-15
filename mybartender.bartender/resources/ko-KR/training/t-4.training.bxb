@@ -1,0 +1,10 @@
+train (t-4jj46y4121ch51hli1668vs2j) {
+  utterance ("[g:findRecipe] (모히또)[v:Id:모히또] 레시피")
+  plan (Y2BmUC7ISaxML8ovzUvRS85Pzi5JzMyJL0stKs7MzzPRC0pNzixIZVDHqygtMy8FqlAer0LPFAYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1571005007514)
+}
+train (t-4o0k553nqtuix6gcau13rs2uw) {
+  utterance ("[g:findCocktail] (블랙 러시안)[v:Id:블랙러시안]")
+  plan (Y2BmUC3ISaxML8ovzUvRS85Pzi5JzMyJL0stKs7MzzPRc4aKMGjiVZaWmZcCVyqPV6lnCgMTAyMQMwBJRgYQgPIB)
+  last-modified (1571007915470)
+}

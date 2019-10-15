@@ -1,0 +1,1 @@
+module.exports=["달콤한", "상큼한"]

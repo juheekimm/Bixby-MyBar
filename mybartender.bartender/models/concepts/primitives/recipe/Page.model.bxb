@@ -1,0 +1,6 @@
+enum (Page){
+  description (페이지)
+  symbol (레시피)
+  symbol (칵테일)
+  symbol (카테고리)
+}

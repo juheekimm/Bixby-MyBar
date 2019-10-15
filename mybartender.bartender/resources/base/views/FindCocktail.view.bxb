@@ -1,0 +1,44 @@
+result-view {
+	match: Cocktail (cocktail) {
+		from-output: findCocktail
+	}
+	
+	message {
+		if(size(cocktail) == 1){
+			template ("#{value(cocktail.id)}")
+		}
+		
+	}
+	
+	render {
+		if (size(cocktail) > 1) {
+			list-of (cocktail) {
+				has-details (true)
+				where-each (item) {
+					layout-macro (FindCocktail-Image) {
+						param (cocktail) {
+							expression (item)
+						}
+					}
+				}
+			}
+		}
+		else if(size(cocktail) == 1) {
+			layout-match (cocktail) {
+				mode (Details)
+			}
+		}
+	}
+	
+	conversation-drivers {
+		conversation-driver {
+			template ("#{value(cocktail.recoNamelist[0])}")
+		}
+		conversation-driver {
+			template ("#{value(cocktail.recoNamelist[1])}")
+		}
+		conversation-driver {
+			template ("#{value(cocktail.recoNamelist[2])}")
+		}
+	}
+}
