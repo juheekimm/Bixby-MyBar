@@ -4,7 +4,7 @@ action (findCategory) {
   collect{
     input (category){
       type (Category) //변수명
-      min (Optional) max (One)
+      min (Required) max (One)
     }
      input(page){
       type(Page)

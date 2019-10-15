@@ -5,16 +5,16 @@ enum (Id){
   symbol (깔루아밀크)
   symbol (모히또)
   symbol (러스티네일)
-  symbol (럼)
+  symbol (럼)
   symbol (로브로이)
   symbol (맨하튼)
   symbol (민트줄렙)
   symbol (베일리스밀크)
   symbol (아구아밤)
-  symbol (예거밤)
+  symbol (예거밤)
   symbol (올드패션)
-  symbol (위스키소다)
-  symbol (잭콕)
+  symbol (위스키소다)
+  symbol (잭콕)
   symbol (진토닉)
   symbol (화이트러시안)
   symbol (소니니)

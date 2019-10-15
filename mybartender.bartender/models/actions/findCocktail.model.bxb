@@ -4,7 +4,11 @@ action (findCocktail) {
   collect{
     input (id){
       type (Id) //변수명
-      min (Required) max (One)
+      min (Optional) max (One)
+    }
+    input(subText){
+      type(SubText)
+      min (Optional) max(One)
     }
   }
   output (Cocktail)

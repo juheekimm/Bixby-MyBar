@@ -4,8 +4,8 @@ var config = require('config')
 function replaceAll(str, searchStr, replaceStr) {
   return str.split(searchStr).join(replaceStr);
 }
-function getRecoImage(cocktailInfo) {
-  let recoSplit = cocktailInfo.recoName.split(',')
+function getRecoImage(names) {
+  let recoSplit = names.split(',')
   let recoName = []
   for (let i = 0; i < recoSplit.length; i++) {
     let newUrl = config.get('single.url') + replaceAll(recoSplit[i], " ", "")
