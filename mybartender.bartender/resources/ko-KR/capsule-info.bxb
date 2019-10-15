@@ -6,7 +6,7 @@ capsule-info {
   //마켓플레이스에서 캡슐과 함께 아이콘이미지표시
   icon-asset (/images/myBartender_logo.png)
   //캡슐 설명하기
-  description ("칵테일에 대한 정보와 레시피를 제공합니다")
+  description ("칵테일에 대한 정보를 제공합니다. 칵테일의 도수나 레시피 등의 정보가 궁금하다면 마이바에 물어보세요. 칵테일 뿐만 아니라 다양한 혼합주의 설명도 있습니다.")
   //우리 웹사이트(승인 필요x) optional
   //website-url (https://www.example.com)
   //캡슐 사용자의 이용약관 optional
@@ -30,8 +30,7 @@ capsule-info {
     alias (마이 바)
     alias (마이빠)
     alias (마이 빠)
-  } 
-  //이거 2개 정확히 뭔지 모르겠네 마켓에 보이는 배경이랑 폰트컬러인가..
-  action-bg-color (#BF2519)
-  action-fg-color (#FFFFFF)
+    alias (마이파)
+    alias (마이 파)
+  }
 }

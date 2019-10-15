@@ -1,7 +1,8 @@
 capsule {
-  id (mybartender.bartender)
+  id (myhand.mybar)
   version (0.1.0)
   format (3)
+    
   targets {
     target (bixby-mobile-ko-KR)
   }
