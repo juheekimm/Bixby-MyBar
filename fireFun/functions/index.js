@@ -71,36 +71,33 @@ app.get("/category/:id", async (request, response) => {
     const id = request.params.id;
     const userQuerySnapshot = await db.collection("CockTail").get();
     const users = [];
-    const a = [];
-    const b = [];
 
     userQuerySnapshot.forEach(doc => {
       if (doc.data().isbase == false) {
         if (doc.data().category.includes(id)) {
-          a.push(doc.id);
-          b.push(doc.data());
+          users.push({
+            id: doc.id,
+            data: doc.data()
+          });
         }
       }
     });
-    for (var i = 0; i < a.length; i++) {
-      users.push({
-        id: a[i],
-        data: b[i]
-      });
-    }
     response.json(users);
   } catch (error) {
     response.status(500).send(error);
   }
 });
+
 const cateList = [];
+
 app.get("/categoryList", async (request, response) => {
   try {
     if (cateList.length == 0) {
       const userQuerySnapshot = await db.collection("CockTail").get();
       
-      const category= [['집에서도 쉽게! 초간단 칵테일'], ['술자리 인싸되는 폭탄주 모음'], ['달콤하게 취하고 싶은 날'],['우와 이거 좀 신기한데?'] ,['유독 혼술이 당기는 날'], ['입문자 추천 칵테일'], ['파티에서 마시기 좋은'], ['무알콜 칵테일 모음'], ['외로운 날을 달달하게 만들어주는'],['비오는 날 마시기 좋은'],['취하고 싶은 날'],['입안가득 청량해지는 칵테일'],['모두가 사랑하는 칵테일']];
+      const category= ['집에서도 쉽게! 초간단 칵테일', '술자리 인싸되는 폭탄주 모음', '달콤하게 취하고 싶은 날','우와 이거 좀 신기한데?','유독 혼술이 당기는 날', '입문자 추천 칵테일','파티에서 마시기 좋은', '무알콜 칵테일 모음','외로운 날을 달달하게 만들어주는','비오는 날 마시기 좋은','취하고 싶은 날','입안가득 청량해지는 칵테일','모두가 사랑하는 칵테일'];
       const x = [[],[],[],[],[],[],[],[],[],[],[],[],[]];
+    
       const y = [
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
@@ -114,19 +111,20 @@ app.get("/categoryList", async (request, response) => {
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b"
-];
+      ];
       const ids = [
         '초간단',
         '폭탄주',
         '달콤',
+        '신기',
         '혼술',
         '입문자',
         '파티에서',
         '무알콜',
         '외로운',
         '비오는',
-        '신기',
         '취하고',
         '청량해',
         '사랑하는'
@@ -145,8 +143,10 @@ app.get("/categoryList", async (request, response) => {
         '취하고 싶은 날 마시기 좋은.',
         '대신 다음날 힘들 수 있어요',
         '입안가득 청량감을 느낄 수 있는 상큼달콤한 칵테일 모음',
-        '너무 유명해서 모두가 아는 칵테일',];
+        '너무 유명해서 모두가 아는 칵테일'];
+        
       userQuerySnapshot.forEach(doc => {
+        if (doc.data().majorCategory == null)  return;
         if (doc.data().majorCategory.includes('초간단')) {
           x[0].push({
             id: doc.id,
@@ -214,6 +214,7 @@ app.get("/categoryList", async (request, response) => {
           });
         }
       });
+
       for (var i = 0; i < 13; i++) {
         cateList.push({
           id: ids[i],
