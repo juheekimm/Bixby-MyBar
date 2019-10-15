@@ -1,5 +1,8 @@
 hints {
   uncategorized {
-    utterance (__ALIGNED_UTTERANCE__)
+    hint ("마이바에서 모히또 알려줘")
+    hint ("마이바에서 모히또 레시피 알려줘")
+    hint ("마이바에서 달콤한 칵테일들 보여줘")
+    hint ("마이바에서 카테고리 리스트 보여줘")
   }
 }

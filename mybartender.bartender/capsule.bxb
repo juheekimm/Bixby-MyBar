@@ -5,6 +5,11 @@ capsule {
   targets {
     target (bixby-mobile-ko-KR)
   }
+
+  store-sections {
+    section (FoodAndDrink)
+  }
+
   runtime-flags {
     concepts-inherit-super-type-features
     modern-prompt-rejection

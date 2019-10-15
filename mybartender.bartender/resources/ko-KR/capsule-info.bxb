@@ -1,13 +1,37 @@
 capsule-info {
-  display-name (내 손안에 바텐더)
-  developer-name (SSAFY 6반)
-  icon-asset (images/myBartender_logo.png)
-  search-keywords{
-      keyword (cocktail)
-      keyword (칵테일)
+  //캡슐 설명
+  display-name (마이바)
+  //개발자 이름
+  developer-name (SSAFY MH)
+  //마켓플레이스에서 캡슐과 함께 아이콘이미지표시
+  icon-asset (/images/myBartender_logo.png)
+  //캡슐 설명하기
+  description ("칵테일에 대한 정보와 레시피를 제공합니다")
+  //우리 웹사이트(승인 필요x) optional
+  //website-url (https://www.example.com)
+  //캡슐 사용자의 이용약관 optional
+  //terms-url (https://www.example.com/TOS.html)
+  // 사용자에게 특정 권한 요청(이는 사용자 에게 특정 사용자에 민감한 데이터에 대한 권한 을 부여 하도록 요청하려는 경우에만 필요합니다 .)
+  privacy-policy-url (https://github.com/TKvl6/myhand.subway/blob/master/playground.subway/privacy-policy.md)
+  //마켓플레이스에서 캡슐 검색 키워드
+  search-keywords {
+    keyword (cocktail)
+    keyword (칵테일)
+    keyword (bartender)
+    keyword (바텐더)
+    keyword (recipe)
+    keyword (레시피)
+    keyword (술)
   }
-  dispatch-name (나의 바텐더)
-  description ("__DESCRIPTION__")
-  website-url (https://example.com/)
-  terms-url (https://example.com/terms-of-use/)
+  // 고유 이름을 가진 명명된 디스패치로 캡슐 호출
+  dispatch-name (마이바)
+  //디스패치 별명에 대한 추가 요구사항
+  dispatch-aliases {
+    alias (마이 바)
+    alias (마이빠)
+    alias (마이 빠)
+  } 
+  //이거 2개 정확히 뭔지 모르겠네 마켓에 보이는 배경이랑 폰트컬러인가..
+  action-bg-color (#BF2519)
+  action-fg-color (#FFFFFF)
 }
