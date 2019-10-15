@@ -345,7 +345,6 @@ me["muddler"] = "머들러(숟가락)를 이용해 내용물을 충분히 으깨
 me["sieve"] = "뜰체를 이용해 걸러주세요";
 me["blender"] = "믹서기로 내용물을 갈아주세요";
 
- 추가
 app.get("/add", async (request, response) => {
   try {
     let data = {
