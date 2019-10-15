@@ -11,5 +11,5 @@ action (findCategory) {
       min (Optional) max (One)
     }
   }
-  output (CategoryList)
+  output (Cocktail)
 }

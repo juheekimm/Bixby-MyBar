@@ -1,56 +1,45 @@
 result-view {
-	match: CategoryList (categoryList) {
+	match: Cocktail (cocktail) {
 		from-output: findCategory
 	}
 	
 	message {
 		if(size(cocktail) == 1){
-			// template ("#{value(cocktail.id)}")
-			template ("그래")
+			template ("#{value(cocktail.id)}")
 		}
 		
 	}
 	
 	render {
 		
-		if (size(categoryList) > 1) {
-			list-of (categoryList) {
+		if (size(cocktail) > 1) {
+			list-of (cocktail) {
 				has-details (true)
 				where-each (item) {
 					layout-macro (FindCategory-Image) {
-						param (categoryList) {
+						param (cocktail) {
 							expression (item)
 						}
 					}
 				}
 			}
 		}
-		else-if(size(categoryList) == 1) {
-			list-of (categoryList) {
-				has-details (true)
-				where-each (item) {
-					layout-macro (FindCategory) {
-						param (categoryList) {
-							expression (item)
-						}
-					}
-				}
+		else-if(size(cocktail) == 1) {
+			layout-match (cocktail) {
+				mode (Details)
 			}
-			// layout-match (categoryList) {
-			// 	mode (Details)
-			// }
 		}
 	}
 	
 	conversation-drivers {
 		conversation-driver {
-			template ("뭐")
+			template ("#{value(cocktail.recoNamelist[0])}")
 		}
-		// conversation-driver {
-		// 	template ("#{value(cocktail.recoNamelist[1])}")
-		// }
-		// conversation-driver {
-		// 	template ("#{value(cocktail.recoNamelist[2])}")
-		// }
+		conversation-driver {
+			template ("#{value(cocktail.recoNamelist[1])}")
+		}
+		conversation-driver {
+			template ("#{value(cocktail.recoNamelist[2])}")
+		}
 	}
 }
