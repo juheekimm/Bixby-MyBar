@@ -99,56 +99,113 @@ app.get("/categoryList", async (request, response) => {
     if (cateList.length == 0) {
       const userQuerySnapshot = await db.collection("CockTail").get();
       const category = [];
-      const x = [[], [], [], [], [], [], [], []];
+      const x = [['집에서도 쉽게! 초간단 칵테일'], ['술자리 인싸되는 폭탄주 모음'], ['달콤하게 취하고 싶은 날'],['우와 이거 좀 신기한데?'] ,['유독 혼술이 당기는 날'], ['입문자 추천 칵테일'], ['파티에서 마시기 좋은'], ['무알콜 칵테일 모음'], ['외로운 날을 달달하게 만들어주는'],['비오는 날 마시기 좋은'],['취하고 싶은 날'],['입안가득 청량해지는 칵테일'],['모두가 사랑하는 칵테일']];
       const y = [];
+      const ids = [
+        '초간단',
+        '폭탄주',
+        '달콤',
+        '혼술',
+        '입문자',
+        '파티에서',
+        '무알콜',
+        '외로운',
+        '비오는',
+        '신기',
+        '취하고',
+        '청량해',
+        '사랑하는'
+      ];
+      const desc =[
+        '이렇게 간단해? 초간단 칵테일 모음',
+        '이거 하나면 술자리 인싸 가능!',
+        '맛도 분위기도 달콤하게 만들어 주는 칵테일',
+        '독특하게 생겼네? 신기하게 생겼네?,',
+        '힘들고 외로운 날. 혼술이 당긴다면?',
+        '칵테일이 낯설다면? 입문자에게 추천하는 칵테일 모음',
+        '파티에서 친구들과 먹기 좋은 칵테일',
+        '술을 못마셔도 괜찮아요! 무알콜 칵테일 모음',
+        '속상한 날 달달하게 당충전! 마시고 힘내요!',
+        '비오는 날 창가에 앉아 마시기 좋은 칵테일',
+        '취하고 싶은 날 마시기 좋은.',
+        '대신 다음날 힘들 수 있어요',
+        '입안가득 청량감을 느낄 수 있는 상큼달콤한 칵테일 모음',
+        '너무 유명해서 모두가 아는 칵테일',];
       userQuerySnapshot.forEach(doc => {
-        if (doc.data().majorCategory.includes()) {
+        if (doc.data().majorCategory.includes('초간단')) {
           x[0].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes()) {
+        } else if (doc.data().majorCategory.includes('폭탄주')) {
           x[1].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes()) {
+        } else if (doc.data().majorCategory.includes('달콤')) {
           x[2].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes()) {
+        } else if (doc.data().majorCategory.includes('신기')) {
           x[3].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes()) {
+        }else if (doc.data().majorCategory.includes('혼술')) {
           x[4].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes()) {
+        } else if (doc.data().majorCategory.includes('입문자')) {
           x[5].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes()) {
+        } else if (doc.data().majorCategory.includes('파티에서')) {
           x[6].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes()) {
+        } else if (doc.data().majorCategory.includes('무알콜')) {
           x[7].push({
+            id: doc.id,
+            data: doc.data()
+          });
+        } else if (doc.data().majorCategory.includes('외로운')) {
+          x[8].push({
+            id: doc.id,
+            data: doc.data()
+          });
+        } else if (doc.data().majorCategory.includes('비오는')) {
+          x[9].push({
+            id: doc.id,
+            data: doc.data()
+          });
+        }  else if (doc.data().majorCategory.includes('취하고')) {
+          x[10].push({
+            id: doc.id,
+            data: doc.data()
+          });
+        }else if (doc.data().majorCategory.includes('청량한')) {
+          x[11].push({
+            id: doc.id,
+            data: doc.data()
+          });
+        }else if (doc.data().majorCategory.includes('사랑하는')) {
+          x[12].push({
             id: doc.id,
             data: doc.data()
           });
         }
       });
-      for (var i = 0; i < 8; i++) {
+      for (var i = 0; i < 13; i++) {
         cateList.push({
-          id: category[i],
+          id: ids[i],
+          name : category[i],
           data: x[i],
-          img: y[i]
+          img: y[i],
+          desc : desc[i]
         });
       }
     }
@@ -276,7 +333,6 @@ me["blender"] = "믹서기로 내용물을 갈아주세요";
 //  추가
 // app.get("/add", async (request, response) => {
 //   try {
-
 //     response.json({
 //       success: "ok"
 //     });
