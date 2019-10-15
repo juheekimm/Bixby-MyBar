@@ -10,7 +10,7 @@ endpoints {
     }
     action-endpoint (findCategory){
       accepted-inputs (category, page)
-      local-endpoint (findCategoryList.js)
+      local-endpoint (findCategory.js)
     }
   }
 }

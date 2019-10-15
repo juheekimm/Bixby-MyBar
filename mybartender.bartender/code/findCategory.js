@@ -18,7 +18,7 @@ module.exports.function = function findCategory(category, page) {
   let cocktailInfo = {
     id: undefined,
     name: undefined,
-    category: undefined,
+    category : undefined,
     abv: undefined,
     imageName: undefined,
     description: undefined,
@@ -28,7 +28,8 @@ module.exports.function = function findCategory(category, page) {
     subMaterial: undefined,
     type: undefined,
     image: undefined,
-    majorCategory: undefined
+    majorCategory: undefined,
+    subCategory : undefined
   }
   searchResult = http.getUrl(config.get('category.url') + category, options)
 
@@ -37,16 +38,17 @@ module.exports.function = function findCategory(category, page) {
     //match.length != 0 -> 어차피 전체 리스트 받아서 할거지만 match를 맨위로 보내둠
     for (let index = 0; index < searchResult.parsed.length; index++) {
       cocktailInfo = searchResult.parsed[index].data
+      cocktailInfo.subCategory = searchResult.parsed[index].data.category
+      
       cocktailInfo.id = searchResult.parsed[index].id
       if (cocktailInfo.category.length > 0) {               //카테고리가 있는데
-        if (cocktailInfo.category.indexOf(",") == -1) {   //split할 수 없는 상황(카테고리가 하나)에 대한 예외 처리
-          cocktailInfo.majorCategory = cocktailInfo.category;
-        } else if (cocktailInfo.category.split(",").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
-          cocktailInfo.majorCategory = (cocktailInfo.category.split(","))[0];
+        if (cocktailInfo.category.split(",").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
+          cocktailInfo.category = (cocktailInfo.category.split(","))[0];
         }
-      } else {
-        cocktailInfo.majorCategory = "";
       }
+
+      cocktailInfo.majorCategory = " ";
+      // }
       searchList.push(cocktailInfo)
     }
   }

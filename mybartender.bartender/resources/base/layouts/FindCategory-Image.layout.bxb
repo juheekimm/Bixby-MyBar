@@ -1,34 +1,41 @@
 layout-macro-def (FindCategory-Image) {
 	params {
-		param (categoryList) {
-			type (CategoryList)
-			min (Optional) max (One)
+		param (cocktail) {
+			type (Cocktail)
+			min (Required) max (One)
 		}
 	}
 	
 	content{
 		image-card {
 			aspect-ratio (16:9)
+			image-url ("#{value(cocktail.image)}")
 			title-area {
 				halign (Start)
 				slot1 {
 					text {
-						value ("#{value(categoryList.cocktail.majorCategory)}")
-						style (Title_M)
+						value ("#{value(cocktail.name)}")
+						style (Title_L)
+					}
+				}
+				
+					slot2 {
+					single-line {
+						text {
+							value ("범주 #{value(cocktail.subCategory)}")
+							style (Detail_M)
+						}
+					}
+				}
+				slot3{
+					single-line{
+						text{
+							value("도수 #{value(cocktail.abv)}")
+							style(Detail_M)
+						}
 					}
 				}
 			}
-      // on-click{
-      //   intent{
-      //     goal: findCategory
-      //     value-set : Category{
-      //        Category(categoryList.cocktail.majorCategory)
-      //     }
-      //     value: $expr(categoryList.page)
-      //   }
-      // }
-			image-url ("#{value(categoryList.cocktail.image)}")
 		}
-		
 	}
 }
