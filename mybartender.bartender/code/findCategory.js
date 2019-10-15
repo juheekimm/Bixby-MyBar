@@ -39,10 +39,10 @@ module.exports.function = function findCategory(category, page) {
       cocktailInfo = searchResult.parsed[index].data
       cocktailInfo.id = searchResult.parsed[index].id
       if (cocktailInfo.category.length > 0) {               //카테고리가 있는데
-        if (cocktailInfo.category.indexOf(", ") == -1) {   //split할 수 없는 상황(카테고리가 하나)에 대한 예외 처리
+        if (cocktailInfo.category.indexOf(",") == -1) {   //split할 수 없는 상황(카테고리가 하나)에 대한 예외 처리
           cocktailInfo.majorCategory = cocktailInfo.category;
-        } else if (cocktailInfo.category.split(", ").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
-          cocktailInfo.majorCategory = (cocktailInfo.category.split(", "))[0];
+        } else if (cocktailInfo.category.split(",").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
+          cocktailInfo.majorCategory = (cocktailInfo.category.split(","))[0];
         }
       } else {
         cocktailInfo.majorCategory = "";
