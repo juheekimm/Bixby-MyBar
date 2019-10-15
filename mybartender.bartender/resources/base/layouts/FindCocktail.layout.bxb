@@ -51,19 +51,21 @@ layout {
 				}
 			}
 		}
-		section{
-			content{
-				input-cell {
-					label {
-						template ("#{value(cocktail.name)}")
-					}
-					value {
-						template ("레시피 페이지로 이동")
-					}
-					on-click {
-						intent {
-							goal: findRecipe
-							value : $expr(cocktail.id)
+		if (cocktail.isBase) {
+			section{
+				content{
+					input-cell {
+						label {
+							template ("#{value(cocktail.name)}")
+						}
+						value {
+							template ("레시피 페이지로 이동")
+						}
+						on-click {
+							intent {
+								goal: findRecipe
+								value : $expr(cocktail.id)
+							}
 						}
 					}
 				}
