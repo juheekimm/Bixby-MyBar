@@ -51,7 +51,7 @@ layout {
 				}
 			}
 		}
-		if (cocktail.isBase) {
+		if (cocktail.isbase) {
 			section{
 				content{
 					input-cell {

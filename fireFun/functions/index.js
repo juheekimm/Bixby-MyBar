@@ -21,7 +21,7 @@ app.get("/single/:id", async (request, response) => {
     response.status(500).send(error);
   }
 });
-//리스트 검색
+
 app.get("/search/:id", async (request, response) => {
   try {
     const id = request.params.id;
@@ -101,16 +101,16 @@ app.get("/categoryList", async (request, response) => {
       const y = [
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/sugar.jpg?alt=media&token=ad25f845-9a91-4571-964f-8a2d1db8b028",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/unique.jpg?alt=media&token=cc565d9d-92b5-4c1b-b096-d8e49d3466eb",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/solo.jpg?alt=media&token=16c17cff-35d3-43b1-af5e-b22cdf3059ce",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/party.jpg?alt=media&token=e10fc303-b3fc-44b2-8575-e3d571befd04",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
-      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
-      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
-      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
-      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
-      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
-      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
-      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/rain.jpg?alt=media&token=6c0d36c1-7f37-4625-b55e-9617a8478b63",
+      "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/blue.jpg?alt=media&token=a907d347-5252-4b14-bf11-7aeda28c6374",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
       "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b"
       ];

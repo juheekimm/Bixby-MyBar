@@ -17,5 +17,4 @@ enum (Category){
   symbol (민트)
   symbol (초콜릿향)
   symbol (탄산이 들어간)
-  
 }
