@@ -38,7 +38,7 @@ module.exports.function = function findRecipe(id, page) {
 
   cocktailInfo = searchCock.parsed.data
   cocktailInfo.subCategory = searchCock.parsed.data.category
-  cocktailInfo.category = "센";
+  cocktailInfo.category = searchCock.parsed.match[0].data.category;
   cocktailInfo.id = searchCock.parsed.id
 
 

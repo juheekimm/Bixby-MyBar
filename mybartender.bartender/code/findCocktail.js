@@ -62,9 +62,18 @@ module.exports.function = function findCocktail(id, subText) {
     }
     //other 하나씩 까셈
     if (searchResult.parsed.other.length > 0) {
+      
       for (let index = 0; index < searchResult.parsed.other.length; index++) {
+        
         cocktailInfo = searchResult.parsed.other[index].data
+        
         cocktailInfo.id = searchResult.parsed.other[index].id
+        cocktailInfo.subCategory = searchResult.parsed.other[0].data.category;
+      if (cocktailInfo.category.length > 0) {               //카테고리가 있는데
+        if (cocktailInfo.category.split(",").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
+          cocktailInfo.category = (cocktailInfo.category.split(","))[0];
+        }
+      }
         searchList.push(cocktailInfo)
       }
     }
