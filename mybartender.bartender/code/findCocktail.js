@@ -29,30 +29,37 @@ module.exports.function = function findCocktail(id, subText) {
     description: undefined,
     isbase: undefined,
     recoName: undefined,
+    recoNamelist: undefined,
     material: undefined,
     subMaterial: undefined,
     type: undefined,
     image: undefined,
     majorCategory: undefined,
-    subCategory : undefined
+    subCategory: undefined
   }
   if (id == undefined) id = subText
   searchResult = http.getUrl(config.get('search.url') + id, options)
   if (searchResult.status == 200) {
-    
+
 
     if (searchResult.parsed.match.length == 1) {
       //첫번째 칵테일 정보
       cocktailInfo = searchResult.parsed.match[0].data
-      cocktailInfo.subCategory = searchResult.parsed.match[0].data.category;
-      if (cocktailInfo.category.length > 0) {               //카테고리가 있는데
+      
+      if (!cocktailInfo.isbase && cocktailInfo.category.length > 0) {               //카테고리가 있는데
         if (cocktailInfo.category.split(",").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
           cocktailInfo.category = (cocktailInfo.category.split(","))[0];
         }
+        cocktailInfo.subCategory = searchResult.parsed.match[0].data.category;
       }
-      
+      // if (cocktailInfo.category == undefined)
+      //   cocktailInfo.category = "상큼한"
+
       cocktailInfo.id = searchResult.parsed.match[0].id
       if (cocktailInfo.isbase == true) {
+        if (cocktailInfo.recoName.length > 0 && cocktailInfo.recoName.split(",").length >= 1) {
+          cocktailInfo.recoNamelist = cocktailInfo.recoName.split(", ")
+        }
         cocktailInfo.recoName = getRecoImage(cocktailInfo.recoName)
       }
       if (cocktailInfo.majorCategory == null ||
@@ -62,18 +69,18 @@ module.exports.function = function findCocktail(id, subText) {
     }
     //other 하나씩 까셈
     if (searchResult.parsed.other.length > 0) {
-      
+
       for (let index = 0; index < searchResult.parsed.other.length; index++) {
-        
+
         cocktailInfo = searchResult.parsed.other[index].data
-        
+
         cocktailInfo.id = searchResult.parsed.other[index].id
         cocktailInfo.subCategory = searchResult.parsed.other[0].data.category;
-      if (cocktailInfo.category.length > 0) {               //카테고리가 있는데
-        if (cocktailInfo.category.split(",").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
-          cocktailInfo.category = (cocktailInfo.category.split(","))[0];
+        if (cocktailInfo.category.length > 0) {               //카테고리가 있는데
+          if (cocktailInfo.category.split(",").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
+            cocktailInfo.category = (cocktailInfo.category.split(","))[0];
+          }
         }
-      }
         searchList.push(cocktailInfo)
       }
     }

@@ -31,14 +31,32 @@ result-view {
 	}
 	
 	conversation-drivers {
-		conversation-driver {
-			template ("#{value(cocktail.recoNamelist[0])}")
+		if (cocktail.isbase) {					//재료일 때
+			if (cocktail.recoNamelist[0] != null) {
+				conversation-driver {
+					template ("#{value(cocktail.recoNamelist[0])} 칵테일 알려줘")
+				}
+			} 
+			// else if (cocktail.recoNamelist[1] != null) {
+			// 	conversation-driver {
+			// 		template ("#{value(cocktail.recoNamelist[1])} 칵테일 알려줘")
+			// 	}
+			// }
+		} else {											//칵테일일 때
+			if (size(cocktail) == 1) {	//목록이 아닌 칵테일 정보 페이지일 때
+				// conversation-driver {			//이 칵테일이 속한 카테고리로 이동
+				// 	template ("#{value(cocktail.category)} 칵테일 알려줘")
+				// }
+				conversation-driver {
+					template ("#{value(cocktail.id)} 레시피 알려줘")
+				}
+			}
 		}
-		conversation-driver {
-			template ("#{value(cocktail.recoNamelist[1])}")
-		}
-		conversation-driver {
-			template ("#{value(cocktail.recoNamelist[2])}")
-		}
+		// conversation-driver {
+		//   template ("카테고리 목록") //majorCategory목록으로 가게하기
+		// }
+		// conversation-driver {
+		//   template ("비슷한 도수의 칵테일 추천") //도수검색 완료되면
+		// }
 	}
 }
