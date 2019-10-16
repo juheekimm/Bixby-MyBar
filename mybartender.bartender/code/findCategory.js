@@ -39,15 +39,17 @@ module.exports.function = function findCategory(category, page) {
     for (let index = 0; index < searchResult.parsed.length; index++) {
       cocktailInfo = searchResult.parsed[index].data
       cocktailInfo.subCategory = searchResult.parsed[index].data.category
-      
       cocktailInfo.id = searchResult.parsed[index].id
-      if (cocktailInfo.category.length > 0) {               //카테고리가 있는데
-        if (cocktailInfo.category.split(",").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
-          cocktailInfo.category = (cocktailInfo.category.split(","))[0];
+      
+      if (cocktailInfo.subCategory.length > 0) {               //카테고리가 있는데
+        if (cocktailInfo.subCategory.split(",").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
+          cocktailInfo.category = (cocktailInfo.subCategory.split(","))[0];
         }
       }
+      // if (cocktailInfo.category == undefined)
+      //   cocktailInfo.category = "상큼한"
 
-      cocktailInfo.majorCategory = " ";
+      cocktailInfo.majorCategory = " "
       // }
       searchList.push(cocktailInfo)
     }

@@ -1,26 +1,29 @@
 result-view{
-  match: Recipe (recipe) {
-    from-output: findRecipe
-  }
-
-  message{
-    template ("레시피 페이지야")
-  }
-  render{
-    layout-match (recipe) {
-        mode (Details)
-    }
-  }
-  conversation-drivers{
-    conversation-driver{
-      template ("#{value(recipe.cocktail.majorCategory)} 술 알려줘")
-      // template ("달콤한 술 알려줘")
-    }
-    conversation-driver {
-      template ("카테고리 목록")
-    }
-    // conversation-driver {
-    //   template ("비슷한 도수의 칵테일 추천")
-    // }
-  }
+	match: Recipe (recipe) {
+		from-output: findRecipe
+	}
+	
+	message{
+		template ("레시피 페이지야")
+	}
+	render{
+		layout-match (recipe) {
+			mode (Details)
+		}
+	}
+	conversation-drivers{
+		//이 칵테일이 속한 카테고리로 이동
+		// conversation-driver {
+		// 	template ("#{value(recipe.cocktail.category)} 칵테일 알려줘")
+		// }
+		conversation-driver {
+			template ("#{value(recipe.cocktail.id)} 정보 알려줘")
+		}
+		//conversation-driver {
+		// template ("카테고리 목록") //majorCategory목록으로 가게하기
+		//}
+		// conversation-driver {
+		//   template ("비슷한 도수의 칵테일 추천") //도수검색 완료되면
+		// }
+	}
 }

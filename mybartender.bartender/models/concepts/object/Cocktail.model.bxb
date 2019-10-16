@@ -60,7 +60,7 @@ structure (Cocktail) {
 	}
 	property (subCategory){
 		type(SubCategory)
-		min(Required) max (Many)
+		min(Optional) max (Many)
 	}
 
 }
