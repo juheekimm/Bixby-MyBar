@@ -21,7 +21,7 @@ layout {
                   slot2 {
                      single-line {
                         text {
-                           value ("범주 #{value(recipe.cocktail.category)}")
+                           value ("범주 #{value(recipe.cocktail.subCategory)}")
                            style (Detail_M)
                         }
                      }

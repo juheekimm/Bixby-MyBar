@@ -1,4 +1,4 @@
-var http = require('http') //http라이브러리를 불러옴
+var http = require('http')
 var console = require('console')
 var config = require('config')
 function replaceAll(str, searchStr, replaceStr) {

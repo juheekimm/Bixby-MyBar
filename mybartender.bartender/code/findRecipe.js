@@ -22,7 +22,8 @@ module.exports.function = function findRecipe(id, page) {
     subMaterial: undefined,
     type: undefined,
     image: undefined,
-    majorCategory: undefined
+    majorCategory: undefined,
+    subCategory : undefined
   }
   var recipeInfo = {
     cocktail: undefined,
@@ -36,18 +37,14 @@ module.exports.function = function findRecipe(id, page) {
   searchCock = http.getUrl(config.get('single.url') + id, options)
 
   cocktailInfo = searchCock.parsed.data
+  cocktailInfo.subCategory = searchCock.parsed.data.category
+  cocktailInfo.category = "센";
   cocktailInfo.id = searchCock.parsed.id
-  // cocktailInfo.image = searchCock.parsed.img
-  if (cocktailInfo.category.length > 0) {               //카테고리가 있는데
-    if (cocktailInfo.category.indexOf(", ") == -1) {   //split할 수 없는 상황(카테고리가 하나)에 대한 예외 처리
-      cocktailInfo.majorCategory = cocktailInfo.category;
-    } else if (cocktailInfo.category.split(", ").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
-      cocktailInfo.majorCategory = (cocktailInfo.category.split(", "))[0];
-    }
-  } else {
-    cocktailInfo.majorCategory = "";
-  }
 
+
+  cocktailInfo.majorCategory = " ";
+
+  console.log(cocktailInfo);
   searchRecipe = http.getUrl(config.get('recipe.url') + id, options)
   recipeInfo = searchRecipe.parsed.data
   recipeInfo.id = searchRecipe.parsed.id
