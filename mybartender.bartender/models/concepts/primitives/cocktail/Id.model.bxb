@@ -62,4 +62,5 @@ enum (Id){
   symbol (퀵샷)
   symbol (세븐레이어)
   symbol (b52)
+  symbol (에그노그)
 }
