@@ -23,7 +23,7 @@ module.exports.function = function findRecipe(id, page) {
     type: undefined,
     image: undefined,
     majorCategory: undefined,
-    subCategory : undefined
+    subCategory: undefined
   }
   var recipeInfo = {
     cocktail: undefined,
@@ -38,7 +38,15 @@ module.exports.function = function findRecipe(id, page) {
 
   cocktailInfo = searchCock.parsed.data
   cocktailInfo.subCategory = searchCock.parsed.data.category
-  cocktailInfo.category = searchCock.parsed.data.category;
+  // cocktailInfo.category = searchCock.parsed.data.category;
+  if (cocktailInfo.category.length > 0) {               //카테고리가 있는데
+    if (cocktailInfo.category.split(",").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
+      cocktailInfo.category = (cocktailInfo.category.split(","))[0];
+    }
+  }
+  if (cocktailInfo.category == undefined)
+    cocktailInfo.category = "상큼한"
+
   cocktailInfo.id = searchCock.parsed.id
 
 
