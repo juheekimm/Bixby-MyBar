@@ -2,15 +2,12 @@ capsule {
   id (myhand.mybar)
   version (0.1.0)
   format (3)
-    
   targets {
     target (bixby-mobile-ko-KR)
   }
-
   store-sections {
     section (FoodAndDrink)
   }
-
   runtime-flags {
     no-filtering-with-validation
     modern-default-view-behavior

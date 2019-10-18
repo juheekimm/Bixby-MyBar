@@ -1,10 +1,15 @@
 train (t-4jj46y4121ch51hli1668vs2j) {
-  utterance ("[g:findRecipe] (모히또)[v:Id:모히또] 레시피")
-  plan (Y2BmkMmtTEosKknNS0kt0kOwglKTMwtSGRSwy6Zl5qVAVUhgV+GZwsDEwAjEDECSkQEEoHwA)
-  last-modified (1571026218594)
+  utterance ("[g:findRecipe:continue:findCategory] (모히또)[v:Id:모히또] (레시피)[v:Page:레시피]")
+  plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghAAFwUA)
+  last-modified (1571210977875)
 }
 train (t-4o0k553nqtuix6gcau13rs2uw) {
   utterance ("[g:findCocktail] (블랙 러시안)[v:Id:블랙러시안]")
-  plan (Y2BmkMutTEosKknNS0kt0kOwnPOTs0sSM3MYlLDLp2XmpcDVSGBX45nCwMTACMQMQJKRAQSgfAA=)
-  last-modified (1571026218620)
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLgUvxo0h5pjAwMTACMQOQZGQAASgfAA==)
+  last-modified (1571196982898)
+}
+train (t-4pdga5melsqdotls4i4tbmskq) {
+  utterance ("[g:findCocktail] (럼)[v:Id:럼]")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLgUvxo0h5pjAwMTACMQOQZGQAASgfAA==)
+  last-modified (1571189255256)
 }

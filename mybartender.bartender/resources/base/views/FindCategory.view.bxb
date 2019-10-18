@@ -2,16 +2,12 @@ result-view {
 	match: Cocktail (cocktail) {
 		from-output: findCategory
 	}
-	
 	message {
 		if(size(cocktail) == 1){
 			template ("#{value(cocktail.id)}")
-		}
-		
+		}	
 	}
-	
-	render {
-		
+	render {	
 		if (size(cocktail) > 1) {
 			list-of (cocktail) {
 				has-details (true)
@@ -30,16 +26,10 @@ result-view {
 			}
 		}
 	}
-	
 	conversation-drivers {
-		conversation-driver {
-			template ("#{value(cocktail.recoNamelist[0])}")
-		}
-		conversation-driver {
-			template ("#{value(cocktail.recoNamelist[1])}")
-		}
-		conversation-driver {
-			template ("#{value(cocktail.recoNamelist[2])}")
-		}
+		// conversation-driver {
+		// conversation-driver {
+    //   template ("카테고리 목록") //majorCategory 전체 목록으로 가게하기
+    // }
 	}
 }

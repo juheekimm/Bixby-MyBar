@@ -1,10 +1,8 @@
 structure (Cocktail) {
-	//id
 	property (id){
 		type(Id)
 		min (Required) max(One)
 	}
-	//data
 	property (name) {
 		type (Name)
 		min (Required) max (One)
@@ -49,7 +47,6 @@ structure (Cocktail) {
 		type(RecoNamelist)
 		min (Optional) max (Many)
 	}
-	//img
 	property (image) {
 		type (Image)
 		min (Required) max (Many)
@@ -60,7 +57,6 @@ structure (Cocktail) {
 	}
 	property (subCategory){
 		type(SubCategory)
-		min(Required) max (Many)
+		min(Optional) max (Many)
 	}
-
 }

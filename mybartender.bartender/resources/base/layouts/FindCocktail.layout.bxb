@@ -1,9 +1,7 @@
 layout {
 	match: Cocktail (cocktail)
 	mode (Details)
-	
 	content {
-	
 		section {
 			content {
 				layout-macro (FindCocktail-Image) {
@@ -11,15 +9,13 @@ layout {
 				}
 			}
 		}
-    
 		section {
 			title (설명)
 			content {
 				paragraph {
 					value ("#{value(cocktail.description)}")
 					style (Detail_M)
-				}
-				
+				}	
 			}
 		}
 		if(!cocktail.isbase){

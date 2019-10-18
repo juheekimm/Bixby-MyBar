@@ -5,11 +5,11 @@ structure (Recipe) {
   }
   property (cockware){
 		type(Cockware)
-		min (Required) max(Many)
+		min (Optional) max(One)
 	}
   property (method){
 		type(Method)
-		min (Required) max(Many)
+		min (Optional) max(One)
 	}
   property (capacity){
 		type(Capacity)

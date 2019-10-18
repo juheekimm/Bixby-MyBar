@@ -2,14 +2,11 @@ result-view {
 	match: Cocktail (cocktail) {
 		from-output: findCocktail
 	}
-	
 	message {
 		if(size(cocktail) == 1){
 			template ("#{value(cocktail.id)}")
-		}
-		
+		}	
 	}
-	
 	render {
 		if (size(cocktail) > 1) {
 			list-of (cocktail) {
@@ -29,16 +26,19 @@ result-view {
 			}
 		}
 	}
-	
 	conversation-drivers {
-		conversation-driver {
-			template ("#{value(cocktail.recoNamelist[0])}")
-		}
-		conversation-driver {
-			template ("#{value(cocktail.recoNamelist[1])}")
-		}
-		conversation-driver {
-			template ("#{value(cocktail.recoNamelist[2])}")
+		if (cocktail.isbase) {
+			if (cocktail.recoNamelist[0] != null) {
+				conversation-driver {
+					template ("#{value(cocktail.recoNamelist[0])} 칵테일 알려줘")
+				}
+			} 
+		} else {
+			if (size(cocktail) == 1) {
+				conversation-driver {
+					template ("#{value(cocktail.id)} 레시피 알려줘")
+				}
+			}
 		}
 	}
 }

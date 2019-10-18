@@ -3,3 +3,13 @@ train (t-f41o2jdtopylu0621edx02ovn) {
   plan (Y2BmUMqtTEosKknNS0kt0kOwnBNLUtPziyp9MotLcKlJy8xLgaljkMKuJiAxPZWBiYERiBmAJCMDCED5AA==)
   last-modified (1571026218664)
 }
+train (t-fmkl4nyx7n8b319cmmzulcvkw) {
+  utterance ("[g:findRecipe] (위스키소다)[v:Id:위스키소다] (레시피)[v:Page:레시피] 알려줘")
+  plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghAAFwUA)
+  last-modified (1571218059481)
+}
+train (t-fzp48vwnacqe5zk5s6sg1417c) {
+  utterance ("[g:findCocktail] (럼)[v:Id:럼] 보여줘")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLgUvxo0h5pjAwMTACMQOQZGQAASgfAA==)
+  last-modified (1571218056964)
+}

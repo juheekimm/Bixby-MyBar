@@ -5,7 +5,6 @@ layout-macro-def (FindCocktail-Image) {
 			min (Required) max (One)
 		}
 	}
-	
 	content{
 		image-card {
 			aspect-ratio (16:9)
@@ -18,7 +17,6 @@ layout-macro-def (FindCocktail-Image) {
 						style (Title_L)
 					}
 				}
-				
 				slot2 {
 					single-line {
 						text {
