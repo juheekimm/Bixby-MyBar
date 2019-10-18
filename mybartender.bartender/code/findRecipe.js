@@ -1,39 +1,13 @@
-var http = require('http');
-var console = require('console');
-var config = require('config');
-
 module.exports.function = function findRecipe(id, page) {
-  let utils = require('lib/utils.js');
-  let options = {
-    format: 'json',
-    returnHeaders: true
-  };
+  const utils = require('./lib/utils');
+  const http = utils.http
+  const console = utils.console
+  const config = utils.config
+  const options = utils.options
   let searchCock = {};
   let searchRecipe = {};
-  let cocktailInfo = {
-    id: undefined,
-    name: undefined,
-    category: undefined,
-    abv: undefined,
-    imageName: undefined,
-    description: undefined,
-    isbase: undefined,
-    recoName: undefined,
-    material: undefined,
-    subMaterial: undefined,
-    type: undefined,
-    image: undefined,
-    majorCategory: undefined,
-    subCategory: undefined
-  };
-  var recipeInfo = {
-    cocktail: undefined,
-    cockware: undefined,
-    method: undefined,
-    capacity: undefined,
-    steps: undefined,
-    steplist: undefined
-  };
+  let cocktailInfo = utils.cocktailInfo
+  let recipeInfo = utils.recipeInfo
 
   searchCock = http.getUrl(config.get('single.url') + id, options);
   cocktailInfo = searchCock.parsed.data;

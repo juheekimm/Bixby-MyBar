@@ -1,34 +1,13 @@
-var http = require('http');
-var console = require('console');
-var config = require('config');
-
 module.exports.function = function findCategory(category, page) {
-  let utils = require('lib/utils.js');
+  const utils = require('./lib/utils');
+  const http = utils.http
+  const console = utils.console
+  const config = utils.config
+  const options = utils.options
   
-  let options = {
-    format: 'json',
-    returnHeaders: true
-  };
-
   let searchResult = {};
   let searchList = [];
-  
-  let cocktailInfo = {
-    id: undefined,
-    name: undefined,
-    category : undefined,
-    abv: undefined,
-    imageName: undefined,
-    description: undefined,
-    isbase: undefined,
-    recoName: undefined,
-    material: undefined,
-    subMaterial: undefined,
-    type: undefined,
-    image: undefined,
-    majorCategory: undefined,
-    subCategory : undefined
-  };
+  let cocktailInfo = utils.cocktailInfo
 
   searchResult = http.getUrl(config.get('category.url') + category, options);
 
@@ -37,9 +16,9 @@ module.exports.function = function findCategory(category, page) {
       cocktailInfo = searchResult.parsed[index].data;
       cocktailInfo.subCategory = searchResult.parsed[index].data.category;
       cocktailInfo.id = searchResult.parsed[index].id;
-      
-      if (cocktailInfo.subCategory.length > 0) {               
-        if (cocktailInfo.subCategory.split(",").length >= 1) { 
+
+      if (cocktailInfo.subCategory.length > 0) {
+        if (cocktailInfo.subCategory.split(",").length >= 1) {
           cocktailInfo.category = (cocktailInfo.subCategory.split(","))[0];
         }
       }

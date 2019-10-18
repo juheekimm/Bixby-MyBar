@@ -20,7 +20,7 @@ layout-macro-def (FindCocktail-Image) {
 				slot2 {
 					single-line {
 						text {
-							value ("범주 #{value(cocktail.category)}")
+							value ("범주 #{value(cocktail.subCategory)}")
 							style (Detail_M)
 						}
 					}
