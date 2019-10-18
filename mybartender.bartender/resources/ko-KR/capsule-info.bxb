@@ -2,7 +2,7 @@ capsule-info {
   //캡슐 설명
   display-name (마이바)
   //개발자 이름
-  developer-name (SSAFY MH)
+  developer-name (mybar)
   //마켓플레이스에서 캡슐과 함께 아이콘이미지표시
   icon-asset (/images/myBartender_logo.png)
   //캡슐 설명하기
