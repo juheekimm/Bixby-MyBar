@@ -33,48 +33,42 @@ module.exports.function = function findCocktail(id, subText) {
     subMaterial: undefined,
     type: undefined,
     image: undefined,
-    majorCategory: undefined
+    majorCategory: undefined,
+    subCategory : undefined,
+    subText:undefined
   }
   if (id == undefined) id = subText
   searchResult = http.getUrl(config.get('search.url') + id, options)
   if (searchResult.status == 200) {
-    //match.length == 0 -> name으로 검색한 결과를 찾았어요
-    //match.length != 0 -> 어차피 전체 리스트 받아서 할거지만 match를 맨위로 보내둠
-
-    if (searchResult.parsed.match.length == 1) {
-      //첫번째 칵테일 정보
-      cocktailInfo = searchResult.parsed.match[0].data
-      cocktailInfo.id = searchResult.parsed.match[0].id
-      if (cocktailInfo.isbase == true) {
-        cocktailInfo.recoName = getRecoImage(cocktailInfo.recoName)
-      }
-      if (cocktailInfo.majorCategory == null ||
-        cocktailInfo.majorCategory == undefined) cocktailInfo.majorCategory = " "
-      // cocktailInfo.image = searchResult.parsed.match[0].img
-      // if (cocktailInfo.category.length > 0) {               //카테고리가 있는데
-      //   if (cocktailInfo.category.indexOf(", ") == -1) {   //split할 수 없는 상황(카테고리가 하나)에 대한 예외 처리
-      //     cocktailInfo.majorCategory = cocktailInfo.category;
-      //   } else if (cocktailInfo.category.split(", ").length >= 1) { //split할 수 있으면 첫번째를 대표카테고리로
-      //     cocktailInfo.majorCategory = (cocktailInfo.category.split(", "))[0];
-      //   }
-      // } else {
-      //   cocktailInfo.majorCategory = "";
-      // }
-      //매치된 칵테일이 존재한다면 첫번째 객체로 삽입
-
-      searchList.push(cocktailInfo)
+    let result = searchResult.parsed.match[0]
+    cocktailInfo = result.data
+    cocktailInfo.id = result.id
+    console.log(result.data.category)
+    console.log(cocktailInfo)
+    if(result.data.category.indexOf(",") == -1){
+      console.log("야호")
     }
-    //other 하나씩 까셈
-    if (searchResult.parsed.other.length > 0) {
-      for (let index = 0; index < searchResult.parsed.other.length; index++) {
-        cocktailInfo = searchResult.parsed.other[index].data
-        cocktailInfo.id = searchResult.parsed.other[index].id
-        // cocktailInfo.image = searchResult.parsed.other[index].img
-        searchList.push(cocktailInfo)
-      }
-    }
+    cocktailInfo.category = result.category.split(", ")
+    // if (searchResult.parsed.match.length > 0) {
+    //   cocktailInfo = searchResult.parsed.match[0].data
+    //   cocktailInfo.id = searchResult.parsed.match[0].id
+    //   if (cocktailInfo.isbase == true) {
+    //     cocktailInfo.recoName = getRecoImage(cocktailInfo.recoName)
+    //   }
+    //   if (cocktailInfo.majorCategory == undefined) cocktailInfo.majorCategory = "無"
+    //   searchList.push(cocktailInfo)
+    // }
+    // //other 하나씩 까셈
+    // if (searchResult.parsed.other.length > 0) {
+    //   for (let index = 0; index < searchResult.parsed.other.length; index++) {
+    //     cocktailInfo = searchResult.parsed.other[index].data
+    //     cocktailInfo.id = searchResult.parsed.other[index].id
+    //     // cocktailInfo.image = searchResult.parsed.other[index].img
+    //     searchList.push(cocktailInfo)
+    //   }
+    // }
   }
-  console.log("A");
+  console.log(searchList)
   return searchList
 }
 function replaceAll(str, searchStr, replaceStr) {
