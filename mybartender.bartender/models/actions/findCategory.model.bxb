@@ -1,15 +1,18 @@
 action (findCategory) {
   description (Searching Cocktail Information)
   type(Search)
+
   collect{
     input (category){
-      type (Category) //변수명
+      type (Category) 
       min (Required) max (One)
     }
+
      input(page){
       type(Page)
       min (Optional) max (One)
     }
   }
+  
   output (Cocktail)
 }
