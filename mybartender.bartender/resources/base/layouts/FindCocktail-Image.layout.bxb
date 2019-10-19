@@ -6,6 +6,7 @@ layout-macro-def (FindCocktail-Image) {
 		}
 	}
 	content{
+		
 		image-card {
 			aspect-ratio (16:9)
 			image-url ("#{value(cocktail.image)}")

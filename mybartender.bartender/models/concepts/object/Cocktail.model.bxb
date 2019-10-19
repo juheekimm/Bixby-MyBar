@@ -1,7 +1,7 @@
 structure (Cocktail) {
 	property (id){
 		type(Id)
-		min (Required) max(One)
+		min (Optional) max(One)
 	}
 	property (name) {
 		type (Name)

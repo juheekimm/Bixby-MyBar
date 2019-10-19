@@ -1,0 +1,23 @@
+structure (MajorList) {
+  description (MajorList Description)
+  property (repId){
+    type(RepId)
+    min (Required) max (One)
+  }
+  property (repName){
+    type(Name)
+    min (Required) max (One)
+  }
+  property (cocktail) {
+    type (Cocktail)
+    min (Optional) max (Many)
+  }
+  property (majorImage){
+    type(Image)
+    min (Optional) max (Many)
+  }
+  property (description){
+    type(Description)
+    min (Optional) max (Many)
+  }
+}

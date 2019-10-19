@@ -1,0 +1,18 @@
+result-view{
+	match: MajorList (majorList) {
+		from-output: findAllList
+	}
+	message{
+		template ("전체 카테고리 페이지")
+	}
+	render{
+		layout-match (majorList) {
+			mode (Details)
+		}
+	}
+	conversation-drivers{
+		conversation-driver {
+			template ("키키")
+		}
+	}
+}

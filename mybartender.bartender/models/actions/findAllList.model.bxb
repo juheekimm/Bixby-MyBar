@@ -1,0 +1,5 @@
+action (findAllList) {
+  description (Major Catergory finding Action)
+  type(Search)
+  output (MajorList)
+}

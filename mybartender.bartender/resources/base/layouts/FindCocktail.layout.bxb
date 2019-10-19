@@ -37,17 +37,6 @@ layout {
 					}
 				}
 			}
-		}else{
-			section {
-				title ("\"#{value(cocktail.name)}\"으로 만들 수 있는 칵테일")
-				content {
-					image-list {
-						images (cocktail.recoName)
-					}
-				}
-			}
-		}
-		if (cocktail.isbase) {
 			section{
 				content{
 					input-cell {
@@ -67,5 +56,17 @@ layout {
 				}
 			}
 		}
+		else{
+			section {
+				title ("\"#{value(cocktail.name)}\"으로 만들 수 있는 칵테일")
+				content {
+					image-list {
+						images (cocktail.recoName)
+					}
+				}
+			}
+		}
+			
+		
 	}
 }
