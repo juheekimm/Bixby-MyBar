@@ -1,0 +1,35 @@
+result-view {
+	match: Cocktail (cocktail) {
+		from-output: findCategoryList
+	}
+	message {
+		if(size(cocktail) == 1){
+			template ("#{value(cocktail.id)}")
+		}	
+	}
+	render {	
+		if (size(cocktail) > 1) {
+			list-of (cocktail) {
+				has-details (true)
+				where-each (item) {
+					layout-macro (FindCategory-Image) {
+						param (cocktail) {
+							expression (item)
+						}
+					}
+				}
+			}
+		}
+		else-if(size(cocktail) == 1) {
+			layout-match (cocktail) {
+				mode (Details)
+			}
+		}
+	}
+	conversation-drivers {
+		// conversation-driver {
+		// conversation-driver {
+    //   template ("카테고리 목록") //majorCategory 전체 목록으로 가게하기
+    // }
+	}
+}

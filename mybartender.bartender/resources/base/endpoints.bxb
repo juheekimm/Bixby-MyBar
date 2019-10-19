@@ -15,5 +15,9 @@ endpoints {
     action-endpoint (findAllList){
       local-endpoint (findAllList.js)
     }
+    action-endpoint (findCategoryList){
+      accepted-inputs (repId)
+      local-endpoint (findCategoryList.js)
+    }
   }
 }

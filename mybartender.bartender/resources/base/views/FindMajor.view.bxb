@@ -6,9 +6,14 @@ result-view{
 		template ("전체 카테고리 페이지")
 	}
 	render{
-		layout-match (majorList) {
-			mode (Details)
-		}
+			layout{
+				layout-macro (FindMajor-Image){
+					param (majorList){
+						expression (majorList)
+					}
+				}
+			}
+	
 	}
 	conversation-drivers{
 		conversation-driver {
