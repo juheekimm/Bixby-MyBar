@@ -6,6 +6,7 @@ admin.initializeApp(functions.config().firebase);
 const db = admin.firestore();
 exports.app = functions.https.onRequest(app);
 const values = require("./values");
+
 app.get("/single/:id", async (request, response) => {
   try {
     const id = request.params.id;
@@ -19,6 +20,7 @@ app.get("/single/:id", async (request, response) => {
       data: user.data()
     });
   } catch (error) {
+    console.log("single error");
     response.status(500).send("single error" +error);
   }
 });
@@ -63,6 +65,7 @@ app.get("/search/:id", async (request, response) => {
       other: users
     });
   } catch (error) {
+    console.log("search error");
     response.status(500).send("search error"+error);
   }
 });
@@ -85,6 +88,7 @@ app.get("/category/:id", async (request, response) => {
     });
     response.json(users);
   } catch (error) {
+    console.log("category error ");
     response.status(500).send("category error "+error);
   }
 });
@@ -177,6 +181,7 @@ app.get("/categoryList", async (request, response) => {
     }
     response.json(cateList);
   } catch (error) {
+    console.log("categorylist error ");
     response.status(500).send("categorylist error "+error);
   }
 });
@@ -256,6 +261,7 @@ app.get("/categorySearch/:id",async(request,response) =>{
     console.log(go);
     response.json(go);
   } catch (error) {
+    console.log("categorysearch error ");
       response.status(500).send("categorysearch error "+error);
   }
 })
@@ -275,6 +281,7 @@ app.get("/recipe/:id", async (request, response) => {
       data: user.data()
     });
   } catch (error) {
+    console.log("recipe error");
     response.status(500).send("recipe error"+error);
   }
 });
@@ -303,6 +310,7 @@ app.get("/similar/:id", async (request, response) => {
 
     response.json(users);
   } catch (error) {
+    console.log("similar error");
     response.status(500).send("similar error"+error);
   }
 });
@@ -338,6 +346,7 @@ app.get("/abv/:id", async (request, response) => {
     }
     response.json(users);
   } catch (error) {
+    console.log("abv error");
     response.status(500).send("abv error"+error);
   }
 });
@@ -351,6 +360,7 @@ app.get("/searchAll", async (request, response) => {
     });
     response.json(a);
   } catch (error) {
+    console.log("search all  error");
     response.status(500).send("search all error"+error);
   }
 });
