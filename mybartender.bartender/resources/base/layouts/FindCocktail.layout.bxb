@@ -9,13 +9,22 @@ layout {
 				}
 			}
 		}
+		
 		section {
 			title (설명)
 			content {
 				paragraph {
 					value ("#{value(cocktail.description)}")
 					style (Detail_M)
-				}	
+				}
+			}
+		}
+		section{
+			content{
+				paragraph{
+					value("야야인ㅁ뤼ㅏㄴㅇ뮈라ㅜㄷ비ㅏㅈㅅ")
+					style(Detail_L)
+				}
 			}
 		}
 		if(!cocktail.isbase){
@@ -60,13 +69,30 @@ layout {
 			section {
 				title ("\"#{value(cocktail.name)}\"으로 만들 수 있는 칵테일")
 				content {
-					image-list {
-						images (cocktail.recoName)
+					compound-card{
+						content{
+							single-line{
+								text{
+									value("야")
+								}
+							}
+							image-list {
+								images (cocktail.recoName)
+							}
+							
+						}
+						on-click{
+							intent{
+								goal : findCocktail
+								value : $expr(cocktail.recoNamelist)
+							}
+						}
 					}
+					
 				}
 			}
 		}
-			
+		
 		
 	}
 }

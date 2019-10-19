@@ -7,36 +7,59 @@ layout-macro-def (FindMajor-Image) {
 	}
 	content{
 		section {
-					content {
-						paragraph {
-							value ("#{value(majorList.repName)}")
-							style (Title_S)
-						}
-					}
-				}
-				
-				section {
-					content {
+			content {
+				for-each (majorList) {
+					as (i) {
+						
 						image-card {
 							aspect-ratio (16:9)
-							image-url ("#{value(majorList.majorImage)}")
+							image-url ("#{value(majorList[i].majorImage)}")
 							title-area {
 								halign (Start)
 								slot1 {
 									text {
-										value ("# #{value(majorList.repId)}")
-										style (Title_M)
+										value ("# #{value(majorList[i].repId)}\n")
+										style (Detail_L)
+
 									}
 								}
+								slot2{
+									paragraph{
+										value ("")
+										style (Title_XXL)
+									}
+								}
+								slot3{
+									// paragraph{
+									// 	value(" ")
+									// 	style(Title_XXL)
+									// }
+									single-line{
+										text{
+											value ("#{value(majorList[i].repName)}")
+											style (Title_S)
+										}
+										
+									}
+								}
+							
 							}
 							on-click {
-							intent {
-								goal: findCocktail
-								value : $expr(majorList.cocktail)
+								intent {
+									goal: findCategoryList
+									// value-set :Cocktail{majorList[i].cocktail}//: $expr(majorList[i].cocktail)
+									value	: $expr(majorList[i].repId)
+								}
 							}
-						}
 						}
 					}
 				}
 			}
+		}
+		// section {
+		// 	content {
+		
+		// 	}
+		// }
 	}
+}

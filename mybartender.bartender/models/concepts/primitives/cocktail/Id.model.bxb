@@ -12,6 +12,8 @@ enum (Id){
   symbol (베일리스밀크)
   symbol (아구아밤)
   symbol (예거밤)
+  symbol (알렉산더)
+  symbol (아이리시커피)
   symbol (올드패션)
   symbol (위스키소다)
   symbol (잭콕)
