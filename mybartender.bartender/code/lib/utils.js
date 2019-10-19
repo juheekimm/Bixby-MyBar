@@ -3,11 +3,9 @@ var console = require('console')
 var config = require('config')
 var utils = {};
 
-
 utils.http = http
 utils.console = console
 utils.config = config
-
 
 utils.replaceAll = function replaceAll(str, searchStr, replaceStr) {
   return str.split(searchStr).join(replaceStr);

@@ -1,43 +1,10 @@
 layout {
 	match: MajorList (majorList)
 	mode (Details)
-	
+
 	content {
-		// for-each (majorList) {
-		// 	as (i) {
-				section {
-					content {
-						paragraph {
-							value ("#{value(majorList.repName)}")
-							style (Title_S)
-						}
-					}
-				}
-				
-				section {
-					content {
-						image-card {
-							aspect-ratio (16:9)
-							image-url ("#{value(majorList.majorImage)}")
-							title-area {
-								halign (Start)
-								slot1 {
-									text {
-										value ("# #{value(majorList.repId)}")
-										style (Title_M)
-									}
-								}
-							}
-							on-click {
-							intent {
-								goal: findCocktail
-								value : $expr(majorList.cocktail)
-							}
-						}
-						}
-					}
-				}
-			}
-	// 	}
-	// }
+		section{
+			title (설명)
+		}
+	}
 }

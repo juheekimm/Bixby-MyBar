@@ -19,7 +19,7 @@ app.get("/single/:id", async (request, response) => {
       data: user.data()
     });
   } catch (error) {
-    response.status(500).send(error);
+    response.status(500).send("single error" +error);
   }
 });
 
@@ -63,7 +63,7 @@ app.get("/search/:id", async (request, response) => {
       other: users
     });
   } catch (error) {
-    response.status(500).send(error.message);
+    response.status(500).send("search error"+error);
   }
 });
 
@@ -85,19 +85,17 @@ app.get("/category/:id", async (request, response) => {
     });
     response.json(users);
   } catch (error) {
-    response.status(500).send(error);
+    response.status(500).send("category error "+error);
   }
 });
 
 const cateList = [];
-
+const x = [[],[],[],[],[],[],[],[],[],[],[],[],[]];
 app.get("/categoryList", async (request, response) => {
   try {
     if (cateList.length == 0) {
       const userQuerySnapshot = await db.collection("CockTail").get();
-    
-      const x = [[],[],[],[],[],[],[],[],[],[],[],[],[]];
-    
+
       userQuerySnapshot.forEach(doc => {
         if (doc.data().majorCategory == null)  return;
         if (doc.data().majorCategory.includes('초간단')) {
@@ -172,7 +170,6 @@ app.get("/categoryList", async (request, response) => {
         cateList.push({
           id: values.ids[i],
           name : values.category[i],
-          data: x[i],
           img: values.img[i],
           desc : values.desc[i]
         });
@@ -180,9 +177,90 @@ app.get("/categoryList", async (request, response) => {
     }
     response.json(cateList);
   } catch (error) {
-    response.status(500).send(error);
+    response.status(500).send("categorylist error "+error);
   }
 });
+
+app.get("/categorySearch/:id",async(request,response) =>{
+  try {
+    const id = request.params.id;
+    console.log(id);
+    let go =[];
+    if (id.match('초간단')) {
+      go.push({
+        id:id,
+        data :x[0]
+      })
+    } else if (id.match('폭탄주')) {
+      go.push({
+        id:id,
+        data :x[1]
+      })
+    } else if (id.match('달콤')) {
+      console.log(x[2]);
+      go.push({
+        id:id,
+        data :x[2]
+      });
+    } else if (id.match('신기')) {
+      go.push({
+        id:id,
+        data :x[3]
+      })
+    }else if (id.match('혼술')) {
+      go.push({
+        id:id,
+        data :x[4]
+      })
+    } else if (id.match('입문자')) {
+      go.push({
+        id:id,
+        data :x[5]
+      })
+    } else if (id.match('파티에서')) {
+      go.push({
+        id:id,
+        data :x[6]
+      })
+    } else if (id.match('무알콜')) {
+      go.push({
+        id:id,
+        data :x[7]
+      })
+    } else if (id.match('외로운')) {
+      go.push({
+        id:id,
+        data :x[8]
+      })
+    } else if (id.match('비오는')) {
+      go.push({
+        id:id,
+        data :x[9]
+      })
+    }  else if (id.match('취하고')) {
+      go.push({
+        id:id,
+        data :x[10]
+      })
+    }else if (id.match('청량한')) {
+      go.push({
+        id:id,
+        data :x[11]
+      })
+    }else if (id.match('사랑하는')) {
+      go.push({
+        id:id,
+        data :x[12]
+      })
+    }
+    console.log(go);
+    response.json(go);
+  } catch (error) {
+      response.status(500).send("categorysearch error "+error);
+  }
+})
+
+
 
 app.get("/recipe/:id", async (request, response) => {
   try {
@@ -197,7 +275,7 @@ app.get("/recipe/:id", async (request, response) => {
       data: user.data()
     });
   } catch (error) {
-    response.status(500).send(error);
+    response.status(500).send("recipe error"+error);
   }
 });
 
@@ -225,7 +303,7 @@ app.get("/similar/:id", async (request, response) => {
 
     response.json(users);
   } catch (error) {
-    response.status(500).send(error);
+    response.status(500).send("similar error"+error);
   }
 });
 
@@ -260,7 +338,7 @@ app.get("/abv/:id", async (request, response) => {
     }
     response.json(users);
   } catch (error) {
-    response.status(500).send(error);
+    response.status(500).send("abv error"+error);
   }
 });
 
@@ -273,7 +351,7 @@ app.get("/searchAll", async (request, response) => {
     });
     response.json(a);
   } catch (error) {
-    response.status(500).send(error);
+    response.status(500).send("search all error"+error);
   }
 });
 
