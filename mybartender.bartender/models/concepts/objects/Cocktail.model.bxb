@@ -11,6 +11,14 @@ structure (Cocktail) {
 		type (Category)
 		min (Optional) max (Many)
 	}
+	property (majorCategory) {
+		type (MajorCategory)
+		min (Required) max (One)
+	}
+	property (subCategory){
+		type(SubCategory)
+		min(Optional) max (Many)
+	}
 	property(abv){
 		type(ABV)
 		min (Required) max (One)
@@ -23,8 +31,8 @@ structure (Cocktail) {
 		type(Isbase)
 		min (Required) max (One)
 	}
-	property(imageName){
-		type(ImageName)
+	property (image) {
+		type (Image)
 		min (Required) max (Many)
 	}
 	property (material){
@@ -35,28 +43,34 @@ structure (Cocktail) {
 		type(SubMaterial)
 		min (Optional) max (Many)
 	}
+	
 	property (recoName){
 		type(RecoName)
 		min (Optional) max (Many)
 	}	
+	property (recoList){
+		type(RecoList)
+		min (Optional) max (Many)
+	}
+	property (recoImage){
+		type(RecoImage)
+		min (Optional) max (Many)
+	}
+	property (recoABV){
+		type (RecoABV)
+		min (Optional) max (Many)
+	}
+	property (recoDescription){
+		type(RecoDescription)
+		min (Optional) max (Many)
+	}
+
 	property (type){
 		type(Type)
 		min (Optional) max (Many)
 	}
-	property (recoNamelist){
-		type(RecoNamelist)
-		min (Optional) max (Many)
-	}
-	property (image) {
-		type (Image)
-		min (Required) max (Many)
-	}
-	property (majorCategory) {
-		type (MajorCategory)
-		min (Required) max (One)
-	}
-	property (subCategory){
-		type(SubCategory)
-		min(Optional) max (Many)
+	property (imageName) {
+		type(ImageName)
+		min (Optional) max (One)
 	}
 }

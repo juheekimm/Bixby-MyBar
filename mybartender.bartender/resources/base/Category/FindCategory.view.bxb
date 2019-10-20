@@ -1,10 +1,10 @@
 result-view {
 	match: Cocktail (cocktail) {
-		from-output: findCategoryList
+		from-output: findCategory
 	}
 	message {
 		if(size(cocktail) == 1){
-			template ("#{value(cocktail.id)}")
+			template ("[#{value(cocktail.id)}]")
 		}	
 	}
 	render {	

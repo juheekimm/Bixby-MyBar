@@ -2,7 +2,7 @@ layout-macro-def (FindMajor-Image) {
 	params {
 		param (majorList) {
 			type (MajorList)
-			min (Required) max (One)
+			min (Optional) max (Many)
 		}
 	}
 	content{
@@ -12,12 +12,12 @@ layout-macro-def (FindMajor-Image) {
 					as (i) {
 						image-card {
 							aspect-ratio (16:9)
-							image-url ("#{value(majorList[i].majorImage)}")
+							image-url ("[#{value(majorList[i].majorImage)}]")
 							title-area {
 								halign (Start)
 								slot1 {
 									text {
-										value ("# #{value(majorList[i].repId)}\n")
+										value ("# [#{value(majorList[i].repId)}]")
 										style (Detail_L)
 									}
 								}
@@ -30,7 +30,7 @@ layout-macro-def (FindMajor-Image) {
 								slot3{
 									single-line{
 										text{
-											value ("#{value(majorList[i].repName)}")
+											value ("[#{value(majorList[i].repName)}]")
 											style (Title_S)
 										}
 									}

@@ -1,0 +1,12 @@
+layout{
+  match : MajorList(majorList)
+  mode (Details)
+
+  content{
+    layout-macro (FindMajor-Image){
+      param (majorList){
+        expression (majorList)
+      }
+    }
+  }
+}
