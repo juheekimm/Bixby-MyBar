@@ -1,5 +1,4 @@
 structure (MajorList) {
-  description (MajorList Description)
   property (repId){
     type(RepId)
     min (Required) max (One)
