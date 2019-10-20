@@ -15,7 +15,7 @@ layout-macro-def (FindCocktail-Image) {
 				slot1 {
 					text {
 						value ("#{value(cocktail.name)}")
-						style (Title_L)
+						style (Title_M)
 					}
 				}
 				slot2 {

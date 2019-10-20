@@ -12,7 +12,7 @@ layout {
 						slot1 {
 							text {
 								value ("#{value(recipe.cocktail.name)}")
-								style (Title_L)
+								style (Title_M)
 							}
 						}
 						slot2 {

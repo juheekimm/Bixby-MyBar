@@ -3,14 +3,8 @@ layout {
 	mode (Details)
 	
 	content {
-	// section {
-			// content {
-				layout-macro (FindMajor-Image) {
-					param (majorList) { expression (majorList) }
-				// }
-			// }
+		layout-macro (FindMajor-Image) {
+			param (majorList) { expression (majorList) }
 		}
-		
 	}
-		
 }
