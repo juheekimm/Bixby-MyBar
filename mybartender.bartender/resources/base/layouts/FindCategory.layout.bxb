@@ -23,7 +23,7 @@ layout {
 				title (필수)
 				content {
 					paragraph {
-						value ("#{value(cocktail.material)}")
+						value ("[#{value(cocktail.material)}]")
 						style (Detail_M)
 					}
 				}
@@ -32,7 +32,7 @@ layout {
 				title (부가)
 				content {
 					paragraph {
-						value ("#{value(cocktail.subMaterial)}")
+						value ("[#{value(cocktail.subMaterial)}]")
 						style (Detail_M)
 					}
 				}

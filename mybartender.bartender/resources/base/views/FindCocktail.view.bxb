@@ -4,7 +4,7 @@ result-view {
 	}
 	message {
 		if(size(cocktail) == 1){
-			template ("#{value(cocktail.id)}")
+			template ("[#{value(cocktail.id)}]")
 		}	
 	}
 	render {
@@ -36,7 +36,7 @@ result-view {
 		} else {
 			if (size(cocktail) == 1) {
 				conversation-driver {
-					template ("#{value(cocktail.id)} 레시피 알려줘")
+					template ("[#{value(cocktail.id)}] 레시피 알려줘")
 				}
 			}
 		}

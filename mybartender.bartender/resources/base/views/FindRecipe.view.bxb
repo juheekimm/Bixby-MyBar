@@ -12,7 +12,7 @@ result-view{
 	}
 	conversation-drivers{
 		conversation-driver {
-			template ("#{value(recipe.cocktail.id)} 정보 알려줘")
+			template ("[#{value(recipe.cocktail.id)}] 정보 알려줘")
 		}
 	}
 }

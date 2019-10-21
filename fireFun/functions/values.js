@@ -17,19 +17,19 @@ values.category = [
 ];
 
 values.img = [
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/sugar.jpg?alt=media&token=ad25f845-9a91-4571-964f-8a2d1db8b028",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/unique.jpg?alt=media&token=cc565d9d-92b5-4c1b-b096-d8e49d3466eb",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/solo.jpg?alt=media&token=16c17cff-35d3-43b1-af5e-b22cdf3059ce",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/noob.jpg?alt=media&token=47497911-9512-4b2a-8f24-f63a286e7aa1",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/party.jpg?alt=media&token=e10fc303-b3fc-44b2-8575-e3d571befd04",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/rain.jpg?alt=media&token=6c0d36c1-7f37-4625-b55e-9617a8478b63",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/blue.jpg?alt=media&token=a907d347-5252-4b14-bf11-7aeda28c6374",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/siwan.jpg?alt=media&token=4ef890ff-314c-4b60-ab33-5066301c7d54",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/shaker.jpg?alt=media&token=f244897a-3571-4dc2-8578-fa0924bced6b"
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf"
 ];
 
 values.ids = [

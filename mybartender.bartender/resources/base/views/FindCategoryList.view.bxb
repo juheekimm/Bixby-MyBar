@@ -4,7 +4,7 @@ result-view {
 	}
 	message {
 		if(size(cocktail) == 1){
-			template ("#{value(cocktail.id)}")
+			template ("[#{value(cocktail.id)}]")
 		}	
 	}
 	render {	

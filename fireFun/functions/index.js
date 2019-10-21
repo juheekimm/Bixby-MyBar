@@ -266,8 +266,6 @@ app.get("/categorySearch/:id",async(request,response) =>{
   }
 })
 
-
-
 app.get("/recipe/:id", async (request, response) => {
   try {
     const id = request.params.id;
@@ -319,8 +317,8 @@ app.get("/abv/:id", async (request, response) => {
   try {
     const id = request.params.id;
     const users = [];
+    const userQuerySnapshot = await db.collection("CockTail").get();
     if (id == "a") {
-      const userQuerySnapshot = await db.collection("CockTail").get();
       userQuerySnapshot.forEach(doc => {
         if (Number(doc.data().abv) <= 15) {
           users.push({
@@ -330,19 +328,23 @@ app.get("/abv/:id", async (request, response) => {
         }
       });
     } else if (id == "b") {
-      if (Number(doc.data().abv) > 15 && Number(doc.data().abv) < 30) {
-        users.push({
-          id: doc.id,
-          data: doc.data()
-        });
-      }
+      userQuerySnapshot.forEach(doc => {
+        if (Number(doc.data().abv) > 15 && Number(doc.data().abv) < 30) {
+          users.push({
+            id: doc.id,
+            data: doc.data()
+          });
+        }
+      });
     } else if (id == "c") {
-      if (Number(doc.data().abv) >= 30) {
-        users.push({
-          id: doc.id,
-          data: doc.data()
-        });
-      }
+        userQuerySnapshot.forEach(doc => {
+        if (Number(doc.data().abv) >= 30) {
+          users.push({
+            id: doc.id,
+            data: doc.data()
+          });
+        }
+      });
     }
     response.json(users);
   } catch (error) {
