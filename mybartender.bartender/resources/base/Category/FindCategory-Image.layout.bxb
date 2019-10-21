@@ -8,13 +8,13 @@ layout-macro-def (FindCategory-Image) {
 		content{
 			image-card {
 				aspect-ratio (16:9)
-				image-url ("#{value(cocktail.image)}")
+				image-url ("[#{value(cocktail.image)}]")
 				title-area {
 					halign (Start)
 					slot1 {
 						text {
-							value ("#{value(cocktail.name)}")
-							style (Title_L)
+							value ("[#{value(cocktail.name)}]")
+							style (Title_M)
 						}
 					}
 					slot2 {
@@ -28,7 +28,7 @@ layout-macro-def (FindCategory-Image) {
 					slot3{
 						single-line{
 							text{
-								value("도수 #{value(cocktail.abv)}")
+								value("도수 [#{value(cocktail.abv)}]")
 								style(Detail_M)
 							}
 						}

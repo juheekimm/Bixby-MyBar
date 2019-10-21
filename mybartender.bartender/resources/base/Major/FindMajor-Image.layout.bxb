@@ -2,7 +2,7 @@ layout-macro-def (FindMajor-Image) {
 	params {
 		param (majorList) {
 			type (MajorList)
-			min (Required) max (One)
+			min (Optional) max (Many)
 		}
 	}
 	content{
@@ -10,7 +10,6 @@ layout-macro-def (FindMajor-Image) {
 			content {
 				for-each (majorList) {
 					as (i) {
-						
 						image-card {
 							aspect-ratio (16:9)
 							image-url ("[#{value(majorList[i].majorImage)}]")
@@ -18,9 +17,8 @@ layout-macro-def (FindMajor-Image) {
 								halign (Start)
 								slot1 {
 									text {
-										value ("# #{value(majorList[i].repId)}\n")
+										value ("# [#{value(majorList[i].repId)}]")
 										style (Detail_L)
-
 									}
 								}
 								slot2{
@@ -30,24 +28,17 @@ layout-macro-def (FindMajor-Image) {
 									}
 								}
 								slot3{
-									// paragraph{
-									// 	value(" ")
-									// 	style(Title_XXL)
-									// }
 									single-line{
 										text{
-											value ("#{value(majorList[i].repName)}")
+											value ("[#{value(majorList[i].repName)}]")
 											style (Title_S)
 										}
-										
 									}
 								}
-							
 							}
 							on-click {
 								intent {
 									goal: findCategoryList
-									// value-set :Cocktail{majorList[i].cocktail}//: $expr(majorList[i].cocktail)
 									value	: $expr(majorList[i].repId)
 								}
 							}
@@ -56,10 +47,5 @@ layout-macro-def (FindMajor-Image) {
 				}
 			}
 		}
-		// section {
-		// 	content {
-		
-		// 	}
-		// }
 	}
 }

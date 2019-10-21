@@ -1,0 +1,72 @@
+<<<<<<< HEAD:mybartender.bartender/resources/base/views/FindCategory.view.bxb
+result-view {
+	match: Cocktail (cocktail) {
+		from-output: findCategory
+	}
+	message {
+		if(size(cocktail) == 1){
+			template ("[#{value(cocktail.id)}]")
+		}	
+	}
+	render {	
+		if (size(cocktail) > 1) {
+			list-of (cocktail) {
+				has-details (true)
+				where-each (item) {
+					layout-macro (FindCategory-Image) {
+						param (cocktail) {
+							expression (item)
+						}
+					}
+				}
+			}
+		}
+		else-if(size(cocktail) == 1) {
+			layout-match (cocktail) {
+				mode (Details)
+			}
+		}
+	}
+	conversation-drivers {
+		
+		conversation-driver {
+      template ("카테고리 목록") //majorCategory 전체 목록으로 가게하기
+    }
+	}
+=======
+result-view {
+	match: Cocktail (cocktail) {
+		from-output: findCategory
+	}
+	message {
+		if(size(cocktail) == 1){
+			template ("[#{value(cocktail.id)}]")
+		}	
+	}
+	render {	
+		if (size(cocktail) > 1) {
+			list-of (cocktail) {
+				has-details (true)
+				where-each (item) {
+					layout-macro (FindCategory-Image) {
+						param (cocktail) {
+							expression (item)
+						}
+					}
+				}
+			}
+		}
+		else-if(size(cocktail) == 1) {
+			layout-match (cocktail) {
+				mode (Details)
+			}
+		}
+	}
+	conversation-drivers {
+		// conversation-driver {
+		// conversation-driver {
+    //   template ("카테고리 목록") //majorCategory 전체 목록으로 가게하기
+    // }
+	}
+>>>>>>> 732c6246ba226f81ed56137487e3550172ec652a:mybartender.bartender/resources/base/Category/FindCategory.view.bxb
+}

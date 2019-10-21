@@ -24,10 +24,10 @@ module.exports.function = function findCocktail(id, subText) {
       cocktailInfo.id = searchResult.parsed.match[0].id;
       if (cocktailInfo.isbase == true) {
         if (cocktailInfo.recoName.length > 0 && cocktailInfo.recoName.indexOf(",") != -1) {
-          cocktailInfo.recoNamelist = cocktailInfo.recoName.split(", ");
+          cocktailInfo.recoList = cocktailInfo.recoName.split(", ");
         }
-        cocktailInfo.recoName = getRecoImage(cocktailInfo.recoName);
-        console.log(cocktailInfo)
+        getRecoImage(cocktailInfo);
+        
       }
       else {
         if (cocktailInfo.category.length > 0) {
@@ -41,6 +41,7 @@ module.exports.function = function findCocktail(id, subText) {
       if (cocktailInfo.majorCategory == undefined) cocktailInfo.majorCategory = " ";
       searchList.push(cocktailInfo);
     }
+    cocktailInfo.imageName = " "
 
     if (searchResult.parsed.other.length > 0) {
       for (let index = 0; index < searchResult.parsed.other.length; index++) {
@@ -53,9 +54,12 @@ module.exports.function = function findCocktail(id, subText) {
             cocktailInfo.category = (cocktailInfo.category.split(","))[0];
           }
         }
+        
         searchList.push(cocktailInfo);
       }
     }
+    console.log(searchList)
+  
     return searchList;
   }
 
@@ -65,17 +69,26 @@ function replaceAll(str, searchStr, replaceStr) {
   return str.split(searchStr).join(replaceStr);
 }
 
-function getRecoImage(names) {
-  let recoSplit = names.split(',');
-  let recoName = [];
+function getRecoImage(cocktailInfo) {
+  let names = cocktailInfo.recoName
+  let recoImages = [];
+  let recoABVs = [];
+  let recoDescriptions = [];
 
-  for (let i = 0; i < recoSplit.length; i++) {
-    let newUrl = config.get('single.url') + replaceAll(recoSplit[i], " ", "");
+  for (let i = 0; i < cocktailInfo.recoList.length; i++) {
+    let newUrl = config.get('single.url') + replaceAll(cocktailInfo.recoList[i], " ", "");
     let tempRes = http.getUrl(newUrl, options);
     console.log(tempRes)
     if (tempRes.status == 200 && tempRes.parsed.data != undefined) {
-      recoName.push({ url: tempRes.parsed.data.image });
+      // recoImages.push({ url: tempRes.parsed.data.image });
+      recoImages.push(tempRes.parsed.data.image);
+      recoABVs.push(tempRes.parsed.data.abv);
+      recoDescriptions.push(tempRes.parsed.data.description);
     }
   }
-  return recoName;
+  cocktailInfo.recoImage = recoImages;
+  cocktailInfo.recoABV = recoABVs;
+  cocktailInfo.recoDescription = recoDescriptions;
+  
+  // return recoName;
 }

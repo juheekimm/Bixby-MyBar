@@ -16,18 +16,21 @@ utils.cocktailInfo = {
     id: undefined,
     name: undefined,
     category: undefined,
+    majorCategory: undefined,
+    subCategory: undefined,
     abv: undefined,
-    imageName: undefined,
     description: undefined,
     isbase: undefined,
-    recoName: undefined,
-    recoNamelist: undefined,
+    image: undefined,
     material: undefined,
     subMaterial: undefined,
+    recoName: undefined,
+    recoList: undefined,
+    recoImage : undefined,
+    recoABV : undefined,
+    recoDescription : undefined,
     type: undefined,
-    image: undefined,
-    majorCategory: undefined,
-    subCategory: undefined
+    imageName: undefined
 };
 
 utils.recipeInfo = {

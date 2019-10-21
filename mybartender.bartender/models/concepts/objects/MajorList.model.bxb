@@ -7,10 +7,6 @@ structure (MajorList) {
     type(Name)
     min (Required) max (One)
   }
-  // property (cocktail) {
-  //   type (Cocktail)
-  //   min (Optional) max (Many)
-  // }
   property (majorImage){
     type(Image)
     min (Optional) max (Many)

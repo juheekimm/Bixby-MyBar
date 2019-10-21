@@ -12,7 +12,11 @@ layout {
 						slot1 {
 							text {
 								value ("[#{value(recipe.cocktail.name)}]")
+<<<<<<< HEAD:mybartender.bartender/resources/base/layouts/FindRecipe.layout.bxb
 								style (Title_L)
+=======
+								style (Title_M)
+>>>>>>> 732c6246ba226f81ed56137487e3550172ec652a:mybartender.bartender/resources/base/Recipe/FindRecipe.layout.bxb
 							}
 						}
 						slot2 {
@@ -40,7 +44,11 @@ layout {
 			content {
 				paragraph {
 					style (Detail_L)
+<<<<<<< HEAD:mybartender.bartender/resources/base/layouts/FindRecipe.layout.bxb
 					value("필수)\n [#{value(recipe.material)}\n\n부가)\n #{value(recipe.subMaterial)}]")
+=======
+					value("필수)\n [#{value(recipe.material)}]\n\n부가)\n [#{value(recipe.subMaterial)}]")
+>>>>>>> 732c6246ba226f81ed56137487e3550172ec652a:mybartender.bartender/resources/base/Recipe/FindRecipe.layout.bxb
 				}
 			}
 		}
@@ -82,12 +90,12 @@ layout {
 								slot1 {
 									text {
 										style (Detail_L_Soft)
-										value ("Step #{i + 1}") // Best Eastern Hotels and Resorts
+										value ("Step #{i + 1}")
 									}
 								}
 								slot2 {
 									paragraph {
-										value("#{value(recipe.steplist[i])}")
+										value("[#{value(recipe.steplist[i])}]")
 										style (Detail_M)
 									}
 								}
