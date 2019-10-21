@@ -1,10 +1,9 @@
-<<<<<<< HEAD:mybartender.bartender/resources/base/views/FindRecipe.view.bxb
 result-view{
 	match: Recipe (recipe) {
 		from-output: findRecipe
 	}
 	message{
-		template ("레시피 페이지야")
+		template ("레시피 페이지")
 	}
 	render{
 		layout-match (recipe) {
@@ -16,23 +15,4 @@ result-view{
 			template ("[#{value(recipe.cocktail.id)}] 정보 알려줘")
 		}
 	}
-=======
-result-view{
-	match: Recipe (recipe) {
-		from-output: findRecipe
-	}
-	message{
-		template ("레시피 페이지야")
-	}
-	render{
-		layout-match (recipe) {
-			mode (Details)
-		}
-	}
-	conversation-drivers{
-		conversation-driver {
-			template ("[#{value(recipe.cocktail.id)}] 정보 알려줘")
-		}
-	}
->>>>>>> 732c6246ba226f81ed56137487e3550172ec652a:mybartender.bartender/resources/base/Recipe/FindRecipe.view.bxb
 }

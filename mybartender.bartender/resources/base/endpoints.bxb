@@ -13,6 +13,7 @@ endpoints {
       local-endpoint (findCategory.js)
     }
     action-endpoint (findAllList){
+      accepted-inputs (page)
       local-endpoint (findAllList.js)
     }
     action-endpoint (findCategoryList){

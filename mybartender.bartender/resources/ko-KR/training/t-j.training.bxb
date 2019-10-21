@@ -1,5 +1,5 @@
-train (t-jys9mev125uag44jt7fu8c9dx) {
-  utterance ("[g:findCocktail] (모히또)[v:Id:모히또] 정보 알려줘")
-  plan (Y2BmkMutTEosKknNS0kt0kOwnPOTs0sSM3MYlLDLp2XmpcDVSGBX45nCwMTACMQMQJKRAQSgfAA=)
-  last-modified (1571026218689)
+train (t-jy6cd6gboqr5www21d0knrsvi) {
+  utterance ("[g:findRecipe] (위스키 소다)[v:Id:위스키소다] (레시피)[v:Page:레시피] 알려줘")
+  plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghAAFwUA)
+  last-modified (1571636727846)
 }

@@ -10,7 +10,7 @@ action (findCocktail) {
 
     input(subText){
       type(SubText)
-      min (Optional) max(One)
+      min (Required) max(One)
     }
   }
   

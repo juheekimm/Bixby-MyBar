@@ -1,5 +1,5 @@
-train (t-z0c29vsasnntn942h3s48sv1k) {
-  utterance ("[g:findCategory] (카테고리)[v:Page:카테고리] 보여줘")
-  plan (Y2BmUMqtTEosKknNS0kt0kOwnBNLUtPziyp9MotLcKlJy8xLgaljkMKuJiAxPZWBiYERiBmAJCMDCED5AA==)
-  last-modified (1571025074185)
+train (t-z1jb1e56fzg1d5xq3s0v6ju1g) {
+  utterance ("[g:findAllList] (전체)[v:Page:전체] 리스트 알려줘")
+  plan (Y2BmEMutzEjMS9HLrUxKLNLzTczKL/LJLC5hkEART8vMS3HMyQHLCKLIBCSmpzIwMTACMQOQZGQAASgfAA==)
+  last-modified (1571638218910)
 }
