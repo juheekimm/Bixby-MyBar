@@ -1,0 +1,5 @@
+train (t-xlk6f9xeq9phijmywa4368rmq) {
+  utterance ("[g:findCategory] (달달한)[v:Category:달콤한] 술 알려줘")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLcU4sSU3PL6pE1wETZmJgBGIGIMnIAAJQPgA=)
+  last-modified (1571636390721)
+}

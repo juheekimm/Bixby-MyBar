@@ -1,3 +1,16 @@
-text (RepId) {
+enum(RepId) {
+  symbol (초간단)
+  symbol (폭탄주)
+  symbol (달콤)
+  symbol (신기)
+  symbol (혼술)
+  symbol (입문자)
+  symbol (파티에서)
+  symbol (무알콜)
+  symbol (외로운)
+  symbol (비오는)
+  symbol (취하고)
+  symbol (청량해)
+  symbol (사랑하는)
   
 }

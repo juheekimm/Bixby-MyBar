@@ -1,5 +1,5 @@
-train (t-kg1rfpya6v3evh0fyioirq8gv) {
-  utterance ("[g:findCategory] (상큼한)[v:Category:상큼한] 칵테일 알려줘")
-  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLcU4sSU3PL6pE1wETZmJgBGIGIMnIAAJQPgA=)
-  last-modified (1571216796709)
+train (t-kxn48m7xghwvxn8cxb0jydnjy) {
+  utterance ("[g:findCocktail] (러시안)[v:SubText] 알려줘")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLgUuJoEgFlyaFpFaUMDAxMAIxA5BkZAABKB8A)
+  last-modified (1571636322680)
 }
