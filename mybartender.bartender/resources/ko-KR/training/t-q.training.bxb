@@ -1,0 +1,5 @@
+train (t-q48u75rtsm1j6ffaq3eof2ec2) {
+  utterance ("[g:findCategoryList] (간단)[v:RepId:초간단]하게 만드는 술 뭐있니")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
+  last-modified (1571738161272)
+}

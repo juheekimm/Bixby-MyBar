@@ -1,0 +1,5 @@
+train (t-rrpu6s303ghlvao9cpqj04n0b) {
+  utterance ("[g:findAllList] (리스트 전부)[v:Page:전체] 보여줘")
+  plan (Y2BmEMutzEjMS9HLrUxKLNLzTczKL/LJLC5hkEART8vMS3HMyQHLCKLIBCSmpzIwMTACMQOQZGQAASgfAA==)
+  last-modified (1571701484606)
+}

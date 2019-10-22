@@ -1,3 +1,8 @@
+train (t-n2dh32gxvhsmb9t88m6eh7o4m) {
+  utterance ("[g:findCategory] (청량한)[v:Category:청량한] 칵테일 뭐있어?")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLcU4sSU3PL6pE1wETZmJgBGIGIMnIAAJQPgA=)
+  last-modified (1571718889868)
+}
 train (t-nod61du4hunduq11b9s4oba07) {
   utterance ("[g:findRecipe] (모히또)[v:Id:모히또] (레시피)[v:Page:레시피] 알려줘")
   plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghAAFwUA)
