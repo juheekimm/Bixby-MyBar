@@ -12,7 +12,7 @@ capsule-info {
   //캡슐 사용자의 이용약관 optional
   //terms-url (https://www.example.com/TOS.html)
   // 사용자에게 특정 권한 요청(이는 사용자 에게 특정 사용자에 민감한 데이터에 대한 권한 을 부여 하도록 요청하려는 경우에만 필요합니다 .)
-  privacy-policy-url (https://github.com/TKvl6/myhand.subway/blob/master/playground.subway/privacy-policy.md)
+  privacy-policy-url (https://github.com/TKvl6/myhand.Bartender/blob/master/Privacy_Policy_Mybar.txt)
   //마켓플레이스에서 캡슐 검색 키워드
   search-keywords {
     keyword (cocktail)
