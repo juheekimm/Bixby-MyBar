@@ -5,7 +5,7 @@ result-view {
 	message {
 		if(size(cocktail) == 1){
 			template ("[#{value(cocktail.id)}]")
-		}	
+		}
 	}
 	render {
 		if (size(cocktail) > 1) {
@@ -27,18 +27,21 @@ result-view {
 		}
 	}
 	conversation-drivers {
-		if (cocktail.isbase) {
-			if (cocktail.recoList[0] != null) {
-				conversation-driver {
-					template ("#{value(cocktail.recoList[0])} 칵테일 알려줘")
-				}
-			} 
-		} else {
-			if (size(cocktail) == 1) {
-				conversation-driver {
-					template ("[#{value(cocktail.id)}] 레시피 알려줘")
-				}
-			}
+		conversation-driver {
+			template ("전체 목록 보여줘")
 		}
+		// if (cocktail.isbase) {
+		// 	if (cocktail.recoList[0] != null) {
+		// 		conversation-driver {
+		// 			template ("#{value(cocktail.recoList[0])} 칵테일 알려줘")
+		// 		}
+		// 	}
+		// } else {
+		// 	if (size(cocktail) == 1) {
+		// 		conversation-driver {
+		// 			template ("[#{value(cocktail.id)}] 레시피 알려줘")
+		// 		}
+		// 	}
+		// }
 	}
 }

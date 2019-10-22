@@ -12,6 +12,9 @@ result-view{
 	}
 	conversation-drivers{
 		conversation-driver {
+			template ("전체 목록 보여줘")
+		}
+		conversation-driver {
 			template ("[#{value(recipe.cocktail.id)}] 정보 알려줘")
 		}
 	}

@@ -8,3 +8,8 @@ train (t-zaaxy4frorg43ox35cvcg1rzz) {
   plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
   last-modified (1571738422210)
 }
+train (t-zkyxr6gavx2x70slyfagnlkru) {
+  utterance ("[g:findCategoryList] (혼술)[v:RepId:혼술] 알려줘")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
+  last-modified (1571755916771)
+}

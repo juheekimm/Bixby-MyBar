@@ -1,0 +1,5 @@
+train (t-mdipuecofj04w0wp14anj89h3) {
+  utterance ("[g:findCategoryList] (취할 수 있는)[v:RepId:취하고] 칵테일 알려줘봐")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
+  last-modified (1571755707730)
+}

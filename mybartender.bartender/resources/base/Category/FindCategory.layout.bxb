@@ -20,7 +20,7 @@ layout {
 		}
 		if(!cocktail.isbase){
 			section {
-				title (필수)
+				title (필수 재료)
 				content {
 					paragraph {
 						value ("[#{value(cocktail.material)}]")
@@ -29,7 +29,7 @@ layout {
 				}
 			}
 			section {
-				title (부가)
+				title (부가 재료)
 				content {
 					paragraph {
 						value ("[#{value(cocktail.subMaterial)}]")

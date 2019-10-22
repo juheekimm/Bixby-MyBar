@@ -3,3 +3,8 @@ train (t-q48u75rtsm1j6ffaq3eof2ec2) {
   plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
   last-modified (1571738161272)
 }
+train (t-q8qntfofswktpt7ggyxfoaevk) {
+  utterance ("[g:findCategoryList] (상쾌한)[v:RepId:청량한] 칵테일 알려줘")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
+  last-modified (1571755638129)
+}

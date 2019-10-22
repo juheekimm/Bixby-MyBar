@@ -17,7 +17,10 @@ result-view{
 	}
 	conversation-drivers{
 		conversation-driver {
-			template ("키키")
+			template ("청량한 칵테일 추천해줘")
+		}
+		conversation-driver {
+			template ("신기한 칵테일 보여줘")
 		}
 	}
 }

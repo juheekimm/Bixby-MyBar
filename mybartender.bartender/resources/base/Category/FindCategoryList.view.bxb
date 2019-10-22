@@ -5,9 +5,9 @@ result-view {
 	message {
 		if(size(cocktail) == 1){
 			template ("[#{value(cocktail.id)}]")
-		}	
+		}
 	}
-	render {	
+	render {
 		if (size(cocktail) > 1) {
 			list-of (cocktail) {
 				has-details (true)
@@ -29,7 +29,10 @@ result-view {
 	conversation-drivers {
 		// conversation-driver {
 		// conversation-driver {
-    //   template ("카테고리 목록") //majorCategory 전체 목록으로 가게하기
-    // }
+		//   template ("카테고리 목록") //majorCategory 전체 목록으로 가게하기
+		// }
+		conversation-driver {
+			template ("전체 목록 보여줘")
+		}
 	}
 }

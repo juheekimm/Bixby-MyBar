@@ -1,0 +1,5 @@
+train (t-s32b0es0dl067nsahkrbc7raw) {
+  utterance ("[g:findCategoryList] (혼자 먹는)[v:RepId:혼술] 술 알려줘")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
+  last-modified (1571755798398)
+}
