@@ -1,0 +1,36 @@
+capsule-info {
+  //캡슐 설명
+  display-name (마이바)
+  //개발자 이름
+  developer-name (mybar)
+  //마켓플레이스에서 캡슐과 함께 아이콘이미지표시
+  icon-asset (/images/myBartender_logo.png)
+  //캡슐 설명하기
+  description ("칵테일에 대한 정보를 제공합니다. 칵테일의 도수나 레시피 등의 정보가 궁금하다면 마이바에 물어보세요. 칵테일 뿐만 아니라 다양한 혼합주의 설명도 있습니다.")
+  //우리 웹사이트(승인 필요x) optional
+  //website-url (https://www.example.com)
+  //캡슐 사용자의 이용약관 optional
+  //terms-url (https://www.example.com/TOS.html)
+  // 사용자에게 특정 권한 요청(이는 사용자 에게 특정 사용자에 민감한 데이터에 대한 권한 을 부여 하도록 요청하려는 경우에만 필요합니다 .)
+  privacy-policy-url (https://github.com/TKvl6/myhand.Bartender/blob/master/Privacy_Policy_Mybar.txt)
+  //마켓플레이스에서 캡슐 검색 키워드
+  search-keywords {
+    keyword (cocktail)
+    keyword (칵테일)
+    keyword (bartender)
+    keyword (바텐더)
+    keyword (recipe)
+    keyword (레시피)
+    keyword (술)
+  }
+  // 고유 이름을 가진 명명된 디스패치로 캡슐 호출
+  dispatch-name (마이바)
+  //디스패치 별명에 대한 추가 요구사항
+  dispatch-aliases {
+    alias (마이 바)
+    alias (마이빠)
+    alias (마이 빠)
+    alias (마이파)
+    alias (마이 파)
+  }
+}

@@ -1,0 +1,10 @@
+train (t-179j8q1a6n63fs9yduwad6vb5) {
+  utterance ("[g:findABVList] (20)[v:ABV]도 보다 (낮은)[v:Keyword:낮은] 칵테일 알려줘")
+  plan (Y2BhkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDFlEvLzEtxdArzySwuYRDFlAZKMUhiCnunVpbnF6UwMDMwMjABSQYgDYIQABcFAA==)
+  last-modified (1572091711362)
+}
+train (t-1h32my4r0w4cj4viv2qwlyi4d) {
+  utterance ("[g:findCategoryList] (혼자먹는)[v:RepId:혼술] 술 추천해줘")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
+  last-modified (1571755818551)
+}

@@ -1,0 +1,51 @@
+layout-macro-def (FindMajor-Image) {
+	params {
+		param (majorList) {
+			type (MajorList)
+			min (Optional) max (Many)
+		}
+	}
+	content{
+		section {
+			content {
+				for-each (majorList) {
+					as (i) {
+						image-card {
+							aspect-ratio (16:9)
+							image-url ("[#{value(majorList[i].majorImage)}]")
+							title-area {
+								halign (Start)
+								slot1 {
+									text {
+										value ("# [#{value(majorList[i].repId)}]")
+										style (Detail_L)
+									}
+								}
+								slot2{
+									paragraph{
+										value ("")
+										style (Title_XXL)
+									}
+								}
+								slot3{
+									single-line{
+										text{
+											value ("[#{value(majorList[i].repName)}]")
+											style (Title_S)
+										}
+									}
+								}
+							}
+							on-click {
+								intent {
+									goal: findCategoryList
+									value	: $expr(majorList[i].repId)
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+action (findRecipe) {
+  description (Searching Cocktail Recipe Information)
+  type(Search)
+
+  collect{
+    input (id){
+      type (Id) //변수명
+      min (Required) max (One)
+    }
+
+    input(page){
+      type(Page)
+      min (Optional) max (One)
+    }
+  }
+  
+  output (Recipe)
+}

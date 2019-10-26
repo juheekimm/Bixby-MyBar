@@ -1,0 +1,4 @@
+text(RecoImage)
+// structure (RecoImage){
+//   extends (viv.core.BaseImage)
+// }

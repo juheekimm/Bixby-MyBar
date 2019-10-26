@@ -1,0 +1,5 @@
+train (t-kxn48m7xghwvxn8cxb0jydnjy) {
+  utterance ("[g:findCocktail] (러시안)[v:SubText] 알려줘")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLgUuJoEgFlyaFpFaUMDAxMAIxA5BkZAABKB8A)
+  last-modified (1571636322680)
+}
