@@ -1,15 +1,15 @@
 train (t-9o2r3e6t9lizynovsfof5zphc) {
   utterance ("[g:findAllList] (모든)[v:Page:전체] 칵테일 보여줘")
-  plan (Y2BmEC/ISaxML8ovzUvRy61MSiwy0vNNzMovYpDFlEjLzEtxzMnxySwuYRDDlA5ITE9lYGJgBGIGIMnIAAJQPgA=)
-  last-modified (1572175961591)
+  plan (Y2BmEMqtzEjMS9HLrUxKLNLzTczKL2KQQBFLy8xLcczJ8cksLmEQRJEJSExPZWBiYARiBiDJyAACUD4A)
+  last-modified (1572185284797)
 }
 train (t-9r6om2fd543cbuwx5rwgz60wy) {
   utterance ("[g:findCocktail] (럼)[v:Id:럼] 알려줘")
-  plan (Y2BmkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDDlEvLzEuBy4tgynumMDAxMAIxA5BkZAABKB8A)
-  last-modified (1572172256152)
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLgUvxo0h5pjAwMTACMQOQZGQAASgfAA==)
+  last-modified (1572185288684)
 }
 train (t-9tgqu1zqjqhrgnyxrzph0tqqn) {
   utterance ("[g:findCategory] (붉은)[v:Category:붉은] 술 뭐 있어")
-  plan (Y2BmUCnISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0TixJTc8vqmSQw1SVlpmXApeXwmIKTI6JgRGIGYAkIwMIQPkA)
-  last-modified (1572173900533)
+  plan (Y2BmkM+tzEjMS9HLrUxKLNJzzk/OLknMzHGqdE4sSU3PL6pkkERRkJaZlwKXEkXVCxNmYmAEYgYgycgAAlA+AA==)
+  last-modified (1572185296502)
 }

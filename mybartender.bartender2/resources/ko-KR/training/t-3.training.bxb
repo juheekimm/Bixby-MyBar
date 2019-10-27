@@ -1,5 +1,5 @@
 train (t-3vitogv726jxmjh4gtvwh3h5i) {
-  utterance ("[g:playground.mybar.findCocktail] (민트줄렙)[v:playground.mybar.Id:민트줄렙] 알려줘")
-  plan (Y2BmkCzISaxML8ovzUvRy61MSizSc85Pzi5JzMxhkMWQSsvMS4FLC2NIe6YwMDEwAjEDkGRkAAEoHwA=)
-  last-modified (1572182891268)
+  utterance ("[g:findCocktail] (민트줄렙)[v:Id:민트줄렙] 알려줘")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLgUvxo0h5pjAwMTACMQOQZGQAASgfAA==)
+  last-modified (1572185254197)
 }

@@ -3,8 +3,3 @@ train (t-gme9ehpqn4rhrv3j5b8ltdd8f) {
   plan (Y2BmkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDDlEvLzEuBy4tgynumMDAxMAIxA5BkZAABKB8A)
   last-modified (1572172950577)
 }
-train (t-goxb3b7mv476v1u86n9r8625f) {
-  utterance ("[g:playground.mybar.findABVList] (도수)[v:playground.mybar.Page:도수] (낮은)[v:playground.mybar.Keyword:낮은] 술")
-  plan (Y2BhkCvISaxML8ovzUvRy61MSizSc85Pzi5JzMxxqnR0CmOQwZBPy8xLAcr4ZBaXMEhgyHqnVpbnF6UwiGLIBCSmpzIwMzAyMAFJBiANghAAFwUA)
-  last-modified (1572182648042)
-}

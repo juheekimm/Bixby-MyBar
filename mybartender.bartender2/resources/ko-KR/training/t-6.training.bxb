@@ -1,10 +1,10 @@
 train (t-6037ukq4un5r8al0wgzop9h9y) {
   utterance ("[g:findCocktail] (모히또)[v:Id:모히또]")
-  plan (Y2BmkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDDlEvLzEuBy4tgynumMDAxMAIxA5BkZAABKB8A)
-  last-modified (1572175928785)
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLgUvxo0h5pjAwMTACMQOQZGQAASgfAA==)
+  last-modified (1572185273969)
 }
 train (t-6g0jdy0zszj6xfle534ft5od3) {
-  utterance ("[g:playground.mybar.findCategory] (붉은술)[v:playground.mybar.Category:붉은] 알려줘")
-  plan (Y2BmUC7ISaxML8ovzUvRy61MSizSc85Pzi5JzMxxqnROLElNzy+qZJDFUJSWmZcCl5bENAMmxcTACMQMQJKRAQSgfAA=)
-  last-modified (1572183185821)
+  utterance ("[g:findCategory] (붉은술)[v:Category:붉은] 알려줘")
+  plan (Y2BmkM+tzEjMS9HLrUxKLNJzzk/OLknMzHGqdE4sSU3PL6pkkERRkJaZlwKXEkXVCxNmYmAEYgYgycgAAlA+AA==)
+  last-modified (1572185280514)
 }

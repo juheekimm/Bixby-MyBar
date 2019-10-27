@@ -1,7 +1,7 @@
 train (t-came9d8zdl4xx4piahgsluoch) {
   utterance ("[g:findCocktail] (럼)[v:Id:럼] 정보 알려줘")
-  plan (Y2BmkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDDlEvLzEuBy4tgynumMDAxMAIxA5BkZAABKB8A)
-  last-modified (1572172352721)
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLgUvxo0h5pjAwMTACMQOQZGQAASgfAA==)
+  last-modified (1572185300947)
 }
 train (t-ce2a2yref8pb9959g0g24elrw) {
   utterance ("[g:findCocktail] (모히또)[v:Id:모히또]가 뭐야")

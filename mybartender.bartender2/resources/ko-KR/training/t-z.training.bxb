@@ -4,9 +4,9 @@ train (t-zecj7g36ajadd7wfj4yyrtkti) {
   last-modified (1572174591695)
 }
 train (t-zh0nw1tw9azg4eji8i7k3agga) {
-  utterance ("[g:playground.mybar.findCocktail] (러시안)[v:playground.mybar.SubText] 알려줘")
+  utterance ("[g:findCocktail] (러시안)[v:SubText] 알려줘")
   plan (Y2BmkCzISaxML8ovzUvRy61MSizSc85Pzi5JzMxhkMWQSsvMS4FLS2BIB5cmhaRWlDAwMTACMQOQZGQAASgfAA==)
-  last-modified (1572182824453)
+  last-modified (1572185083635)
 }
 train (t-znzveqtaw7txx76mzai4517bn) {
   utterance ("[g:findCategory] (달콤한)[v:Category:달콤한]")

@@ -1,5 +1,5 @@
 train (t-xfeo4o3yndn03g3ehhqh8e7wp) {
-  utterance ("[g:playground.mybar.findABVList] (도수)[v:playground.mybar.Page:도수] (낮은)[v:playground.mybar.Keyword:낮은] 술")
+  utterance ("[g:findABVList] (도수)[v:Page:도수] (낮은)[v:Keyword:낮은] 술")
   plan (Y2BhkCvISaxML8ovzUvRy61MSizSc85Pzi5JzMxxqnR0CmOQwZBPy8xLAcr4ZBaXMEhgyHqnVpbnF6UwiGLIBCSmpzIwMzAyMAFJBiANghAAFwUA)
-  last-modified (1572182730691)
+  last-modified (1572185092364)
 }

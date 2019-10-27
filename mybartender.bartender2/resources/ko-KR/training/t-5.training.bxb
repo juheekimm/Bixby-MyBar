@@ -1,10 +1,10 @@
 train (t-5igq3uo84pbww6r9zo54e82h3) {
   utterance ("[g:findRecipe] (위스키 소다)[v:Id:위스키소다] (레시피)[v:Page:레시피] 알려줘")
-  plan (Y2BhkCjISaxML8ovzUvRy61MSiwy0gtKTc4sSGWQwZRJy8xLgcqKYMp6pjCIYYoGJKanMjAzMDIwAUkGIA2CEAAXBQA=)
-  last-modified (1572173251254)
+  plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572185250031)
 }
 train (t-5y582j1ihxxh3senpfpuutsp5) {
   utterance ("[g:findMajorList] (파티용)[v:RepId:파티에서]으로 좋은 칵테일 보여줘")
-  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
-  last-modified (1572174887604)
+  plan (Y2BmkMmtzEjMS9HLrUxKLNJzzk/OLknMzHGq9E3Myi9ikEKRTcvMSwGL+2QWlzAIocgFpRZ4pjAwMTACMQOQZGQAASgfAA==)
+  last-modified (1572185268832)
 }

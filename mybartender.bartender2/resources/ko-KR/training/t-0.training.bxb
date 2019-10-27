@@ -1,5 +1,5 @@
 train (t-0103ii5gxvq4ahjgmtc13sfw0) {
-  utterance ("[g:playground.mybar.findRecipe] (러스 T 네일)[v:playground.mybar.Id:러스티네일] (레시피)[v:playground.mybar.Page:레시피] 보여줘")
-  plan (Y2BhEC/ISaxML8ovzUvRy61MSizSC0pNzixIZZDGkEjLzEuBSgpjSHqmMIhiCAYkpqcyMDMwMjABSQYgDYIQABcFAA==)
-  last-modified (1572182845552)
+  utterance ("[g:findRecipe] (러스 T 네일)[v:Id:러스티네일] (레시피)[v:Page:레시피] 보여줘")
+  plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572185261016)
 }
