@@ -43,10 +43,6 @@ structure (CocktailByMajor) {
 		type(Type)
 		min (Optional) max (Many)
 	}	
-	property (imageName) {
-		type(ImageName)
-		min (Optional) max (One)
-	}
 	property (majorCategory) {
 		type (MajorCategory)
 		min (Required) max (One)

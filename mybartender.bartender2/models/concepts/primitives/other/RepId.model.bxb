@@ -1,7 +1,6 @@
 enum(RepId) {
   symbol (초간단)
   symbol (폭탄주)
-  symbol (달콤)
   symbol (신기)
   symbol (혼술)
   symbol (입문자)
@@ -11,6 +10,6 @@ enum(RepId) {
   symbol (비오는)
   symbol (취하고)
   symbol (청량한)
-  symbol (사랑하는)
+  symbol (베스트)
   
 }
