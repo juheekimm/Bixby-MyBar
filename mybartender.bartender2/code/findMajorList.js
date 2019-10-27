@@ -11,7 +11,6 @@ module.exports.function = function findMajorList(repId) {
   let cocktailInfo = objects.cocktailInfo
 
   searchResult = http.getUrl(config.get('categorySearch.url') + repId, options);
-  console.log(searchResult)
   if (searchResult.status == 200) {
     for (let index = 0; index < searchResult.parsed[0].data.length; index++) {
       cocktailInfo = searchResult.parsed[0].data[index].data;
@@ -28,6 +27,5 @@ module.exports.function = function findMajorList(repId) {
       searchList.push(cocktailInfo);
     }
   }
-  console.log(searchList)
   return searchList
 }

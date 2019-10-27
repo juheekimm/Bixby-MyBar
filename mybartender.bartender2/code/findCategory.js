@@ -37,6 +37,5 @@ module.exports.function = function findCategory(category, page) {
       testInfo = {};
     }
   }
-  console.log(searchList)
   return searchList
 }
