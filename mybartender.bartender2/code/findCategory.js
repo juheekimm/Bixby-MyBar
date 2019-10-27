@@ -8,26 +8,35 @@ module.exports.function = function findCategory(category, page) {
 
   let searchResult = {};
   let searchList = [];
-  let cocktailInfo = objects.cocktailInfo
-
+  let cocktailInfo = objects.cocktailInfo;
+  let testInfo = objects.testInfo;
   searchResult = http.getUrl(config.get('category.url') + category, options);
 
   if (searchResult.status == 200) {
     for (let index = 0; index < searchResult.parsed.length; index++) {
-      cocktailInfo = searchResult.parsed[index].data;
-      cocktailInfo.subCategory = searchResult.parsed[index].data.category;
-      cocktailInfo.id = searchResult.parsed[index].id;
+      let temp = searchResult.parsed[index];
+      testInfo.id = temp.id;
+      testInfo.name = temp.data.name;
+      testInfo.image = temp.data.image;
+      testInfo.category = temp.data.category;
+      testInfo.abv = temp.data.abv;
+      testInfo.description = temp.data.description;
+      testInfo.material = temp.data.material;
+      testInfo.subMaterial = temp.data.subMaterial;
+      testInfo.isbase = temp.data.isbase;
+      testInfo.subCategory = temp.data.category;
 
-      if (cocktailInfo.subCategory.length > 0) {
-        if (cocktailInfo.subCategory.split(",").length >= 1) {
-          cocktailInfo.category = (cocktailInfo.subCategory.split(","))[0];
+      if (testInfo.subCategory.length > 0) {
+        if (testInfo.subCategory.split(",").length >= 1) {
+          testInfo.category = (testInfo.subCategory.split(","))[0];
         }
       }
-      if(cocktailInfo.subMaterial == "")   { cocktailInfo.subMaterial   = "야호"};
-      if(cocktailInfo.majorCategory == "") { cocktailInfo.majorCategory = " " };
-      searchList.push(cocktailInfo);
+      if(testInfo.subMaterial == "" || testInfo.subMaterial == undefined)   { testInfo.subMaterial   = ""};
+      testInfo.type = "카테고리"
+      searchList.push(testInfo);
+      testInfo = {};
     }
   }
-
+  console.log(searchList)
   return searchList
 }

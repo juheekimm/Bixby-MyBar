@@ -1,7 +1,7 @@
 train (t-r7nfjr532kvjcdqqjvfmrlajn) {
-  utterance ("[g:findCategoryList] (안흔한)[v:RepId:신기] 칵테일 알려줘")
-  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
-  last-modified (1571755856022)
+  utterance ("[g:findMajorList] (안흔한)[v:RepId:신기] 칵테일 알려줘")
+  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
+  last-modified (1572163847721)
 }
 train (t-rrpu6s303ghlvao9cpqj04n0b) {
   utterance ("[g:findAllList] (리스트 전부)[v:Page:전체] 보여줘")

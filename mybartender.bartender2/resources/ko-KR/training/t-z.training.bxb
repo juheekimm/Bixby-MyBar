@@ -4,12 +4,12 @@ train (t-z1jb1e56fzg1d5xq3s0v6ju1g) {
   last-modified (1571638218910)
 }
 train (t-zaaxy4frorg43ox35cvcg1rzz) {
-  utterance ("[g:findCategoryList] (취하고)[v:RepId:취하고] 싶을 때 뭐 먹을까")
-  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
-  last-modified (1571738422210)
+  utterance ("[g:findMajorList] (취하고)[v:RepId:취하고] 싶을 때 뭐 먹을까")
+  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
+  last-modified (1572163908688)
 }
 train (t-zkyxr6gavx2x70slyfagnlkru) {
-  utterance ("[g:findCategoryList] (혼술)[v:RepId:혼술] 알려줘")
-  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
-  last-modified (1571755916771)
+  utterance ("[g:findMajorList] (혼술)[v:RepId:혼술] 알려줘")
+  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
+  last-modified (1572163913809)
 }

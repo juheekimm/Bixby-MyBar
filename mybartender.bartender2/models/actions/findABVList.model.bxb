@@ -14,5 +14,5 @@ action (findABVList) {
       min (Required) max (One)
     }
   }
-  output (Cocktail)
+  output (CocktailByABV)
 }

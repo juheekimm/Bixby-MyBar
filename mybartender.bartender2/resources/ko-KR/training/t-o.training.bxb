@@ -1,0 +1,5 @@
+train (t-og5u550zlv8g4nm7i7mi4neg4) {
+  utterance ("[g:findCocktail] (깔루아 밀크)[v:Id:깔루아밀크] 알려줘")
+  plan (Y2BmkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDDlEvLzEuBy4tgynumMDAxMAIxA5BkZAABKB8A)
+  last-modified (1572164813328)
+}

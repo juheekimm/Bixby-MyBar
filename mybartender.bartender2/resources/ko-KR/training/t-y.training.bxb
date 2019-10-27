@@ -1,12 +1,12 @@
 train (t-y4y66g5rr455ksnds8ch6fzjp) {
-  utterance ("[g:findCategoryList] (초간단)[v:RepId:초간단] 칵테일 추천해줘")
-  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
-  last-modified (1571755874396)
+  utterance ("[g:findMajorList] (초간단)[v:RepId:초간단] 칵테일 추천해줘")
+  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
+  last-modified (1572163888287)
 }
 train (t-y8sb06ur082thpeidkss3qlqy) {
-  utterance ("[g:findCategoryList] (취할)[v:RepId:취하고] 술 알려줘")
-  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
-  last-modified (1571755738063)
+  utterance ("[g:findMajorList] (취할)[v:RepId:취하고] 술 알려줘")
+  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
+  last-modified (1572163898894)
 }
 train (t-ya365o8cqetw3960lwwn434z5) {
   utterance ("[g:findCocktail] (블랙러시안)[v:Id:블랙러시안] 보여줘")

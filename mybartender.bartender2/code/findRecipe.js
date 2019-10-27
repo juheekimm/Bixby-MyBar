@@ -20,7 +20,7 @@ module.exports.function = function findRecipe(id, page) {
     }
   }
 
-  if (cocktailInfo.category == undefined) cocktailInfo.category = "상큼한";
+  if (cocktailInfo.category == undefined) cocktailInfo.category = " ";
 
   cocktailInfo.id = searchCock.parsed.id;
   if(cocktailInfo.majorCategory == undefined)

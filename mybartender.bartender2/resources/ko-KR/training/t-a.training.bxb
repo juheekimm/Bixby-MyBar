@@ -1,5 +1,5 @@
 train (t-aek08djmsxgs0s7px4ie3n1a1) {
-  utterance ("[g:findCategoryList] (취하기 좋은)[v:RepId:취하고] 술 알려줘")
-  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
-  last-modified (1571755746286)
+  utterance ("[g:findMajorList] (취하기 좋은)[v:RepId:취하고] 술 알려줘")
+  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
+  last-modified (1572163780088)
 }

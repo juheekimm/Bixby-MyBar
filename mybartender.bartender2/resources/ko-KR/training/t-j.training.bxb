@@ -1,3 +1,8 @@
+train (t-j9tjn3s69byqwbrlevc8mio8r) {
+  utterance ("[g:findABVList] (10)[v:ABV]도 보다 (높은)[v:Keyword:높은] 술들 알려줘")
+  plan (Y2BhkC/ISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0dApjkMVUkJaZlwKU8sksLmEQxZQG6ZLEFPZOrSzPL0phYGZgZGACkgxAGgQhAC4KAA==)
+  last-modified (1572166270255)
+}
 train (t-jy6cd6gboqr5www21d0knrsvi) {
   utterance ("[g:findRecipe] (위스키 소다)[v:Id:위스키소다] (레시피)[v:Page:레시피] 알려줘")
   plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghAAFwUA)

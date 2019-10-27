@@ -1,4 +1,4 @@
-action (findCategoryList) {
+action (findMajorList) {
   type(Search)
   collect {
     input (repId) {
@@ -6,5 +6,5 @@ action (findCategoryList) {
       min (Required) max (One)
     }
   }
-  output (Cocktail)
+  output (CocktailByMajor)
 }

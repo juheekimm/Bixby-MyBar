@@ -14,5 +14,5 @@ action (findCategory) {
     }
   }
   
-  output (Cocktail)
+  output (CocktailByCategory)
 }

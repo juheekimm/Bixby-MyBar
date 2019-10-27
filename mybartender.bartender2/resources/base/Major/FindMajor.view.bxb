@@ -1,5 +1,5 @@
 result-view{
-	match: MajorList (majorList) {
+	match: Major (major) {
 		from-output: findAllList
 	}
 	message{
@@ -8,8 +8,8 @@ result-view{
 	render{
 			layout{
 				layout-macro (FindMajor-Image){
-					param (majorList){
-						expression (majorList)
+					param (major){
+						expression (major)
 					}
 				}
 			}

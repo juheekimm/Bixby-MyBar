@@ -1,5 +1,10 @@
+train (t-9rigdbuqvn0nvco3lvkth161a) {
+  utterance ("[g:findABVList] (도수)[v:Page:도수]가 (낮은)[v:Keyword:낮은] 술 알려줘")
+  plan (Y2BhkC/ISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0dApjkMVUkJaZlwKU8sksLmGQxJT2Tq0szy9KYRDDlApITE9lYGZgZGACkgxAGgQhAC4KAA==)
+  last-modified (1572166201984)
+}
 train (t-9xsfdde4krkgb7thu9s1402bv) {
-  utterance ("[g:findCategoryList] (혼자먹기)[v:RepId:혼술] 좋은 술 알려줘")
-  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
-  last-modified (1571755770275)
+  utterance ("[g:findMajorList] (혼자먹기)[v:RepId:혼술] 좋은 술 알려줘")
+  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
+  last-modified (1572163765483)
 }

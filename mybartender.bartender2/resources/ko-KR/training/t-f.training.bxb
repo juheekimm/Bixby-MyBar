@@ -1,10 +1,10 @@
 train (t-fjbii5b9bhjra6dm3l9sjcm8z) {
-  utterance ("[g:findCategoryList] (혼자 먹는)[v:RepId:혼술] 칵테일 추천해줘")
-  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
-  last-modified (1571755899412)
+  utterance ("[g:findMajorList] (혼자 먹는)[v:RepId:혼술] 칵테일 추천해줘")
+  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
+  last-modified (1572163803577)
 }
 train (t-fjp8glxr7zegp2abo6hv69l6w) {
-  utterance ("[g:findCategoryList] (청량한)[v:RepId:청량한] 칵테일 알려줘")
-  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRRFOy8xLcU4sSU3PL6r0ySwuYRBCkQ5KLfBMYWBiYARiBiDJyAACUD4A)
-  last-modified (1571755652499)
+  utterance ("[g:findMajorList] (청량한)[v:RepId:청량한] 칵테일 알려줘")
+  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
+  last-modified (1572163802845)
 }
