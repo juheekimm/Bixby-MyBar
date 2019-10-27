@@ -16,9 +16,9 @@ endpoints {
       accepted-inputs (page)
       local-endpoint (findAllList.js)
     }
-    action-endpoint (findCategoryList){
+    action-endpoint (findMajorList){
       accepted-inputs (repId)
-      local-endpoint (findCategoryList.js)
+      local-endpoint (findMajorList.js)
     }
     action-endpoint (findABVList){
       accepted-inputs (page, abv, keyword)

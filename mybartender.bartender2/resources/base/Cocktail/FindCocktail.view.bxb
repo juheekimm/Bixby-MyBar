@@ -1,22 +1,27 @@
 result-view {
 
-	// match: Cocktail (cocktail) {
-	// 	from-output: findCocktail
+	match: Cocktail (cocktail) {
+		from-output: findCocktail
 	// }
-	match{
-		Cocktail(cocktail){
-			// from-output : findCocktail
-			from-output : findABVList
-			// from-output : findCategory
-			// from-output : findCategoryList
-		}
+	// match{
+	
+		// Cocktail(cocktail){
+			
+		// 	from-output : findCocktail
+		// 	// from-output : findABVList
+		// 	// from-output : findCategory
+		// 	// from-output : findCategoryList
+		// }
 	}
 	message {
 		if(size(cocktail) == 1){
 			template ("[#{value(cocktail.id)}]")
+		}else{
+			template ("[#{value(cocktail.type)}]")
 		}
 	}
 	render {
+		
 		if (size(cocktail) > 1) {
 			list-of (cocktail) {
 				has-details (true)

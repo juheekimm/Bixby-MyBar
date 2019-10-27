@@ -1,11 +1,11 @@
 layout{
-  match : MajorList(majorList)
+  match : Major(major)
   mode (Details)
 
   content{
     layout-macro (FindMajor-Image){
-      param (majorList){
-        expression (majorList)
+      param (major){
+        expression (major)
       }
     }
   }

@@ -20,6 +20,25 @@ objects.cocktailInfo = {
     imageName: undefined
 };
 
+objects.testInfo = {
+    id: undefined,
+    name: undefined,
+    image: undefined,
+    category: undefined,
+    subCategory: undefined,
+    abv: undefined,
+    description: undefined,
+    material: undefined,
+    subMaterial: undefined,
+    isbase: undefined,
+    recoName: undefined,
+    recoList: undefined,
+    recoImage : undefined,
+    recoABV : undefined,
+    recoDescription : undefined,
+    type: undefined
+};
+
 objects.recipeInfo = {
     cocktail: undefined,
     cockware: undefined,

@@ -1,0 +1,84 @@
+result-view {
+	
+	match: CocktailByMajor (cocktail_majorCategory) {
+		from-output: findMajorList
+	}
+	message {
+		if(size(cocktail_majorCategory) == 1){
+			template ("[#{value(cocktail_majorCategory.id)}]")
+		}
+	}
+	render {
+		
+		if (size(cocktail_majorCategory) > 1) {
+			list-of (cocktail_majorCategory) {
+				has-details (true)
+				where-each (item) {
+					layout-macro (FindCocktailByMajor-Image) {
+						param (cocktail_majorCategory) {
+							expression (item)
+						}
+					}
+				}
+			}
+		}
+		else-if(size(cocktail_majorCategory) == 1) {
+			layout {
+				section {
+					content {
+						layout-macro (FindCocktailByMajor-Image) {
+							param (cocktail_majorCategory) { expression (cocktail_majorCategory) }
+						}
+					}
+				}
+				section {
+					title (설명)
+					content {
+						paragraph {
+							value ("[#{value(cocktail_majorCategory.description)}]")
+							style (Detail_M)
+						}
+					}
+				}
+				section {
+					title (필수 재료)
+					content {
+						paragraph {
+							value ("[#{value(cocktail_majorCategory.material)}]")
+							style (Detail_M)
+						}
+					}
+				}
+				section {
+					title (부가 재료)
+					content {
+						paragraph {
+							value ("[#{value(cocktail_majorCategory.subMaterial)}]")
+							style (Detail_M)
+						}
+					}
+				}
+				section{
+					content{
+						input-cell {
+							label {	template ("#{value(cocktail_majorCategory.name)}")		}
+							value {	template ("레시피 페이지로 이동하기")		}
+							on-click {
+								intent {
+									goal: findRecipe
+									value : $expr(cocktail_majorCategory.id)
+								}
+							}
+						}
+					}
+					
+				}
+			}
+		}
+	}
+	conversation-drivers {
+		conversation-driver {
+			template ("전체 목록 보여줘")
+		}
+	}
+}

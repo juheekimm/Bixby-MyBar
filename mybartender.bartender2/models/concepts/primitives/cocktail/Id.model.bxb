@@ -22,6 +22,7 @@ enum (Id){
   symbol (소니니)
   symbol (소토닉)
   symbol (소메리카노)
+  symbol (스팅거)
   symbol (홍익인간주)
   symbol (고진감래주)
   symbol (스크류키스)

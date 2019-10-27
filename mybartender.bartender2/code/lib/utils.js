@@ -2,14 +2,14 @@ var http = require('http')
 var console = require('console')
 var config = require('config')
 var utils = {};
-
-utils.http = http
-utils.console = console
-utils.config = config
-utils.options = {
+var options = {
   format: 'json',
   returnHeaders: true
 };
+utils.http = http
+utils.console = console
+utils.config = config
+utils.options = options
 
 utils.replaceAll = function (str, searchStr, replaceStr) {
   return str.split(searchStr).join(replaceStr);
@@ -23,7 +23,7 @@ utils.getRecoImage = function (cocktailInfo) {
 
   for (let i = 0; i < cocktailInfo.recoList.length; i++) {
     let newUrl = config.get('single.url') + utils.replaceAll(cocktailInfo.recoList[i], " ", "");
-    let tempRes = http.getUrl(newUrl, options);
+    let tempRes = http.getUrl(newUrl, utils.options);
     console.log(tempRes)
     if (tempRes.status == 200 && tempRes.parsed.data != undefined) {
       recoImages.push(tempRes.parsed.data.image);

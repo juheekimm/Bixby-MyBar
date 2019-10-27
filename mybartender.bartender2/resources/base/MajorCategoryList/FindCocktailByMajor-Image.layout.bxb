@@ -1,0 +1,40 @@
+layout-macro-def (FindCocktailByMajor-Image) {
+	params {
+		param (cocktail_majorCategory) {
+			type (CocktailByMajor)
+			min (Required) max (One)
+		}
+	}
+	content{
+		
+		image-card {
+			aspect-ratio (16:9)
+			image-url ("[#{value(cocktail_majorCategory.image)}]")
+			title-area {
+				halign (Start)
+				slot1 {
+					text {
+						value ("[#{value(cocktail_majorCategory.name)}]")
+						style (Title_M)
+					}
+				}
+				slot2 {
+					single-line {
+						text {
+							value ("범주 [#{value(cocktail_majorCategory.subCategory)}]")
+							style (Detail_M)
+						}
+					}
+				}
+				slot3{
+					single-line{
+						text{
+							value("도수 [#{value(cocktail_majorCategory.abv)}]")
+							style(Detail_M)
+						}
+					}
+				}
+			}
+		}
+	}
+}

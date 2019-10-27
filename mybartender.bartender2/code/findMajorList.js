@@ -1,4 +1,4 @@
-module.exports.function = function findCategoryList(repId) {
+module.exports.function = function findMajorList(repId) {
   const utils = require('./lib/utils');
   const objects = require('./lib/objects');
   const http = utils.http
@@ -11,7 +11,7 @@ module.exports.function = function findCategoryList(repId) {
   let cocktailInfo = objects.cocktailInfo
 
   searchResult = http.getUrl(config.get('categorySearch.url') + repId, options);
-
+  console.log(searchResult)
   if (searchResult.status == 200) {
     for (let index = 0; index < searchResult.parsed[0].data.length; index++) {
       cocktailInfo = searchResult.parsed[0].data[index].data;
@@ -22,11 +22,12 @@ module.exports.function = function findCategoryList(repId) {
           cocktailInfo.category = (cocktailInfo.subCategory.split(","))[0];
         }
       }
-      if(cocktailInfo.subMaterial.length == 0) cocktailInfo.subMaterial =" ";
-      if(cocktailInfo.majorCategory == undefined)
-        cocktailInfo.majorCategory = " ";
+      if(cocktailInfo.subMaterial == "" || cocktailInfo.subMaterial == undefined)   { cocktailInfo.subMaterial   = ""};
+      if(cocktailInfo.majorCategory == "" || cocktailInfo.majorCategory == undefined) { cocktailInfo.majorCategory = " " };
+      cocktailInfo.type = "대표"
       searchList.push(cocktailInfo);
     }
   }
+  console.log(searchList)
   return searchList
 }

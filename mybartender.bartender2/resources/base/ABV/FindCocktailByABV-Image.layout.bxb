@@ -1,0 +1,40 @@
+layout-macro-def (FindCocktailByABV-Image) {
+	params {
+		param (cocktail_abv) {
+			type (CocktailByABV)
+			min (Required) max (One)
+		}
+	}
+	content{
+		
+		image-card {
+			aspect-ratio (16:9)
+			image-url ("[#{value(cocktail_abv.image)}]")
+			title-area {
+				halign (Start)
+				slot1 {
+					text {
+						value ("[#{value(cocktail_abv.name)}]")
+						style (Title_M)
+					}
+				}
+				slot2 {
+					single-line {
+						text {
+							value ("범주 [#{value(cocktail_abv.subCategory)}]")
+							style (Detail_M)
+						}
+					}
+				}
+				slot3{
+					single-line{
+						text{
+							value("도수 [#{value(cocktail_abv.abv)}]")
+							style(Detail_M)
+						}
+					}
+				}
+			}
+		}
+	}
+}

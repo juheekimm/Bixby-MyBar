@@ -36,7 +36,9 @@ module.exports.function = function findCocktail(id, subText) {
         }
       }
       //메이저 카테고리가 없는경우 빈 스트링으로 처리
-      if (cocktailInfo.majorCategory == undefined) cocktailInfo.majorCategory = " ";
+      if(cocktailInfo.subMaterial == "" || cocktailInfo.subMaterial == undefined)   { cocktailInfo.subMaterial   = ""};
+      if(cocktailInfo.majorCategory == "" || cocktailInfo.majorCategory == undefined) { cocktailInfo.majorCategory = " " };
+      cocktailInfo.type = "칵테일"
       searchList.push(cocktailInfo);
     }
     cocktailInfo.imageName = " "
@@ -53,8 +55,9 @@ module.exports.function = function findCocktail(id, subText) {
             cocktailInfo.category = (cocktailInfo.category.split(","))[0];
           }
         }
-        if(cocktailInfo.majorCategory == undefined)
-          cocktailInfo.majorCategory = " ";
+        if(cocktailInfo.subMaterial == "" || cocktailInfo.subMaterial == undefined)   { cocktailInfo.subMaterial   = ""};
+        if(cocktailInfo.majorCategory == "" || cocktailInfo.majorCategory == undefined) { cocktailInfo.majorCategory = " " };
+        cocktailInfo.type = "칵테일"
         searchList.push(cocktailInfo);
       }
     }
