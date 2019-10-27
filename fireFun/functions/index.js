@@ -114,7 +114,7 @@ app.get("/categoryList", async (request, response) => {
             data: doc.data()
           });
         }
-        if (doc.data().majorCategory.includes('신기')) {
+        if (doc.data().majorCategory.includes('신기한')) {
           x[2].push({
             id: doc.id,
             data: doc.data()
@@ -126,7 +126,7 @@ app.get("/categoryList", async (request, response) => {
             data: doc.data()
           });
         }
-        if (doc.data().majorCategory.includes('입문자')) {
+        if (doc.data().majorCategory.includes('칵테일입문자')) {
           x[4].push({
             id: doc.id,
             data: doc.data()
@@ -207,7 +207,7 @@ app.get("/categorySearch/:id",async(request,response) =>{
         id:id,
         data :x[1]
       })
-    } else if (id.match('신기')) {
+    } else if (id.match('신기한')) {
       go.push({
         id:id,
         data :x[2]
@@ -217,7 +217,7 @@ app.get("/categorySearch/:id",async(request,response) =>{
         id:id,
         data :x[3]
       })
-    } else if (id.match('입문자')) {
+    } else if (id.match('칵테일입문자')) {
       go.push({
         id:id,
         data :x[4]
