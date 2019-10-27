@@ -1,0 +1,5 @@
+train (t-ff0g83mzr3vz9il4jttd9slps) {
+  utterance ("[g:findRecipe] (모히또)[v:Id:모히또] 레시피 알려줘")
+  plan (Y2BmkCjISaxML8ovzUvRy61MSiwy0gtKTc4sSGWQwZRJy8xLgcqKYMp6pjAwMTACMQOQZGQAASgfAA==)
+  last-modified (1572167783311)
+}
