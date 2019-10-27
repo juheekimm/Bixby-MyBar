@@ -1,5 +1,5 @@
-train (t-efaoa3gfxi35jsl0kdk8295hz) {
-  utterance ("[g:findAllList] (전체)[v:Page:전체] 카테고리 보여줘")
-  plan (Y2BmEC/ISaxML8ovzUvRy61MSiwy0vNNzMovYpDFlEjLzEtxzMnxySwuYRDDlA5ITE9lYGJgBGIGIMnIAAJQPgA=)
-  last-modified (1572168217723)
+train (t-e6hc6iv0d2tic95omlvs4uz29) {
+  utterance ("[g:findRecipe] (민트줄랩)[v:Id:민트줄렙] (레시피)[v:Page:레시피] 보여줘")
+  plan (Y2BhkCjISaxML8ovzUvRy61MSiwy0gtKTc4sSGWQwZRJy8xLgcqKYMp6pjCIYYoGJKanMjAzMDIwAUkGIA2CEAAXBQA=)
+  last-modified (1572173252196)
 }

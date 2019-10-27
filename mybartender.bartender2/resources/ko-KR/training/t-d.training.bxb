@@ -1,5 +1,5 @@
-train (t-dmaral748qrtx53luxz820c13) {
-  utterance ("[g:findAllList] (전체)[v:Page:전체] 카테고리 알려줘")
-  plan (Y2BmEC/ISaxML8ovzUvRy61MSiwy0vNNzMovYpDFlEjLzEtxzMnxySwuYRDDlA5ITE9lYGJgBGIGIMnIAAJQPgA=)
-  last-modified (1572169135779)
+train (t-dnjk0caw8ccvgq8dyxc2uw52o) {
+  utterance ("[g:findABVList] (10)[v:ABV]도랑 (비슷한)[v:Keyword:중간] 칵테일 보여줘")
+  plan (Y2BhkC/ISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0dApjkMVUkJaZlwKU8sksLmEQxZQG6ZLEFPZOrSzPL0phYGZgZGACkgxAGgQhAC4KAA==)
+  last-modified (1572177189591)
 }

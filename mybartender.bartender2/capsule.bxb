@@ -1,6 +1,6 @@
 capsule {
-  id (playground.mybar2)
-  version (0.1.1)
+  id (myhand.mybar)
+  version (1.0.1)
   format (3)
   targets {
     target (bixby-mobile-ko-KR)

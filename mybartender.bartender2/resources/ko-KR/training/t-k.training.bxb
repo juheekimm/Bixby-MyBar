@@ -1,0 +1,10 @@
+train (t-k98qfcwm1wxngnra1kfrg3n64) {
+  utterance ("[g:findABVList] (도수)[v:Page:도수] (비슷한)[v:Keyword:중간] 칵테일")
+  plan (Y2BhkC/ISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0dApjkMVUkJaZlwKU8sksLmGQxJT2Tq0szy9KYRDDlApITE9lYGZgZGACkgxAGgQhAC4KAA==)
+  last-modified (1572176371302)
+}
+train (t-kgx04wyeum1nz1yevu70ocr1p) {
+  utterance ("[g:findABVList] (도수가)[v:Page:도수] (높은)[v:Keyword:높은] 술 알려줘")
+  plan (Y2BhkC/ISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0dApjkMVUkJaZlwKU8sksLmGQxJT2Tq0szy9KYRDDlApITE9lYGZgZGACkgxAGgQhAC4KAA==)
+  last-modified (1572176287009)
+}

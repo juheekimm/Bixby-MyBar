@@ -317,7 +317,7 @@ app.get("/similar/:id", async (request, response) => {
 
 app.get("/abvsearch/:id/:level" , async (requset, response) =>{
 try {
-  const target = requset.params.id;
+  const target = Number(requset.params.id);
   const level = requset.params.level;
 
   const user = [];

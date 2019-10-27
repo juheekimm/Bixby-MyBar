@@ -1,9 +1,5 @@
 endpoints {
   action-endpoints {
-    action-endpoint (findCocktail) {
-      accepted-inputs (id, subText)
-      local-endpoint (findCocktail.js)
-    }
     action-endpoint (findRecipe){
       accepted-inputs (id, page)
       local-endpoint (findRecipe.js)
@@ -23,6 +19,10 @@ endpoints {
     action-endpoint (findABVList){
       accepted-inputs (page, abv, keyword)
       local-endpoint (findABVList.js)
+    }
+    action-endpoint (findCocktail) {
+      accepted-inputs (id, subText)
+      local-endpoint (findCocktail.js)
     }
   }
 }

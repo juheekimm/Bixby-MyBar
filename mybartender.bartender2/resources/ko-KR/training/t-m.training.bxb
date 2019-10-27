@@ -1,0 +1,15 @@
+train (t-m1dob8zuzyheom2s4m0lcbtsx) {
+  utterance ("[g:findABVList] (20)[v:ABV]도 보다 (낮은)[v:Keyword:낮은] 술 알려줘")
+  plan (Y2BhkC/ISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0dApjkMVUkJaZlwKU8sksLmEQxZQG6ZLEFPZOrSzPL0phYGZgZGACkgxAGgQhAC4KAA==)
+  last-modified (1572176840981)
+}
+train (t-m39vrpcndt5e6sykq9mwm8866) {
+  utterance ("[g:findABVList] (도수가)[v:Page:도수] (적당한)[v:Keyword:중간] 술 알려줘")
+  plan (Y2BhkC/ISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0dApjkMVUkJaZlwKU8sksLmGQxJT2Tq0szy9KYRDDlApITE9lYGZgZGACkgxAGgQhAC4KAA==)
+  last-modified (1572176438818)
+}
+train (t-mh89r9un4gn7ve2ytblu78e9m) {
+  utterance ("[g:findMajorList] (파티용)[v:RepId:파티에서] 칵테일 추천해줘")
+  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
+  last-modified (1572175133782)
+}

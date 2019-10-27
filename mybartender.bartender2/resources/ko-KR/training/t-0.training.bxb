@@ -1,0 +1,5 @@
+train (t-05yb9m810vp643ys6r68bya7e) {
+  utterance ("[g:findCocktail] (모히또)[v:Id:모히또] 알려줘")
+  plan (Y2BmkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDDlEvLzEuBy4tgynumMDAxMAIxA5BkZAABKB8A)
+  last-modified (1572177419853)
+}

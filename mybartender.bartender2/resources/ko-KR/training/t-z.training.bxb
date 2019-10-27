@@ -1,0 +1,10 @@
+train (t-zecj7g36ajadd7wfj4yyrtkti) {
+  utterance ("[g:findCategory] (달콤한)[v:Category:달콤한] 술 알려줘")
+  plan (Y2BmUCnISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0TixJTc8vqmSQw1SVlpmXApeXwmIKTI6JgRGIGYAkIwMIQPkA)
+  last-modified (1572174591695)
+}
+train (t-znzveqtaw7txx76mzai4517bn) {
+  utterance ("[g:findCategory] (달콤한)[v:Category:달콤한]")
+  plan (Y2BmUCnISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0TixJTc8vqmSQw1SVlpmXApeXwmIKTI6JgRGIGYAkIwMIQPkA)
+  last-modified (1572175720823)
+}

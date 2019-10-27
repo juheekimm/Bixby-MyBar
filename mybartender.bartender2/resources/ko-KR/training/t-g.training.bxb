@@ -1,0 +1,5 @@
+train (t-gme9ehpqn4rhrv3j5b8ltdd8f) {
+  utterance ("[g:findCocktail] (블랙 러시안)[v:Id:블랙러시안] 알려줘")
+  plan (Y2BmkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDDlEvLzEuBy4tgynumMDAxMAIxA5BkZAABKB8A)
+  last-modified (1572172950577)
+}

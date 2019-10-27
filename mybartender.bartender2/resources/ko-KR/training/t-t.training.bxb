@@ -1,5 +1,5 @@
-train (t-tfkrk875g1qb9a83z4mfmqfbo) {
-  utterance ("[g:findRecipe] (모히또)[v:Id:모히또] 레시피 알려줘")
-  plan (Y2BmkCjISaxML8ovzUvRy61MSiwy0gtKTc4sSGWQwZRJy8xLgcqKYMp6pjAwMTACMQOQZGQAASgfAA==)
-  last-modified (1572168224474)
+train (t-tr44yrsdyw3nijmeskm2a59zk) {
+  utterance ("[g:findABVList] (높은)[v:Keyword:높은] (도수)[v:Page:도수] 칵테일 알려줘")
+  plan (Y2BhkC/ISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0dApjkMVUkJaZlwKU8sksLmGQxJT2Tq0szy9KYRDDlApITE9lYGZgZGACkgxAGgQhAC4KAA==)
+  last-modified (1572176507974)
 }

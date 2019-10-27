@@ -1,5 +1,10 @@
-train (t-ff0g83mzr3vz9il4jttd9slps) {
-  utterance ("[g:findRecipe] (모히또)[v:Id:모히또] 레시피 알려줘")
-  plan (Y2BmkCjISaxML8ovzUvRy61MSiwy0gtKTc4sSGWQwZRJy8xLgcqKYMp6pjAwMTACMQOQZGQAASgfAA==)
-  last-modified (1572167783311)
+train (t-f2u8xqyje5hdmbdwwn95pikcv) {
+  utterance ("[g:findAllList] (전체 리스트)[v:Page:전체]")
+  plan (Y2BmEC/ISaxML8ovzUvRy61MSiwy0vNNzMovYpDFlEjLzEtxzMnxySwuYRDDlA5ITE9lYGJgBGIGIMnIAAJQPgA=)
+  last-modified (1572175995359)
+}
+train (t-f78g7bfzzjazx0n65m5ncxna0) {
+  utterance ("[g:findCategory] (달콤한)[v:Category:달콤한] 칵테일 알려줘")
+  plan (Y2BmUCnISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0TixJTc8vqmSQw1SVlpmXApeXwmIKTI6JgRGIGYAkIwMIQPkA)
+  last-modified (1572174050133)
 }

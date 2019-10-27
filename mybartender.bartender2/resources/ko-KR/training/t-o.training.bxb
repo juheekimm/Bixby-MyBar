@@ -1,0 +1,5 @@
+train (t-oery3x2uonp18fwy4ldrtb6p7) {
+  utterance ("[g:findMajorList] (처음)[v:RepId:칵테일입문자] 먹기 좋은 칵테일 알려줘")
+  plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
+  last-modified (1572174851224)
+}

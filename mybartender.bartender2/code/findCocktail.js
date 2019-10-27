@@ -24,7 +24,7 @@ module.exports.function = function findCocktail(id, subText) {
         if (cocktailInfo.recoName.length > 0 && cocktailInfo.recoName.indexOf(",") != -1) {
           cocktailInfo.recoList = cocktailInfo.recoName.split(", ");
         }
-        cocktailInfo = getRecoImage(cocktailInfo);
+        cocktailInfo = utils.getRecoImage(cocktailInfo);
       }
       //베이스가 아닌경우 카테고리가 나뉘므로 카테고리 정보 추가
       else {

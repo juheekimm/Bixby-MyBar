@@ -1,0 +1,10 @@
+train (t-j4io974un1lotei8lyz2m9kb7) {
+  utterance ("[g:findCocktail] (모히또)[v:Id:모히또] 정보 알려줘")
+  plan (Y2BmkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDDlEvLzEuBy4tgynumMDAxMAIxA5BkZAABKB8A)
+  last-modified (1572172379937)
+}
+train (t-j7gv3v03hhsedvnhff2boih5l) {
+  utterance ("[g:findAllList] (전체 리스트)[v:Page:전체] 알려줘")
+  plan (Y2BmEC/ISaxML8ovzUvRy61MSiwy0vNNzMovYpDFlEjLzEtxzMnxySwuYRDDlA5ITE9lYGJgBGIGIMnIAAJQPgA=)
+  last-modified (1572175931035)
+}

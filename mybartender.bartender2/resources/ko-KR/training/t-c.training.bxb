@@ -1,0 +1,10 @@
+train (t-came9d8zdl4xx4piahgsluoch) {
+  utterance ("[g:findCocktail] (럼)[v:Id:럼] 정보 알려줘")
+  plan (Y2BmkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDDlEvLzEuBy4tgynumMDAxMAIxA5BkZAABKB8A)
+  last-modified (1572172352721)
+}
+train (t-ce2a2yref8pb9959g0g24elrw) {
+  utterance ("[g:findCocktail] (모히또)[v:Id:모히또]가 뭐야")
+  plan (Y2BmkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDDlEvLzEuBy4tgynumMDAxMAIxA5BkZAABKB8A)
+  last-modified (1572172422901)
+}
