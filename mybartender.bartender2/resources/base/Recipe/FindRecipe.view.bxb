@@ -6,8 +6,10 @@ result-view{
 		template ("레시피 페이지")
 	}
 	render{
-		layout-match (recipe) {
-			mode (Details)
+		if(size(recipe) == 1){
+			layout-match (recipe) {
+				mode (Details)
+			}
 		}
 	}
 	conversation-drivers{
