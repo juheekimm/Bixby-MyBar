@@ -69,8 +69,4 @@ structure (Cocktail) {
 		type(Type)
 		min (Optional) max (Many)
 	}
-	property (imageName) {
-		type(ImageName)
-		min (Optional) max (One)
-	}
 }
