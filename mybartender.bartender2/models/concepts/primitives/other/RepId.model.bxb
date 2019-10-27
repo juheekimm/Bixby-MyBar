@@ -1,9 +1,9 @@
 enum(RepId) {
   symbol (초간단)
   symbol (폭탄주)
-  symbol (신기)
+  symbol (신기한)
   symbol (혼술)
-  symbol (입문자)
+  symbol (칵테일입문자)
   symbol (파티에서)
   symbol (무알콜)
   symbol (외로운)

@@ -1,0 +1,5 @@
+train (t-efaoa3gfxi35jsl0kdk8295hz) {
+  utterance ("[g:findAllList] (전체)[v:Page:전체] 카테고리 보여줘")
+  plan (Y2BmEC/ISaxML8ovzUvRy61MSiwy0vNNzMovYpDFlEjLzEtxzMnxySwuYRDDlA5ITE9lYGJgBGIGIMnIAAJQPgA=)
+  last-modified (1572168217723)
+}
