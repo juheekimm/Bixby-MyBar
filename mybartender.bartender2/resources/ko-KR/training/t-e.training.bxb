@@ -1,3 +1,8 @@
+train (t-e58wj2d897i30l3au5rshcw36) {
+  utterance ("[g:findCocktail] (모히또)[v:Id:모히또] 알려줘")
+  plan (Y2BmkCzISaxML8ovzUvRy61MSizSc85Pzi5JzMxhkMWQSsvMS4FLC2NIe6YwMDEwAjEDkGRkAAEoHwA=)
+  last-modified (1572182874737)
+}
 train (t-e6hc6iv0d2tic95omlvs4uz29) {
   utterance ("[g:findRecipe] (민트줄랩)[v:Id:민트줄렙] (레시피)[v:Page:레시피] 보여줘")
   plan (Y2BhkCjISaxML8ovzUvRy61MSiwy0gtKTc4sSGWQwZRJy8xLgcqKYMp6pjCIYYoGJKanMjAzMDIwAUkGIA2CEAAXBQA=)

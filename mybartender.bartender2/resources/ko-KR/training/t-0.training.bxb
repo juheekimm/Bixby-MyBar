@@ -1,5 +1,5 @@
-train (t-05yb9m810vp643ys6r68bya7e) {
-  utterance ("[g:findCocktail] (모히또)[v:Id:모히또] 알려줘")
-  plan (Y2BmkCrISaxML8ovzUvRy61MSiwy0nPOT84uSczMYZDDlEvLzEuBy4tgynumMDAxMAIxA5BkZAABKB8A)
-  last-modified (1572177419853)
+train (t-0103ii5gxvq4ahjgmtc13sfw0) {
+  utterance ("[g:playground.mybar.findRecipe] (러스 T 네일)[v:playground.mybar.Id:러스티네일] (레시피)[v:playground.mybar.Page:레시피] 보여줘")
+  plan (Y2BhEC/ISaxML8ovzUvRy61MSizSC0pNzixIZZDGkEjLzEuBSgpjSHqmMIhiCAYkpqcyMDMwMjABSQYgDYIQABcFAA==)
+  last-modified (1572182845552)
 }

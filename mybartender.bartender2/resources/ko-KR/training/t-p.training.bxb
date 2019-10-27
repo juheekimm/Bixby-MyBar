@@ -1,0 +1,5 @@
+train (t-pvl8c37mb5mssleykn3lygwur) {
+  utterance ("[g:playground.mybar.findCocktail] (블랙러시안)[v:playground.mybar.Id:블랙러시안] 보여줘")
+  plan (Y2BmkCzISaxML8ovzUvRy61MSizSc85Pzi5JzMxhkMWQSsvMS4FLC2NIe6YwMDEwAjEDkGRkAAEoHwA=)
+  last-modified (1572182754251)
+}

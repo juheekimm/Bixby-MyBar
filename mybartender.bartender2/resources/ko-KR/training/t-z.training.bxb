@@ -3,6 +3,11 @@ train (t-zecj7g36ajadd7wfj4yyrtkti) {
   plan (Y2BmUCnISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0TixJTc8vqmSQw1SVlpmXApeXwmIKTI6JgRGIGYAkIwMIQPkA)
   last-modified (1572174591695)
 }
+train (t-zh0nw1tw9azg4eji8i7k3agga) {
+  utterance ("[g:playground.mybar.findCocktail] (러시안)[v:playground.mybar.SubText] 알려줘")
+  plan (Y2BmkCzISaxML8ovzUvRy61MSizSc85Pzi5JzMxhkMWQSsvMS4FLS2BIB5cmhaRWlDAwMTACMQOQZGQAASgfAA==)
+  last-modified (1572182824453)
+}
 train (t-znzveqtaw7txx76mzai4517bn) {
   utterance ("[g:findCategory] (달콤한)[v:Category:달콤한]")
   plan (Y2BmUCnISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0TixJTc8vqmSQw1SVlpmXApeXwmIKTI6JgRGIGYAkIwMIQPkA)

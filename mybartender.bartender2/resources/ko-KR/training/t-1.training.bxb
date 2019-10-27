@@ -1,5 +1,0 @@
-train (t-18b7cxup1el8sfulnua3t0gep) {
-  utterance ("[g:findRecipe] (러스 T 네일)[v:Id:러스티네일] (레시피)[v:Page:레시피] 보여줘")
-  plan (Y2BhkCjISaxML8ovzUvRy61MSiwy0gtKTc4sSGWQwZRJy8xLgcqKYMp6pjCIYYoGJKanMjAzMDIwAUkGIA2CEAAXBQA=)
-  last-modified (1572177453410)
-}
