@@ -3,23 +3,20 @@ var values = {};
 values.category = [
   "집에서도 쉽게! 초간단 칵테일",
   "술자리 인싸되는 폭탄주 모음",
-  "달콤하게 취하고 싶은 날",
-  "우와 이거 좀 신기한데?",
-  "유독 혼술이 당기는 날",
-  "입문자 추천 칵테일",
-  "파티에서 마시기 좋은",
-  "무알콜 칵테일 모음",
-  "외로운 날을 달달하게 만들어주는",
-  "비오는 날 마시기 좋은",
-  "취하고 싶은 날",
+  "우와 이게 칵테일이라구?",
+  "유독 혼술이 생각나는 날 마시기 좋은",
+  "입문자에게 추천하는 칵테일",
+  "파티에서 여럿이 마시기 좋은",
+  "술을 못마셔도 괜찮아! 무알콜 칵테일 모음",
+  "외로운 날 한잔하기 좋은",
+  "비오는 날과 잘 어울리는",
+  "취하고 싶은 날 마시기 좋은",
   "입안가득 청량해지는 칵테일",
-  "모두가 사랑하는 칵테일"
+  "모두에게 사랑받는 베스트 칵테일"
 ];
-
 values.img = [
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/sugar.jpg?alt=media&token=ad25f845-9a91-4571-964f-8a2d1db8b028",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/unique.jpg?alt=media&token=cc565d9d-92b5-4c1b-b096-d8e49d3466eb",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/solo.jpg?alt=media&token=16c17cff-35d3-43b1-af5e-b22cdf3059ce",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/noob.jpg?alt=media&token=47497911-9512-4b2a-8f24-f63a286e7aa1",
@@ -29,13 +26,12 @@ values.img = [
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/rain.jpg?alt=media&token=6c0d36c1-7f37-4625-b55e-9617a8478b63",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/blue.jpg?alt=media&token=a907d347-5252-4b14-bf11-7aeda28c6374",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/siwan.jpg?alt=media&token=4ef890ff-314c-4b60-ab33-5066301c7d54",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf"
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/sugar.jpg?alt=media&token=ad25f845-9a91-4571-964f-8a2d1db8b028"
 ];
 
 values.ids = [
   "초간단",
   "폭탄주",
-  "달콤",
   "신기",
   "혼술",
   "입문자",
@@ -45,13 +41,11 @@ values.ids = [
   "비오는",
   "취하고",
   "청량한",
-  "사랑하는"
+  "베스트"
 ];
-
 values.desc = [
   "이렇게 간단해? 초간단 칵테일 모음",
   "이거 하나면 술자리 인싸 가능!",
-  "맛도 분위기도 달콤하게 만들어 주는 칵테일",
   "독특하게 생겼네? 신기하게 생겼네?,",
   "힘들고 외로운 날. 혼술이 당긴다면?",
   "칵테일이 낯설다면? 입문자에게 추천하는 칵테일 모음",

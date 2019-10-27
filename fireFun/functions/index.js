@@ -107,70 +107,76 @@ app.get("/categoryList", async (request, response) => {
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes('폭탄주')) {
+        } 
+        if (doc.data().majorCategory.includes('폭탄주')) {
           x[1].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes('달콤')) {
+        }
+        if (doc.data().majorCategory.includes('신기')) {
           x[2].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes('신기')) {
+        }
+        if (doc.data().majorCategory.includes('혼술')) {
           x[3].push({
             id: doc.id,
             data: doc.data()
           });
-        }else if (doc.data().majorCategory.includes('혼술')) {
+        }
+        if (doc.data().majorCategory.includes('입문자')) {
           x[4].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes('입문자')) {
+        }
+        if (doc.data().majorCategory.includes('파티에서')) {
           x[5].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes('파티에서')) {
+        }
+        if (doc.data().majorCategory.includes('무알콜')) {
           x[6].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes('무알콜')) {
+        }
+        if (doc.data().majorCategory.includes('외로운')) {
           x[7].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes('외로운')) {
+        }
+        if (doc.data().majorCategory.includes('비오는')) {
           x[8].push({
             id: doc.id,
             data: doc.data()
           });
-        } else if (doc.data().majorCategory.includes('비오는')) {
+        }
+        if (doc.data().majorCategory.includes('취하고')) {
           x[9].push({
             id: doc.id,
             data: doc.data()
           });
-        }  else if (doc.data().majorCategory.includes('취하고')) {
+        }
+        if (doc.data().majorCategory.includes('청량한')) {
           x[10].push({
             id: doc.id,
             data: doc.data()
           });
-        }else if (doc.data().majorCategory.includes('청량한')) {
+        }
+        if (doc.data().majorCategory.includes('베스트')) {
           x[11].push({
-            id: doc.id,
-            data: doc.data()
-          });
-        }else if (doc.data().majorCategory.includes('사랑하는')) {
-          x[12].push({
             id: doc.id,
             data: doc.data()
           });
         }
       });
 
-      for (var i = 0; i < 13; i++) {
+      for (var i = 0; i < 12; i++) {
         cateList.push({
           id: values.ids[i],
           name : values.category[i],
@@ -201,61 +207,55 @@ app.get("/categorySearch/:id",async(request,response) =>{
         id:id,
         data :x[1]
       })
-    } else if (id.match('달콤')) {
-      console.log(x[2]);
-      go.push({
-        id:id,
-        data :x[2]
-      });
     } else if (id.match('신기')) {
       go.push({
         id:id,
-        data :x[3]
+        data :x[2]
       })
     }else if (id.match('혼술')) {
       go.push({
         id:id,
-        data :x[4]
+        data :x[3]
       })
     } else if (id.match('입문자')) {
       go.push({
         id:id,
-        data :x[5]
+        data :x[4]
       })
     } else if (id.match('파티에서')) {
       go.push({
         id:id,
-        data :x[6]
+        data :x[5]
       })
     } else if (id.match('무알콜')) {
       go.push({
         id:id,
-        data :x[7]
+        data :x[6]
       })
     } else if (id.match('외로운')) {
       go.push({
         id:id,
-        data :x[8]
+        data :x[7]
       })
     } else if (id.match('비오는')) {
       go.push({
         id:id,
-        data :x[9]
+        data :x[8]
       })
     }  else if (id.match('취하고')) {
       go.push({
         id:id,
-        data :x[10]
+        data :x[9]
       })
     }else if (id.match('청량한')) {
       go.push({
         id:id,
-        data :x[11]
+        data :x[10]
       })
-    }else if (id.match('사랑하는')) {
+    }else if (id.match('베스트')) {
       go.push({
         id:id,
-        data :x[12]
+        data :x[11]
       })
     }
     console.log(go);
