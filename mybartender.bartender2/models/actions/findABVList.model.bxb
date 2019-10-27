@@ -1,0 +1,18 @@
+action (findABVList) {
+  type(Search)
+  collect {
+    input (page){
+      type (Page)
+      min (Optional) max (One)
+    }
+    input (abv) {
+      type (ABV)
+      min (Optional) max (One)
+    }
+    input (keyword){
+      type(Keyword)
+      min (Required) max (One)
+    }
+  }
+  output (Cocktail)
+}

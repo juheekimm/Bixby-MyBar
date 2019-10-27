@@ -1,0 +1,40 @@
+layout-macro-def (FindCocktail-Image) {
+	params {
+		param (cocktail) {
+			type (Cocktail)
+			min (Required) max (One)
+		}
+	}
+	content{
+		
+		image-card {
+			aspect-ratio (16:9)
+			image-url ("[#{value(cocktail.image)}]")
+			title-area {
+				halign (Start)
+				slot1 {
+					text {
+						value ("[#{value(cocktail.name)}]")
+						style (Title_M)
+					}
+				}
+				slot2 {
+					single-line {
+						text {
+							value ("범주 [#{value(cocktail.subCategory)}]")
+							style (Detail_M)
+						}
+					}
+				}
+				slot3{
+					single-line{
+						text{
+							value("도수 [#{value(cocktail.abv)}]")
+							style(Detail_M)
+						}
+					}
+				}
+			}
+		}
+	}
+}

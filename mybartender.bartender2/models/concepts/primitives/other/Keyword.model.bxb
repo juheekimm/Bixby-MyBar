@@ -1,0 +1,6 @@
+enum (Keyword) {
+  description (도수 비교 키워드)
+  symbol (낮은)
+  symbol (중간)
+  symbol (높은)
+}
