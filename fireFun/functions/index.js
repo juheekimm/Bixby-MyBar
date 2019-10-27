@@ -284,6 +284,7 @@ app.get("/recipe/:id", async (request, response) => {
   }
 });
 
+
 app.get("/similar/:id", async (request, response) => {
   try {
     const id = request.params.id;
@@ -295,6 +296,7 @@ app.get("/similar/:id", async (request, response) => {
     const base = Number(user.data().abv);
     const userQuerySnapshot = await db.collection("CockTail").get();
     userQuerySnapshot.forEach(doc => {
+      if (doc.data().majorCategory == null)  return;
       if (
         Number(doc.data().abv) >= base - 5 &&
         Number(doc.data().abv) <= base + 5
@@ -313,6 +315,53 @@ app.get("/similar/:id", async (request, response) => {
   }
 });
 
+app.get("/abvsearch/:id/:level" , async (requset, response) =>{
+try {
+  const target = requset.params.id;
+  const level = requset.params.level;
+
+  const user = [];
+  const userQuerySnapshot = await db.collection("CockTail").get();
+
+  if (level == "a") {
+    userQuerySnapshot.forEach(doc => {
+      if (doc.data().majorCategory == null)  return;
+      if (Number(doc.data().abv) <= target) {
+        user.push({
+          id: doc.id,
+          data: doc.data()
+        });
+      }
+    });
+  } else if (level == "b") {
+    userQuerySnapshot.forEach(doc => {
+      if (doc.data().majorCategory == null)  return;
+      if (Number(doc.data().abv) > (target-5) && Number(doc.data().abv) < (target+5)) {
+        user.push({
+          id: doc.id,
+          data: doc.data()
+        });
+      }
+    });
+  } else if (level == "c") {
+      userQuerySnapshot.forEach(doc => {
+      if (doc.data().majorCategory == null)  return;
+      if (Number(doc.data().abv) >= target) {
+        user.push({
+          id: doc.id,
+          data: doc.data()
+        });
+      }
+    });
+  }
+  response.json(user);
+  
+} catch (error) {
+  console.log("abvsearch eroor");
+  response.status(500).send("abvsearch error" + error);
+}
+});
+
 app.get("/abv/:id", async (request, response) => {
   try {
     const id = request.params.id;
@@ -320,6 +369,7 @@ app.get("/abv/:id", async (request, response) => {
     const userQuerySnapshot = await db.collection("CockTail").get();
     if (id == "a") {
       userQuerySnapshot.forEach(doc => {
+        if (doc.data().majorCategory == null)  return;
         if (Number(doc.data().abv) <= 15) {
           users.push({
             id: doc.id,
@@ -329,6 +379,7 @@ app.get("/abv/:id", async (request, response) => {
       });
     } else if (id == "b") {
       userQuerySnapshot.forEach(doc => {
+        if (doc.data().majorCategory == null)  return;
         if (Number(doc.data().abv) > 15 && Number(doc.data().abv) < 30) {
           users.push({
             id: doc.id,
@@ -338,6 +389,7 @@ app.get("/abv/:id", async (request, response) => {
       });
     } else if (id == "c") {
         userQuerySnapshot.forEach(doc => {
+          if (doc.data().majorCategory == null)  return;
         if (Number(doc.data().abv) >= 30) {
           users.push({
             id: doc.id,
