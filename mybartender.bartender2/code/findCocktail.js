@@ -61,7 +61,6 @@ module.exports.function = function findCocktail(id, subText) {
         searchList.push(cocktailInfo);
       }
     }
-    console.log(searchList)
   
     return searchList;
   }

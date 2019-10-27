@@ -51,7 +51,6 @@ module.exports.function = function findABV(abv, keyword) {
       url += abv + '/c';
       break;
   }
-  console.log(state)
   if (state != 0) {
     searchResult = http.getUrl(url,options);
     console.log(cocktailInfo);
@@ -85,7 +84,7 @@ module.exports.function = function findABV(abv, keyword) {
     }
   }
   searchList.sort(function(a,b){
-    return a.abv < b.abv ? -1 : a.abv > b.abv ? 1 : 0;
+    return Number(a.abv) < Number(b.abv) ? -1 :  Number(a.abv) >  Number(b.abv) ? 1 : 0;
   })
   return searchList
 }
