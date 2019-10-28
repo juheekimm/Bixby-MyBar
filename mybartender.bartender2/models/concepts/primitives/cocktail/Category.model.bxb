@@ -14,7 +14,8 @@ enum (Category){
   symbol (라임)
   symbol (커피)
   symbol (민트)
-  symbol (초콜릿향)
-  symbol (탄산이 들어간)
-  symbol (쉽게 만들 수 있는)
+  symbol (초콜렛)
+  symbol (탄산)
+  symbol (크렌베리)
+  symbol (코코넛)
 }

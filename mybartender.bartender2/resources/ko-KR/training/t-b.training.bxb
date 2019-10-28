@@ -1,0 +1,5 @@
+train (t-b22zmn4bwv9plnlfzb20oupcb) {
+  utterance ("[g:findCategory] (코코넛)[v:Category:코코넛] 들어간 칵테일 보여줘")
+  plan (Y2BmkM+tzEjMS9HLrUxKLNJzzk/OLknMzHGqdE4sSU3PL6pkkERRkJaZlwKXEkXVCxNmYmAEYgYgycgAAlA+AA==)
+  last-modified (1572260543638)
+}
