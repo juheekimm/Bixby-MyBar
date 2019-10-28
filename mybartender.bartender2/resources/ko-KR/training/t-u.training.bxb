@@ -3,8 +3,3 @@ train (t-u900a5sacw2ht09j6vpn8cfzo) {
   plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
   last-modified (1572175243571)
 }
-train (t-uwjxlmjb9skmx2j4lk4u1wqnc) {
-  utterance ("[g:findCategory] (과일이 들어간)[v:Category:'과일이 들어간'] 칵테일 알려줘")
-  plan (Y2BmUCnISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0TixJTc8vqmSQw1SVlpmXApeXwmIKTI6JgRGIGYAkIwMIQPkA)
-  last-modified (1572174588680)
-}

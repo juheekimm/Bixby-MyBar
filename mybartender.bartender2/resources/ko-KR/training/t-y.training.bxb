@@ -1,0 +1,5 @@
+train (t-y0ie7q70j6atpuo5rtnwpkuxk) {
+  utterance ("[g:findRecipe] (썬 라이즈)[v:Id:선라이즈] (레시피)[v:Page:레시피] 보여줘봐")
+  plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572257429067)
+}

@@ -15,18 +15,18 @@ values.category = [
   "모두에게 사랑받는 베스트 칵테일"
 ];
 values.img = [
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/easy.jpg?alt=media&token=512527ce-4e18-4446-814a-a2dd3bab45ca",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/bomb.jpg?alt=media&token=ee936d49-f412-44a3-9866-7398da76889e",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/easy.jpg?alt=media&token=97df02d8-529d-4fc7-b66a-d04b3b04f83e",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/bomb.jpg?alt=media&token=c88d539f-4d48-4f38-9a63-1f9ee49857d7",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/unique.jpg?alt=media&token=cc565d9d-92b5-4c1b-b096-d8e49d3466eb",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/solo.jpg?alt=media&token=16c17cff-35d3-43b1-af5e-b22cdf3059ce",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/noob.jpg?alt=media&token=47497911-9512-4b2a-8f24-f63a286e7aa1",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/party.jpg?alt=media&token=e10fc303-b3fc-44b2-8575-e3d571befd04",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/nonal.jpg?alt=media&token=283ce2cc-b41c-49f1-aa1b-c400069e5c34",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/solo.jpg?alt=media&token=768b71a8-224d-4a04-b3a7-7c8d359a970c",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/rain.jpg?alt=media&token=6c0d36c1-7f37-4625-b55e-9617a8478b63",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/solo.jpg?alt=media&token=fec9adf4-01f3-460c-a5bd-d5dab0d18b92",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/start.jpg?alt=media&token=3b4a8213-d326-42a6-8599-cb326ba2dfb3",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/party.jpg?alt=media&token=171753cf-e712-4633-8055-24fe2271045e",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/nonal.jpg?alt=media&token=c9140ea0-4d83-485b-9b1d-8b2407d4a751",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/alone.png?alt=media&token=bbea4840-6a6e-4383-be09-dd6a7cfe6cd4",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/rain.jpg?alt=media&token=4c1bb8d3-794f-438b-a80b-e143a133de08",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/blue.jpg?alt=media&token=a907d347-5252-4b14-bf11-7aeda28c6374",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/siwan.jpg?alt=media&token=4ef890ff-314c-4b60-ab33-5066301c7d54",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/sugar.jpg?alt=media&token=ad25f845-9a91-4571-964f-8a2d1db8b028"
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/cool.jpg?alt=media&token=379182fc-90ed-42bd-9346-fbb06e184e49",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/best.jpg?alt=media&token=8fb12fac-e342-4c59-877a-a0e4556b517f"
 ];
 
 values.ids = [

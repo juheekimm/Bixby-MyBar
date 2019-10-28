@@ -8,3 +8,8 @@ train (t-e6hc6iv0d2tic95omlvs4uz29) {
   plan (Y2BhkCjISaxML8ovzUvRy61MSiwy0gtKTc4sSGWQwZRJy8xLgcqKYMp6pjCIYYoGJKanMjAzMDIwAUkGIA2CEAAXBQA=)
   last-modified (1572173252196)
 }
+train (t-eji0jbruzeked9t957ydvf8ac) {
+  utterance ("[g:findCocktail] (아이리시 커피)[v:Id:아이리시커피] 뭐야")
+  plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLgUvxo0h5pjAwMTACMQOQZGQAASgfAA==)
+  last-modified (1572256837490)
+}

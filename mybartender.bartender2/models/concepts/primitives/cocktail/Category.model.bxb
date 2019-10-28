@@ -7,7 +7,6 @@ enum (Category){
   symbol (에너지)
   symbol (센)
   symbol (청량한)
-  symbol (과일이 들어간)
   symbol (깔끔한)
   symbol (부드러운)
   symbol (향긋한)

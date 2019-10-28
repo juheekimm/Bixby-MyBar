@@ -3,3 +3,8 @@ train (t-oery3x2uonp18fwy4ldrtb6p7) {
   plan (Y2BmUCzISaxML8ovzUvRy61MSiwy0nPOT84uSczMcar0TczKL2KQx1SSlpmXApb0ySwuYRDHVBCUWuCZwsDEwAjEDECSkQEEoHwA)
   last-modified (1572174851224)
 }
+train (t-oq32m4yhp417ukvjbapn0u0pg) {
+  utterance ("[g:findMajorList] (취할 만한)[v:RepId:취하고] 칵테일 알려주라")
+  plan (Y2BmkMmtzEjMS9HLrUxKLNJzzk/OLknMzHGq9E3Myi9ikEKRTcvMSwGL+2QWlzAIocgFpRZ4pjAwMTACMQOQZGQAASgfAA==)
+  last-modified (1572258966468)
+}
