@@ -3,11 +3,6 @@ train (t-5igq3uo84pbww6r9zo54e82h3) {
   plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghAAFwUA)
   last-modified (1572185250031)
 }
-train (t-5mqrxidjb3dwbrllxvveuolxz) {
-  utterance ("[g:findRecipe:continue:Id] (레시피)[v:Page:레시피] 알려 줄래")
-  plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghDABGQBxQA=)
-  last-modified (1572252560230)
-}
 train (t-5y582j1ihxxh3senpfpuutsp5) {
   utterance ("[g:findMajorList] (파티용)[v:RepId:파티에서]으로 좋은 칵테일 보여줘")
   plan (Y2BmkMmtzEjMS9HLrUxKLNJzzk/OLknMzHGq9E3Myi9ikEKRTcvMSwGL+2QWlzAIocgFpRZ4pjAwMTACMQOQZGQAASgfAA==)

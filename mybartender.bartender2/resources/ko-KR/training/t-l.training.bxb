@@ -1,5 +1,0 @@
-train (t-lxyz5yqdub5qlxii8oxhm9wc3) {
-  utterance ("[g:findRecipe:continue:Id] (레시피)[v:Page:레시피] 알려줘")
-  plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghDABGQBxQA=)
-  last-modified (1572230901678)
-}

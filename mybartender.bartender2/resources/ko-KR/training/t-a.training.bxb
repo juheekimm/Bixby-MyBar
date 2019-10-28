@@ -1,8 +1,3 @@
-train (t-alf7rl2wxppvtwfpi63nypi3j) {
-  utterance ("[g:findRecipe:continue:Id] (레시피)[v:Page:레시피] 설명해줘")
-  plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghDABGQBxQA=)
-  last-modified (1572252084966)
-}
 train (t-ao1f8niedja3073trrwcfmb4m) {
   utterance ("[g:findCocktail] (갓마더)[v:Id:갓마더] 알려줘")
   plan (Y2BmEM2tzEjMS9HLrUxKLNJzzk/OLknMzGGQRBFOy8xLgUvxo0h5pjAwMTACMQOQZGQAASgfAA==)
