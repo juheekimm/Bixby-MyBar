@@ -66,4 +66,7 @@ enum (Id){
   symbol (세븐레이어)
   symbol (b52)
   symbol (에그노그)
+  symbol (선라이즈)
+  symbol (무알콜모히또)
+  symbol (무알콜도화)
 }
