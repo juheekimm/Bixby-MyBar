@@ -8,3 +8,8 @@ train (t-f78g7bfzzjazx0n65m5ncxna0) {
   plan (Y2BmUCnISaxML8ovzUvRy61MSiwy0nPOT84uSczMcap0TixJTc8vqmSQw1SVlpmXApeXwmIKTI6JgRGIGYAkIwMIQPkA)
   last-modified (1572174050133)
 }
+train (t-fr8lm3jw6v5x8nijvpz7mbtjn) {
+  utterance ("[g:findRecipe:continue:Id] (레시피)[v:Page:레시피] 보여줘")
+  plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghDABGQBxQA=)
+  last-modified (1572252442096)
+}
