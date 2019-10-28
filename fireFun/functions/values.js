@@ -15,14 +15,14 @@ values.category = [
   "모두에게 사랑받는 베스트 칵테일"
 ];
 values.img = [
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/easy.jpg?alt=media&token=512527ce-4e18-4446-814a-a2dd3bab45ca",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/bomb.jpg?alt=media&token=ee936d49-f412-44a3-9866-7398da76889e",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/unique.jpg?alt=media&token=cc565d9d-92b5-4c1b-b096-d8e49d3466eb",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/solo.jpg?alt=media&token=16c17cff-35d3-43b1-af5e-b22cdf3059ce",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/noob.jpg?alt=media&token=47497911-9512-4b2a-8f24-f63a286e7aa1",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/party.jpg?alt=media&token=e10fc303-b3fc-44b2-8575-e3d571befd04",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf",
-  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/readyforimage.jpg?alt=media&token=0352aa05-84fe-41b9-b074-9ada7072e6cf",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/nonal.jpg?alt=media&token=283ce2cc-b41c-49f1-aa1b-c400069e5c34",
+  "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/solo.jpg?alt=media&token=768b71a8-224d-4a04-b3a7-7c8d359a970c",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/rain.jpg?alt=media&token=6c0d36c1-7f37-4625-b55e-9617a8478b63",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/blue.jpg?alt=media&token=a907d347-5252-4b14-bf11-7aeda28c6374",
   "https://firebasestorage.googleapis.com/v0/b/myhand-bartender.appspot.com/o/siwan.jpg?alt=media&token=4ef890ff-314c-4b60-ab33-5066301c7d54",

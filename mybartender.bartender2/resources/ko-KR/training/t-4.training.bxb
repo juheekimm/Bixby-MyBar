@@ -1,0 +1,5 @@
+train (t-4jkr9oa6f3wmyld07x4ezsmrd) {
+  utterance ("[g:findRecipe] (애플 마티니)[v:Id:애플마티니] (레시피)[v:Page:레시피] 설명해줘")
+  plan (Y2BhEM6tzEjMS9HLrUxKLNILSk3OLEhlEEcRTMvMS4FK8KNIeKYwCKIIBCSmpzIwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572255035336)
+}
