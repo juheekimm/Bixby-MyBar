@@ -1,8 +1,0 @@
-enum (Method) {
-  description (__DESCRIPTION__)
-  symbol (Build) //직접넣기
-  symbol (Stir)  //휘젓기
-  symbol (Shake) //흔들기
-  symbol (Float) //띄우기
-  symbol (Blend) //블렌드
-}

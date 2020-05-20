@@ -1,5 +1,0 @@
-train (t-a02hmzw8dljmym58wivblmw65) {
-  utterance ([g:findRecipe] IceBreaker 레시피 보여줘)
-  plan (Y2BikCvISaxML8ovzUvRS85Pzi5JzMwJy0wt1wtKTc4sSGVQwiWflpmXAlXDCIQMUAwkAQ==)
-  last-modified (1570365508300)
-}

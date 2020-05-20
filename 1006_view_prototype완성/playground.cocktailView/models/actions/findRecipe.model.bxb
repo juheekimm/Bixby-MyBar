@@ -1,6 +1,0 @@
-action (findRecipe) {
-  description (Searching Cocktail Recipe Information)
-  type(Search)
-  
-  output (Recipe)
-}

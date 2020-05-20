@@ -65,22 +65,22 @@
 ## 화면 구성
 
 ### [서비스 첫 화면 (서비스 소개 및 대표 발화 정보)]
-<img src="img/page1.png" width=80% />
+<img src="README_img/page1.png" width=80% />
 
 <br>
 
 ### [테마별 추천 카테고리]
-<img src="img/page2.png" width=80% />
+<img src="README_img/page2.png" width=80% />
 
 <br>
 
 ### [카테고리 별 칵테일 정보]
-<img src="img/page3.png" width=80% />
+<img src="README_img/page3.png" width=80% />
 
 <br>
 
 ### [칵테일 정보 및 레시피]
-<img src="img/page4.png" width=80% />
+<img src="README_img/page4.png" width=80% />
 
 <hr>
 
